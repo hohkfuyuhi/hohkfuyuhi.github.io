@@ -8,8 +8,8 @@ y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
 VER 0.2.1 | 28/01/19
-- added Lightbox to 2D gallery page
+> added Lightbox to 2D gallery page
 <br>
 VER 0.1.1 | 27/01/19
-- portfolio website skeleton created
-- portfolio hosted on Netlify
+> portfolio website skeleton created
+> portfolio hosted on Netlify
