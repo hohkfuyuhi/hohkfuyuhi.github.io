@@ -9,6 +9,9 @@ z denotes minor changes: starts from 1\
 <br>
 VER 0.2.1 | 28/01/19
 - added Lightbox to 2D gallery page
+- issues to be addressed:
+  1. make Lightbox mobile friendly
+  2. center images in Lightbox
 
 VER 0.1.1 | 27/01/19
 - portfolio website skeleton created
