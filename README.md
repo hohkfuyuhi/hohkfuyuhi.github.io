@@ -17,13 +17,13 @@ VER 0.2.3 | 29/01/19
 VER 0.2.2 | 29/01/19
 - added logo
 - issues to be addressed:
-  1. ~~Lightbox still not mobile friendly
+  1. ~~Lightbox still not mobile friendly~~
 
 VER 0.2.1 | 28/01/19
 - added Lightbox to 2D gallery page
 - issues to be addressed:
-  1. ~~make Lightbox mobile friendly
-  2. ~~center images in Lightbox
+  1. ~~make Lightbox mobile friendly~~
+  2. ~~center images in Lightbox~~
 
 VER 0.1.1 | 27/01/19
 - portfolio website skeleton created
