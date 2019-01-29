@@ -47,6 +47,12 @@ header a.active {
     font-size: 35px;;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -59,12 +65,15 @@ footer {
 }
 
 .gallery {
-    margin: 10px 50px;
+    margin: auto;
 }
 
 .gallery img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
     transition: 0.5s;
-    padding: 50px;
+    padding: 20px;
     width: 200px;
     filter: grayscale(100%);
 }
@@ -81,6 +90,10 @@ footer {
     
     footer {
         font-size: 15pt;
+    }
+    
+    .gallery img {
+        max-width: 50%;
     }
 }
 
