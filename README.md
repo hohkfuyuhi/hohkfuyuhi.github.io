@@ -3,7 +3,7 @@
 __LEGEND__\
 VER x.y.z | dd/mm/yy\
 \
-x denotes build version: 0 is alpha build, 1 is release build\
+x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
