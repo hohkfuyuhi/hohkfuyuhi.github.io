@@ -1,8 +1,23 @@
+@font-face {
+  font-family: CuprumRegular;
+  src: url('../fonts/Cuprum-Regular.ttf');
+}
+
+@font-face {
+  font-family: ArchivoNarrowRegular;
+  src: url('../fonts/ArchivoNarrow-Regular.otf');
+}
+
+@font-face {
+  font-family: UniqueRegular;
+  src: url('../fonts/Unique.ttf');
+}
+
 * {box-sizing: border-box;}
 
 body {
-    margin: 0;
-    font-family: ArchivoRegular;
+    margin: 0 auto;
+    font-family: CuprumRegular;
     font-size: 18pt;
     padding-bottom: 50px;
     background: #241F1F;
@@ -41,25 +56,6 @@ header a.active {
     color: #E9E8E8;
 }
 
-.home {
-    margin: 0 auto;
-    width: 11em;
-    font-size: 35px;
-    text-align: center;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.name {
-    font-family: UniqueRegular;
-    font-size: 85px;
-    color: #CA9E60;
-}
-
 .center {
     text-align: center;
 }
@@ -89,32 +85,16 @@ footer {
 }
 
 @media screen and (max-width: 1280px) {
-    .home {
-        font-size: 30px;
-    }
-    
-    .name {
-        font-size: 75px;
-    }
-    
     footer {
         font-size: 15pt;
     }
-    
+
     .gallery img {
         max-width: 50%;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .home {
-        font-size: 25px;
-    }
-    
-    .name {
-        font-size: 65px;
-    }
-
     footer {
         font-size: 12pt;
     }

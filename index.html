@@ -5,33 +5,180 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheets/style.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/archivo" type="text/css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/archivo-narrow" type="text/css"/>
+        <link rel="stylesheet" href="stylesheets/parallax.css" />
+        <link rel="stylesheet" href="stylesheets/hipster.css" />
+        <link rel="stylesheet" href="stylesheets/returntop.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <style>
+            .header {
+                z-index: 1000;
+                background: rgba(36, 31, 31, 0.8);
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .intro {
+                margin: 0 auto;
+                overflow: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .about {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .logo {
+                float: left;
+                display: inline-block;
+                width: 234px;
+            }
+
+            .home {
+                float: left;
+                display: inline-block;
+                font-size: 35px;
+                padding-left: 10px;
+            }
+
+            .name {
+                font-family: UniqueRegular;
+                font-size: 85px;
+                color: #CA9E60;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            @media screen and (max-width: 1280px) {
+                .home {
+                    font-size: 30px;
+                }
+
+                .name {
+                    font-size: 75px;
+                }
+
+                .logo {
+                    width: 156px;
+                }
+            }
+
+            @media screen and (max-width: 640px) {
+                .home {
+                    font-size: 25px;
+                }
+
+                .name {
+                    font-size: 65px;
+                }
+
+                .logo {
+                    width: 78px;
+                }
+            }
+        </style>
     </head>
     <body>
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
         <header>
-            <div>
+            <div class="header" id="myHeader">
                 <a class="active" href="index.html">Home</a>
                 <a href="twod.html">2D gallery</a>
                 <a href="threed.html">3D gallery</a>
-                <a href="about.html">Me</a>
+                <a href="#contact">Contact</a>
             </div>
         </header>
-        <div class="home">
-            Hello, my name is<br>
-            <span class="name">
-                Max Ho
-            </span>
-            <br>
-            and I am a programmer<br>
-            with various design skills
+
+        <div class="parallax1">
+            <div class="intro">
+                <div class="logo">
+                    <img src="images/logo/logo_new_grey.png">
+                </div>
+                <div class="home">
+                    Hello, my name is<br>
+                    <span class="name">
+                        Max Ho
+                    </span>
+                    <br>
+                    and I am a programmer<br>
+                    with various design skills
+                    <div>
+                        &#8595;
+                    </div>
+                </div>
+            </div>
         </div>
-        <br><br>
-        <div class="center">
-            <img src="images/logo/logo_bw_outline.png">
+
+        <div class="parallax2" style="text-align: center;">
+            <div class="container">
+                <section class="neon">
+                    <span class="text">
+                        <span class="blink">N</span>EON F<span class="blink">U</span>EL<span class="blink">E</span>D DRE<span class="blink">A</span>MS
+                    </span>
+                </section>
+            </div>
         </div>
+
+        <div class="parallax1" style="height: 1080px;">
+            <div class="about">
+                <strong>Skill sets and proficiency</strong>
+            </div>
+        </div>
+
+        <div class="parallax3" style="text-align: center;"></div>
+
+        <div class="parallax1" style="height: 1080px;">
+            <div class="about">
+                You can find me on the following platforms
+                <p>
+                    <span style="font-size: 2em">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-weixin"></i>
+                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-line"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/returntop.js"></script>
+
+        <script>
+            window.onscroll = function () {
+                myFunction();
+            }
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
     </body>
 </html>
