@@ -7,7 +7,7 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
-VER 0.3.1 | 29/01/19
+VER 0.3.1 | 29/01/19\
 !! LOTS OF CHANGES !!
 - logo:
   1. logo has been changed
@@ -33,7 +33,7 @@ VER 0.2.3 | 29/01/19
 - website should be sufficiently mobile friendly
 - issues to be addressed:
   1. ~~font takes time to load - change font library to Google Fonts instead?~~
-  2. touch up on website's mobile friendliness
+  2. ~~touch up on website's mobile friendliness~~
 
 VER 0.2.2 | 29/01/19
 - added logo
