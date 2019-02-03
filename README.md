@@ -7,13 +7,22 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
-VER 0.3.1 | 29/01/19\
+VER 0.3.2 | 03/02/19
+- bugfixes:
+  1. fixed a bug where certain content was being served over HTTP instead of HTTPS whoops
+  2. fixed a bug where the return to top button was not showing up correctly
+  3. fixed various JavaScript bugs that caused JavaScript content to behave weirdly
+- quality of life improvements:
+  1. spaghetti code cleaned up
+  2. updated codes that are deprecated in HTML5
+
+VER 0.3.1 | 02/02/19\
 !! LOTS OF CHANGES !!
 - logo:
   1. logo has been changed
-  2. logo is now mobile friendly; will scale according to viewport size
+  2. logo is now mobile friendly, and will scale depending on viewport size
 - navigation:
-  1. added sticky functionality to the navbar
+  1. navbar now sticks to the top
   2. added a return to top button
 - website:
   1. home page now utilises parallax scrolling
