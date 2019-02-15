@@ -7,12 +7,22 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.3.3 | 15/02/19
+- certain elements were not being centered properly:
+  1. neon letters now centers within the parallax with a flex display instead of using absolute position and padding
+  2. introduction element now horizontally centers based on screen height instead of using absolute posistion and padding
+  3. contact icons now horizontally centers based on screen height instead of using absolute position and padding
+- quality of life:
+  1. cleaned up even more spaghetti code
+  2. changed font-size to use em instead of pt and px
+  3. working links and QR codes have been added to contact icons
+
 VER 0.3.2 | 03/02/19
 - bugfixes:
   1. fixed a bug where certain content was being served over HTTP instead of HTTPS whoops
   2. fixed a bug where the return to top button was not showing up correctly
   3. fixed various JavaScript bugs that caused JavaScript content to behave weirdly
-- quality of life improvements:
+- quality of life:
   1. spaghetti code cleaned up
   2. updated codes that are deprecated in HTML5
 
