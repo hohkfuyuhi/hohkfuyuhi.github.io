@@ -9,18 +9,13 @@
 
 .container {
     overflow-y: hidden;
-}
-
-.container section {
-    padding: 3.5rem;
-}
-
-.container section:first-child {
-    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
-    display: inline-block;
     font-size: 70px;
     z-index: 10;
 }
@@ -98,20 +93,12 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .container section {
-        padding: 4.5rem;
-    }
-    
     .text {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .container section {
-        padding: 5rem;
-    }
-    
     .text {
         font-size: 25px;
     }

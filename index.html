@@ -24,21 +24,22 @@
             }
 
             .intro {
+                height: 85%;
                 margin: 0 auto;
                 overflow: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            
+
             .about {
                 position: absolute;
                 left: 0;
-                top: 50%;
+                top: 35%;
                 width: 100%;
                 text-align: center;
             }
-
+            
             .logo {
                 float: left;
                 display: inline-block;
@@ -48,13 +49,13 @@
             .home {
                 float: left;
                 display: inline-block;
-                font-size: 35px;
+                font-size: 2em;
                 padding-left: 10px;
             }
 
             .name {
                 font-family: UniqueRegular;
-                font-size: 85px;
+                font-size: 2.5em;
                 color: #CA9E60;
             }
 
@@ -68,25 +69,29 @@
 
             @media screen and (max-width: 1280px) {
                 .home {
-                    font-size: 30px;
+                    font-size: 1.5em;
                 }
 
                 .name {
-                    font-size: 75px;
+                    font-size: 2.5em;
                 }
 
                 .logo {
                     width: 156px;
                 }
+                
+                .about {
+                    top: 40%;
+                }
             }
 
             @media screen and (max-width: 640px) {
                 .home {
-                    font-size: 25px;
+                    font-size: 1em;
                 }
 
                 .name {
-                    font-size: 65px;
+                    font-size: 2.5em;
                 }
 
                 .logo {
@@ -127,7 +132,7 @@
             </div>
         </div>
 
-        <div class="parallax2" style="text-align: center;">
+        <div class="parallax2">
             <div class="container">
                 <section class="neon">
                     <span class="text">
@@ -146,16 +151,19 @@
         <div class="parallax3" style="text-align: center;"></div>
 
         <div class="parallax1" style="height: 1080px;">
-            <div class="about">
+            <div class="about" id="contact">
                 You can find me on the following platforms
+                <br><br><br>
                 <p>
                     <span style="font-size: 2em">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-weixin"></i>
-                        <i class="fab fa-telegram"></i>
-                        <i class="fab fa-line"></i>
+                        <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <br><br>
+                        <i class="fab fa-weixin"><img src="images/qr/qr_line.jpg"></i>
+                        &emsp;
+                        <i class="fab fa-line"><img src="images/qr/qr_wechat.png"></i>
                     </span>
                 </p>
             </div>
