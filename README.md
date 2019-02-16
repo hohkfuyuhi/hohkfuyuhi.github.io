@@ -7,6 +7,17 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.4.1 | 16/02/19
+- languages:
+  1. website now supports three languages: English, Simplified Chinese, Japanese
+- loading speed:
+  1. each language is currently coded as raw text in the HTML file
+  2. load times are dependant on how fast the user can pull the data from the GitHub repository
+- issues to be addresssed:
+  1. create a language manager in JavaScript
+  2. separate the raw text into constants and store them in a list
+  3. swap languages via the constats
+
 VER 0.3.3 | 15/02/19
 - certain elements were not being centered properly:
   1. neon letters now centers within the parallax with a flex display instead of using absolute position and padding
