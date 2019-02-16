@@ -13,6 +13,21 @@
   src: url('../fonts/Unique.ttf');
 }
 
+@font-face {
+  font-family: JPRegular;
+  src: url('../fonts/MPLUSRounded1c-Regular.ttf');
+}
+
+@font-face {
+  font-family: CNSerif;
+  src: url('../fonts/NotoSerifSC-Regular.otf');
+}
+
+@font-face {
+  font-family: CNSans;
+  src: url('../fonts/NotoSansSC-Light.otf');
+}
+
 * {box-sizing: border-box;}
 
 body {
@@ -31,6 +46,7 @@ p {
 
 header {
     font-family: ArchivoNarrowRegular;
+    font-size: 18px;
     overflow: hidden;
     padding: 30px 10px 50px 10px;
     display: flex;
@@ -43,7 +59,6 @@ header a {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
 }
@@ -90,6 +105,65 @@ footer {
 
 .about a:visited{
     color: inherit;
+}
+
+#jp {
+    font-family: JPRegular;
+    display: none
+}
+
+#cn {
+    font-family: CNSans;
+    display: none
+}
+
+.button_lang {
+    background-color: #444;
+    color: #FFF;
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: auto;
+    display: inline;
+
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+.button_lang:hover, .current_lang {
+    cursor: pointer;
+    background-color: #777;	
+    -webkit-transition: background-color .1s ease-in-out;
+    -moz-transition: background-color .1s ease-in-out;
+    -o-transition: background-color .1s ease-in-out;
+    -ms-transition: background-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out;
+}
+
+::selection {
+    background-color: #594F3B;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #594F3B;
+    color: #fff;
+}
+
+::-o-selection {
+    background-color: #594F3B;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #594F3B;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #594F3B;
+    color: #fff;
 }
 
 @media screen and (max-width: 1280px) {

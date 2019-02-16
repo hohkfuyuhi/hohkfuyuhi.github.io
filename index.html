@@ -39,7 +39,7 @@
                 width: 100%;
                 text-align: center;
             }
-            
+
             .logo {
                 float: left;
                 display: inline-block;
@@ -50,12 +50,37 @@
                 float: left;
                 display: inline-block;
                 font-size: 2em;
-                padding-left: 10px;
+                padding-left: 50px;
             }
 
             .name {
                 font-family: UniqueRegular;
                 font-size: 2.5em;
+                color: #CA9E60;
+            }
+            
+            .jphome {
+                float: left;
+                display: inline-block;
+                font-size: 1.5em;
+                padding-left: 50px;
+            }
+            
+            #jp .jpname {
+                font-size: 3.15em;
+                color: #CA9E60;
+            }
+            
+            .cnhome {
+                float: left;
+                display: inline-block;
+                font-size: 1.6em;
+                padding-left: 50px;
+            }
+            
+            #cn .cnname {
+                font-family: CNSerif;
+                font-size: 2.6em;
                 color: #CA9E60;
             }
 
@@ -79,7 +104,7 @@
                 .logo {
                     width: 156px;
                 }
-                
+
                 .about {
                     top: 40%;
                 }
@@ -97,6 +122,10 @@
                 .logo {
                     width: 78px;
                 }
+
+                .about {
+                    top: 30%;
+                }
             }
         </style>
     </head>
@@ -109,6 +138,9 @@
                 <a href="twod.html">2D gallery</a>
                 <a href="threed.html">3D gallery</a>
                 <a href="#contact">Contact</a>
+                <span id="en_click" class="button_lang current_lang">EN</span>
+                <span id="cn_click" class="button_lang">CN</span>
+                <span id="jp_click" class="button_lang">JP</span>
             </div>
         </header>
 
@@ -117,14 +149,35 @@
                 <div class="logo">
                     <img src="images/logo/logo_new_grey.png">
                 </div>
-                <div class="home">
-                    Hello, my name is<br>
-                    <span class="name">
+                <div id="en" class="home">
+                    Hello! My name is<br>
+                    <span id="en" class="name">
                         Max Ho
                     </span>
-                    <br>
                     and I am a programmer<br>
                     with various design skills
+                    <div>
+                        &#8595;
+                    </div>
+                </div>
+                <div id="jp" class="jphome">
+                    こんにちは！僕の名前は<br>
+                    <span id="jp" class="jpname">
+                        マックス
+                    </span>
+                    僕はプログラマーです。更に、<br>
+                    様々なデザインスキルを持っています。
+                    <div>
+                        &#8595;
+                    </div>
+                </div>
+                <div id="cn" class="cnhome">
+                    你好！我的名字是<br>
+                    <span id="cn" class="cnname">
+                        何浩杰
+                    </span>
+                    我的专长是编程，<br>
+                    但我也有各种的设计技能。
                     <div>
                         &#8595;
                     </div>
@@ -161,8 +214,8 @@
                         <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
                         <br><br>
-                        <i class="fab fa-weixin"><img src="images/qr/qr_line.jpg"></i>
-                        <i class="fab fa-line"><img src="images/qr/qr_wechat.png"></i>
+                        <i class="fab fa-line"><img src="images/qr/qr_line.jpg"></i>
+                        <i class="fab fa-weixin"><img src="images/qr/qr_wechat.png"></i>
                     </span>
                 </p>
             </div>
@@ -170,6 +223,7 @@
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="js/returntop.js"></script>
+        <script  src="js/language.js"></script>
 
         <script>
             window.onscroll = function () {
