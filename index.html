@@ -24,7 +24,7 @@
             }
 
             .intro {
-                height: 85%;
+                height: 80%;
                 margin: 0 auto;
                 overflow: auto;
                 display: flex;
@@ -35,9 +35,14 @@
             .about {
                 position: absolute;
                 left: 0;
-                top: 35%;
+                top: 25%;
                 width: 100%;
                 text-align: center;
+            }
+
+            #findme {
+                margin: 0 auto;
+                width: 85%;
             }
 
             .logo {
@@ -46,39 +51,54 @@
                 width: 234px;
             }
 
-            .home {
+            #fontchange {
+                padding-left: 20px;
+            }
+
+            .en {
+                font-family: CuprumRegular;
+            }
+
+            .jp {
+                font-family: JPRegular;
+            }
+
+            .cn {
+                font-family: CNSans;
+            }
+
+            .eng {
                 float: left;
                 display: inline-block;
                 font-size: 2em;
-                padding-left: 50px;
             }
 
-            .name {
+            .engname {
                 font-family: UniqueRegular;
                 font-size: 2.5em;
                 color: #CA9E60;
             }
-            
-            .jphome {
-                float: left;
-                display: inline-block;
-                font-size: 1.5em;
-                padding-left: 50px;
-            }
-            
-            #jp .jpname {
-                font-size: 3.15em;
-                color: #CA9E60;
-            }
-            
-            .cnhome {
+
+            .jap {
+                font-family: JPRegular;
                 float: left;
                 display: inline-block;
                 font-size: 1.6em;
-                padding-left: 50px;
             }
-            
-            #cn .cnname {
+
+            .japname {
+                font-size: 3.1em;
+                color: #CA9E60;
+            }
+
+            .chn {
+                font-family: CNSans;
+                float: left;
+                display: inline-block;
+                font-size: 1.6em;
+            }
+
+            .chnname {
                 font-family: CNSerif;
                 font-size: 2.6em;
                 color: #CA9E60;
@@ -92,13 +112,38 @@
                 object-fit: contain;
             }
 
+            #skills {
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            article {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            th, tr, td{
+                text-align: center;
+                width: 250px;
+            }
+            
+            th {
+                color: #CA9E60;
+            }
+
             @media screen and (max-width: 1280px) {
-                .home {
+                .eng {
                     font-size: 1.5em;
                 }
 
-                .name {
-                    font-size: 2.5em;
+                .jap {
+                    font-size: 1.1em;
+                }
+
+                .chn {
+                    font-size: 1.2em;
                 }
 
                 .logo {
@@ -106,30 +151,30 @@
                 }
 
                 .about {
-                    top: 40%;
+                    top: 20%;
                 }
             }
 
             @media screen and (max-width: 640px) {
-                .home {
+                .eng {
                     font-size: 1em;
                 }
 
-                .name {
-                    font-size: 2.5em;
+                .jap {
+                    font-size: 0.8em;
+                }
+
+                .chn {
+                    font-size: 0.8em;
                 }
 
                 .logo {
                     width: 78px;
                 }
-
-                .about {
-                    top: 30%;
-                }
             }
         </style>
     </head>
-    <body>
+    <body class="unselectable">
         <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
 
         <header>
@@ -138,9 +183,11 @@
                 <a href="twod.html">2D gallery</a>
                 <a href="threed.html">3D gallery</a>
                 <a href="#contact">Contact</a>
-                <span id="en_click" class="button_lang current_lang">EN</span>
-                <span id="cn_click" class="button_lang">CN</span>
-                <span id="jp_click" class="button_lang">JP</span>
+                <div style="text-align: center; padding-top: 15px;">
+                    <span id="en" class="button_lang current_lang">EN</span>
+                    <span id="cn" class="button_lang">中文</span>
+                    <span id="jp" class="button_lang">日本語</span>
+                </div>
             </div>
         </header>
 
@@ -149,35 +196,14 @@
                 <div class="logo">
                     <img src="images/logo/logo_new_grey.png">
                 </div>
-                <div id="en" class="home">
-                    Hello! My name is<br>
-                    <span id="en" class="name">
+                <div id="fontchange" class="eng">
+                    <span id="intro1">Hello! My name is</span><br>
+                    <span id="intro2" class="engname">
                         Max Ho
                     </span>
-                    and I am a programmer<br>
-                    with various design skills
-                    <div>
-                        &#8595;
-                    </div>
-                </div>
-                <div id="jp" class="jphome">
-                    こんにちは！僕の名前は<br>
-                    <span id="jp" class="jpname">
-                        マックス
-                    </span>
-                    僕はプログラマーです。更に、<br>
-                    様々なデザインスキルを持っています。
-                    <div>
-                        &#8595;
-                    </div>
-                </div>
-                <div id="cn" class="cnhome">
-                    你好！我的名字是<br>
-                    <span id="cn" class="cnname">
-                        何浩杰
-                    </span>
-                    我的专长是编程，<br>
-                    但我也有各种的设计技能。
+                    <br>
+                    <span id="intro3">and I am a programmer</span><br>
+                    <span id="intro4">with various design skills</span>
                     <div>
                         &#8595;
                     </div>
@@ -196,17 +222,54 @@
         </div>
 
         <div class="parallax1" style="height: 1080px;">
-            <div class="about">
-                <strong>Skill sets and proficiency</strong>
+            <div>
+                <div id="skills">
+                    <h2>Look at what I can do!</h2>
+                </div>
+                <article>
+                    <table>
+                        <tr>
+                            <th id="head1">
+                                Programming
+                            </th>
+                            <th id="head2">
+                                Design
+                            </th>
+                            <th id="head3">
+                                Video
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td id="design1">Vectors</td>
+                            <td id="video1">Editor / Colourist</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td id="design2">Packaging</td>
+                            <td id="video2">Audio Technician</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td id="design3">Pamphlet</td>
+                            <td id="video3">Lighting Designer / Gaffer</td>
+                        </tr>
+                        <tr>
+                            <td>HTML / CSS / SCSS</td>
+                            <td id="design4">Name cards</td>
+                            <td id="video4">Director of Photography / Camera Operator</td>
+                        </tr>
+                    </table>
+                </article>
             </div>
         </div>
 
         <div class="parallax3" style="text-align: center;"></div>
 
-        <div class="parallax1" style="height: 1080px;">
+        <div class="parallax1">
             <div class="about" id="contact">
-                You can find me on the following platforms
-                <br><br><br>
+                <div id="findme">You can find me on the following platforms</div>
+                <br><br>
                 <p>
                     <span style="font-size: 2em">
                         <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -223,7 +286,7 @@
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="js/returntop.js"></script>
-        <script  src="js/language.js"></script>
+        <script src="js/lang.js"></script>
 
         <script>
             window.onscroll = function () {
