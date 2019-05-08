@@ -7,6 +7,26 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.5.1 | 08/05/19
+- bugfixes:
+  1. fixed funky navbar buttons - hopefully they stay that way
+  2. adjusted the placement of the header buttons too - they should look nicer on mobile now
+  3. "Contact" button in navbar should now correctly jump to the bottom of the home page instead of redirecting to a broken page
+  4. return to top button should now display the correct animation when hovering over it
+  5. language selector buttons should now fade in and fade out the correct colour when hovering over it
+- languages:
+  1. created a language manager with JavaScript
+  2. shifted all raw text translations into the language manager
+  3. added Simplified Chinese and Japanese translations for the following:
+      - terms under "Design"
+      - terms under "Video"
+      - these terms might not be 100% accurate, will change if mistakes are found
+- quality of life:
+  1. layout of certain elements changed
+  2. font sizes adjusted across all viewports
+- issues to be addressed:
+  1. navbar buttons do not change language for some weird reason - possible spaghetti code?
+
 VER 0.4.1 | 16/02/19
 - languages:
   1. website now supports three languages: English, Simplified Chinese, Japanese
@@ -14,9 +34,8 @@ VER 0.4.1 | 16/02/19
   1. each language is currently coded as raw text in the HTML file
   2. load times are dependant on how fast the user can pull the data from the GitHub repository
 - issues to be addresssed:
-  1. create a language manager in JavaScript
-  2. separate the raw text into constants and store them in a list
-  3. swap languages via the constats
+  1. ~~create a language manager with JavaScript~~
+  2. ~~navbar buttons displayed and behaved funky when viewed in different viewports~~
 
 VER 0.3.3 | 15/02/19
 - certain elements were not being centered properly:
@@ -50,19 +69,19 @@ VER 0.3.1 | 02/02/19\
   2. contact and skills page have been removed
   3. contact and skills page have been merged into the home page
 - quality of life improvements:
-  1. fonts have been shifted into a folder; no need to depend on font library
+  1. fonts have been shifted into a folder - no need to depend on an online font library
   2. code has been mostly cleaned up
 - miscellaneous:
   1. used CSS to produce a neon sign effect
-  2. incorporated JavaScript for sticky header and return to top
+  2. incorporated JavaScript for sticky header and return to top button
 - issues to be addressed:
   1. actually add content lol
 
 VER 0.2.3 | 29/01/19
 - Lightbox is mobile friendly
 - website should be sufficiently mobile friendly
-- issues to be addressed:
-  1. ~~font takes time to load - change font library to Google Fonts instead?~~
+- iss~~ues to be addressed:~~
+  1. ~~~~font takes time to load - change font library to Google Fonts instead?~~~
   2. ~~touch up on website's mobile friendliness~~
 
 VER 0.2.2 | 29/01/19
