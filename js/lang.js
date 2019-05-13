@@ -55,6 +55,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video2").innerHTML = "Audio Technician";
         document.getElementById("video3").innerHTML = "Lighting Designer / Gaffer";
         document.getElementById("video4").innerHTML = "Director of Photography / Camera Operator";
+        document.getElementById("clickme").innerHTML = "Click me!";
     }
     
     else if (langon.innerHTML == "日本語"){
@@ -74,7 +75,7 @@ function lang(langon,langoff1,langoff2){
 	document.getElementById("intro2").innerHTML = "マックス";
 	document.getElementById("intro3").innerHTML = "僕はプログラマーです。更に、";
 	document.getElementById("intro4").innerHTML = "様々なデザインスキルを持っています。";
-	findme.innerHTML = "以下のリンク又はQRコードで僕に連絡することができます";
+	findme.innerHTML = "以下のサイトまたはQRコードで僕に連絡することができます";
 	skills.innerHTML = "<h2>僕のスキルを見せてやろう！</h2>";
         document.getElementById("head1").innerHTML = "プログラミング";
         document.getElementById("head2").innerHTML = "デザイン";
@@ -87,6 +88,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video2").innerHTML = "音響技師";
         document.getElementById("video3").innerHTML = "照明技師";
         document.getElementById("video4").innerHTML = "撮影監督 ／ 撮影技師";
+        document.getElementById("clickme").innerHTML = "アイコンがクリックできます！";
     }
     
     else if (langon.innerHTML == "中文"){
@@ -119,5 +121,6 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video2").innerHTML = "录音师";
         document.getElementById("video3").innerHTML = "照明师 ／ 灯光师";
         document.getElementById("video4").innerHTML = "摄影指导 ／ 放映技师";
+        document.getElementById("clickme").innerHTML = "这些图标是能单击的！";
     }
 }
