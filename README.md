@@ -7,6 +7,18 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.5.2 | 13/05/19
+- bugfixes:
+  1. navbar still behaving funky apparently - tried some new code, let's see how it goes
+  2. certain css and scss elements were not functioning correctly - they should now
+  3. some of the links in the contact section seen to be redirecting users to broken sites - all fixed now
+- quality of life:
+  1. fixed the center alignment of the skills section - it's not perfectly center, but it should be easier on the eyes
+  2. changed the layout of the contact details portion - it should be easier to scan the QE codes
+  3. fixed some translation issues
+- issues to be addressed:
+  1. navbar links still don't change to the correct language - what the heck is going on??
+
 VER 0.5.1 | 08/05/19
 - bugfixes:
   1. fixed funky navbar buttons - hopefully they stay that way
@@ -80,7 +92,7 @@ VER 0.3.1 | 02/02/19\
 VER 0.2.3 | 29/01/19
 - Lightbox is mobile friendly
 - website should be sufficiently mobile friendly
-- iss~~ues to be addressed:~~
+- issues to be addressed:
   1. ~~~~font takes time to load - change font library to Google Fonts instead?~~~
   2. ~~touch up on website's mobile friendliness~~
 
