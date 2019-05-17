@@ -99,7 +99,7 @@ VER 0.2.3 | 29/01/19
 - Lightbox is mobile friendly
 - website should be sufficiently mobile friendly
 - issues to be addressed:
-  1. ~~~font takes too lonh to load: change font library to Google Fonts instead?~~~
+  1. ~~font takes too long to load - change font library to Google Fonts instead?~~
   2. ~~touch up on website's mobile friendliness~~
 
 VER 0.2.2 | 29/01/19
