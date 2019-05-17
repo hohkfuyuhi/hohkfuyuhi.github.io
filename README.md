@@ -7,6 +7,11 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.6.1 | (WIP)
+- i found an amazing JavaScript library online
+- am trying to learn how to use it in order to add and improve functionality as well as dynamics to the website
+- MAJOR UPDATE INCOMING
+
 VER 0.5.2 | 13/05/19
 - bugfixes:
   1. navbar still behaving funky apparently - tried some new code, let's see how it goes
