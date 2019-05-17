@@ -9,8 +9,8 @@ z denotes minor changes: starts from 1\
 <br>
 VER 0.6.1 | (WIP)
 - i wanted to add more interactive elements to the website
-- i found an amazing scroll interaction library called ScrollMagic
-- i am currently learning how to use GSAP and JavaScript in order to customise ScrollMagic to my theme
+- i found a few amazing libraries, but it requires GSAP, and advanced JavaScript knowledge
+- i am currently learning how to use GSAP and JavaScript in order to incorporate these elements into my website
 - MAJOR UPDATE INCOMING
 
 VER 0.5.2 | 13/05/19
@@ -99,7 +99,7 @@ VER 0.2.3 | 29/01/19
 - Lightbox is mobile friendly
 - website should be sufficiently mobile friendly
 - issues to be addressed:
-  1. ~~~~font takes time to load - change font library to Google Fonts instead?~~~
+  1. ~~~font takes too lonh to load: change font library to Google Fonts instead?~~~
   2. ~~touch up on website's mobile friendliness~~
 
 VER 0.2.2 | 29/01/19
