@@ -8,8 +8,9 @@ y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
 VER 0.6.1 | (WIP)
-- i found an amazing JavaScript library online
-- am trying to learn how to use it in order to add and improve functionality as well as dynamics to the website
+- i wanted to add more interactive elements to the website
+- i found an amazing scroll interaction library called ScrollMagic
+- i am currently learning how to use GSAP and JavaScript in order to customise ScrollMagic to my theme
 - MAJOR UPDATE INCOMING
 
 VER 0.5.2 | 13/05/19
