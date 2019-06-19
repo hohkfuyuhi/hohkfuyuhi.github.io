@@ -22,7 +22,7 @@
             </div>
 
             <div class="overlay2">
-
+                hello world
             </div>
 
             <div class="content">
@@ -49,7 +49,7 @@
                 <br>
                 <div class="ajax-intro" id="ajax-intro">
                     <div class="logo">
-                        <img src="images/logo/logo_new_grey.png">
+                        <img class="imglogo" src="images/logo/logo_new_grey.png">
                     </div>
                     <div id="fontchange" class="eng">
                         <span id="intro1">Hello! My name is</span><br>
@@ -118,9 +118,9 @@
                                 <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
                                 <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
                                 <br><br>
-                                <i class="fab fa-line"><img src="images/qr/qr_line.jpg"></i>
+                                <i class="fab fa-line"><br><img src="images/qr/qr_line.jpg"></i>
                                 <span class="space"/>
-                                <i class="fab fa-weixin"><img src="images/qr/qr_wechat.png"></i>
+                                <i class="fab fa-weixin"><br><img src="images/qr/qr_wechat.png"></i>
                             </span>
                         </p>
                     </div>
@@ -191,7 +191,7 @@
                     top: "-110%",
                     ease: Expo.easeInOut
                 });
-
+                
                 TweenMax.from(".content", 2, {
                     delay: 3.5,
                     opacity: 0,
@@ -200,7 +200,6 @@
 
                 TweenMax.to(".content", 2, {
                     opacity: 1,
-                    y: -300,
                     delay: 3.2,
                     ease: Power2.easeInOut
                 });

@@ -37,13 +37,25 @@ Colour scheme
 
 * {box-sizing: border-box;}
 
+html, body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 body {
     margin: 0 auto;
     font-family: CuprumRegular;
     font-size: 18pt;
-    padding-bottom: 50px;
     background: #303030;
     color: #bebcbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
 }
 
 p {
@@ -84,9 +96,7 @@ span.space {
     text-align: center;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.imglogo {
     max-width: 15vw;
 }
 
@@ -226,10 +236,6 @@ article {
     .ajax-skills {
         width: 90%;
         font-size: 0.9em;
-    }
-
-    .content {
-        top: 50%;
     }
 }
 
