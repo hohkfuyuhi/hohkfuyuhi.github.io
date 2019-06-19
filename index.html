@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hohk portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        <link rel="stylesheet" href="stylesheets/hipster.css" />
+        <link rel="stylesheet" href="stylesheets/effects.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+
+    <body class="unselectable">
+        <div class="main">
+            <div class="overlay1">
+                <p class="screen">EXPLORE</p>
+                <div class="intro">
+                    <button class="btn" onclick="fadeOut()">EXPLORE</button>
+                </div>
+            </div>
+
+            <div class="overlay2">
+
+            </div>
+
+            <div class="content">
+                <div class="header" id="myHeader">
+                    <li><a class="cool active" id="btn-index" href="#">Home</a></li>
+                    <span class="space"/>
+                    <li><a class="cool" id="btn-skills" href="#">Skills</a></li>
+                    <span class="space"/>
+                    <li><a class="cool" id="btn-contact" href="#">Contact</a></li>
+                    <div class="lang">
+                        <span id="en" class="button_lang current_lang">EN</span>
+                        <span id="cn" class="button_lang">中文</span>
+                        <span id="jp" class="button_lang">日本語</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <section class="neon">
+                        <span class="text">
+                            <span class="blink">N</span>EON F<span class="blink">U</span>EL<span class="blink">E</span>D DRE<span class="blink">A</span>MS
+                        </span>
+                    </section>
+                </div>
+                <br>
+                <div class="ajax-intro" id="ajax-intro">
+                    <div class="logo">
+                        <img src="images/logo/logo_new_grey.png">
+                    </div>
+                    <div id="fontchange" class="eng">
+                        <span id="intro1">Hello! My name is</span><br>
+                        <span id="intro2" class="engname">
+                            Max Ho
+                        </span>
+                        <br>
+                        <span id="intro3">and I am a programmer,</span><br>
+                        <span id="intro4">with various design skills.</span>
+                    </div>
+                </div>
+
+                <div class="ajax-skills" id="ajax-skills">
+                    <div class="skill">
+                        <div id="skills">
+                            <h2>Look at what I can do!</h2>
+                        </div>
+                        <article>
+                            <table>
+                                <tr>
+                                    <th id="head1">
+                                        Programming
+                                    </th>
+                                    <th id="head2">
+                                        Design
+                                    </th>
+                                    <th id="head3">
+                                        Video
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>SQL</td>
+                                    <td id="design1">Vectors</td>
+                                    <td id="video1">Editor / Colourist</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td id="design2">Packaging</td>
+                                    <td id="video2">Audio Technician</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td id="design3">Pamphlet</td>
+                                    <td id="video3">Lighting Designer / Gaffer</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML / CSS / SCSS</td>
+                                    <td id="design4">Name cards</td>
+                                    <td id="video4">Director of Photography / Camera Operator</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="ajax-contact" id="ajax-contact">
+                    <div class="about" id="contact">
+                        <div id="findme">You can find me on the following platforms</div>
+                        <br>
+                        <p>
+                            <span id="clickme">Click me!</span>
+                            <br>
+                            <span style="font-size: 2em; text-align: center">
+                                <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <br><br>
+                                <i class="fab fa-line"><img src="images/qr/qr_line.jpg"></i>
+                                <span class="space"/>
+                                <i class="fab fa-weixin"><img src="images/qr/qr_wechat.png"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/lang.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#myHeader a').click(function(e) {
+                    e.preventDefault();
+                    $('#myHeader a').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $('#btn-index').click(function(){
+                    $('.ajax-skills, .ajax-contact').fadeOut(300, function(){
+                        $('.ajax-intro').delay(300).fadeIn(300);
+                    });
+                });
+
+                $('#btn-skills').click(function(){
+                    $('.ajax-intro, .ajax-contact').fadeOut(300, function(){
+                        $('.ajax-skills').delay(300).fadeIn(300);
+                    });
+                });
+
+                $('#btn-contact').click(function(){
+                    $('.ajax-intro, .ajax-skills').fadeOut(300, function(){
+                        $('.ajax-contact').delay(300).fadeIn(300);
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            function fadeOut() {
+                TweenMax.to(".btn", 1, {
+                    y: -100,
+                    opacity: 0
+                });
+
+                TweenMax.to(".screen", 2, {
+                    y: -400,
+                    opacity: 0,
+                    ease: Power2.easeInOut,
+                    delay: 2
+                });
+
+                TweenMax.from(".overlay1", 2, {
+                    ease: Power2.easeInOut
+                });
+
+                TweenMax.to(".overlay1", 2, {
+                    delay: 2.6,
+                    top: "-110%",
+                    ease: Expo.easeInOut
+                });
+
+                TweenMax.to(".overlay2", 2, {
+                    delay: 3,
+                    top: "-110%",
+                    ease: Expo.easeInOut
+                });
+
+                TweenMax.from(".content", 2, {
+                    delay: 3.5,
+                    opacity: 0,
+                    ease: Power2.easeInOut
+                });
+
+                TweenMax.to(".content", 2, {
+                    opacity: 1,
+                    y: -300,
+                    delay: 3.2,
+                    ease: Power2.easeInOut
+                });
+            }
+        </script>
+    </body>
+</html>

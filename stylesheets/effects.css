@@ -1,0 +1,119 @@
+/*
+Colour scheme
+#303030
+#bebcbc
+#ca9e60
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: #fff;
+    overflow: hidden;
+}
+
+.main {
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    top: 35%
+}
+
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #CA9E60;
+}
+
+.overlay1 {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay1 p {
+    font-size: 30vw;
+    font-weight: 800;
+}
+
+.screen {
+    color: #323232;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    display: block;
+    padding: 25px 50px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: #fff;
+    border: solid 2px #fff;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    transition: 0.8s ease-out;
+}
+
+.btn:hover {
+    color: #101010;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.btn:hover:before {
+    top: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #8F8C8C;
+}
+
+.cool::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #CA9E60;
+    transition: width .3s;
+}
+
+.cool:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
