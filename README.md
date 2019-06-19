@@ -8,18 +8,22 @@ y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
 VER 0.6.1 | 19/06/19
-- COMPLETE WEBSITE OVERHAUL
+!! COMPLETE WEBSITE OVERHAUL !!
 - major changes:
   1. removed every page except index.html
       - all content has been merged into index.html
       - removed 2D and 3D gallery (for now)
-      - navigation now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
-      - links now have a small animation that plays when hovering over it
+      - navbar now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
+      - navbar links now have a small animation that plays when hovering over it
       - all content except landing page content is hidden by default via css
       - when a link is clicked, jQuery will hide all irrelevant content, and display the relevant content
-      - this reduces the need to load a different page, and provides a better navigation experience
-  2. added an intro animation that plays when the page loads
-  3. 
+  2. removed all parallax effects
+  3. added an animated intro
+- minor changes:
+  1. optimised images and neon letters to resize dynamically based on viewport width
+- issues to be addressed:
+  1. contact icons are not resizing dynamically based on viewport width
+  2. languages take too long to load, need to find a way to optimise
 
 VER 0.6.1 | (WIP)
 - i wanted to add more interactive elements to the website
