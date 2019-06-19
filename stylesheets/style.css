@@ -84,10 +84,10 @@ span.space {
     text-align: center;
 }
 
-.logo {
-    float: left;
-    display: inline-block;
-    width: 234px;
+img {
+    width: 100%;
+    height: auto;
+    max-width: 15vw;
 }
 
 #fontchange {
@@ -141,14 +141,6 @@ span.space {
     font-family: CNSerif;
     font-size: 2.6em;
     color: #ca9e60;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 th, tr, td{
@@ -231,10 +223,6 @@ article {
         font-size: 1.2em;
     }
 
-    .logo {
-        width: 156px;
-    }
-
     .ajax-skills {
         width: 90%;
         font-size: 0.9em;
@@ -256,10 +244,6 @@ article {
 
     .chn {
         font-size: 0.8em;
-    }
-
-    .logo {
-        width: 78px;
     }
 
     .ajax-skills {

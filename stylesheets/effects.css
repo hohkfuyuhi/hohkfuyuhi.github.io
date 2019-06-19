@@ -71,7 +71,7 @@ button {
     overflow: hidden;
     background: none;
     z-index: 1;
-    transition: 0.8s ease-out;
+    transition: 0.5s ease-out;
 }
 
 .btn:hover {
@@ -87,7 +87,7 @@ button {
     right: 0;
     top: 100%;
     z-index: -1;
-    transition: top 0.8s ease-out;
+    transition: top 0.5s ease-out;
 }
 
 .btn:hover:before {
