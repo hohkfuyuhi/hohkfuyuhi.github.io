@@ -11,13 +11,13 @@ VER 0.6.1 | 19/06/19
 - COMPLETE WEBSITE OVERHAUL
 - major changes:
   1. removed every page except index.html
-    - all content has been merged into index.html
-    - removed 2D and 3D gallery (for now)
-    - navigation now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
-    - links now have a small animation that plays when hovering over it
-    - all content except landing page content is hidden by default via css
-    - when a link is clicked, jQuery will hide all irrelevant content, and display the relevant content
-    - this reduces the need to load a different page, and provides a better navigation experience
+      - all content has been merged into index.html
+      - removed 2D and 3D gallery (for now)
+      - navigation now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
+      - links now have a small animation that plays when hovering over it
+      - all content except landing page content is hidden by default via css
+      - when a link is clicked, jQuery will hide all irrelevant content, and display the relevant content
+      - this reduces the need to load a different page, and provides a better navigation experience
   2. added an intro animation that plays when the page loads
   3. 
 
