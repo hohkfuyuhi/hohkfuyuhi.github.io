@@ -7,6 +7,10 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
+VER 0.6.2 | 20/06/19
+- bugfixes:
+  1. fixed landing page alignment on mobile devices - it should display properly now
+
 VER 0.6.1 | 19/06/19
 !! COMPLETE WEBSITE OVERHAUL !!
 - major changes:
@@ -18,12 +22,13 @@ VER 0.6.1 | 19/06/19
       - all content except landing page content is hidden by default via css
       - when a link is clicked, jQuery will hide all irrelevant content, and display the relevant content
   2. removed all parallax effects
-  3. added an animated intro
+  3. added an animated homepage intro
 - minor changes:
-  1. optimised images and neon letters to resize dynamically based on viewport width
+  1. optimised the neon letters to resize dynamically based on viewport width
+  2. optimised logo to resize dynamically based on viewport width
 - issues to be addressed:
-  1. contact icons are not resizing dynamically based on viewport width
-  2. languages take too long to load, need to find a way to optimise
+  1. landing page does not align properly on mobile devies
+  2. need to optimise the loading of languages
 
 VER 0.6.1 | (WIP)
 - i wanted to add more interactive elements to the website
