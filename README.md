@@ -8,8 +8,15 @@ y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
 <br>
 VER 0.6.2 | 20/06/19
+- quality of life:
+  1. website is now hosted on GitHub Pages, there are a two main reasons for this:
+      - Netlify cannot be accessed in certain organisations
+      - Netlify has been flagged as dangerous by certain apps
+  2. fixed some translation issues
 - bugfixes:
-  1. fixed landing page alignment on mobile devices - it should display properly now
+  1. fixed landing page alignment issue on mobile devices
+  2. optimised the loading of fonts - updated almost every font to use Google's online font library
+  3. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
 
 VER 0.6.1 | 19/06/19
 !! COMPLETE WEBSITE OVERHAUL !!
@@ -28,7 +35,7 @@ VER 0.6.1 | 19/06/19
   2. optimised logo to resize dynamically based on viewport width
 - issues to be addressed:
   1. landing page does not align properly on mobile devies
-  2. need to optimise the loading of languages
+  2. need to optimise the loading of fonts
 
 VER 0.6.1 | (WIP)
 - i wanted to add more interactive elements to the website
