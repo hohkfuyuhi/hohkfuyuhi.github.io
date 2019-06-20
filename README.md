@@ -12,7 +12,7 @@ VER 0.6.2 | 20/06/19
   1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
       - Netlify has been flagged as dangerous by certain apps and firewalls
-      - portfolio website is how hohkfuyuhi.github.io
+      - newly hosted portfolio link is as follows https://hohkfuyuhi.github.io/
   2. fixed some translation issues
 - bugfixes:
   1. fixed landing page alignment issue on mobile devices
