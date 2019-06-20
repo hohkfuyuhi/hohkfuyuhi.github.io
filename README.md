@@ -9,9 +9,9 @@ z denotes minor changes: starts from 1\
 <br>
 VER 0.6.2 | 20/06/19
 - quality of life:
-  1. website is now hosted on GitHub Pages, there are a two main reasons for this:
+  1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
-      - Netlify has been flagged as dangerous by certain apps
+      - Netlify has been flagged as dangerous by certain apps and firewalls
   2. fixed some translation issues
 - bugfixes:
   1. fixed landing page alignment issue on mobile devices
