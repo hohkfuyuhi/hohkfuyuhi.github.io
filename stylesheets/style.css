@@ -6,33 +6,8 @@ Colour scheme
 */
 
 @font-face {
-    font-family: CuprumRegular;
-    src: url('../fonts/Cuprum-Regular.ttf');
-}
-
-@font-face {
-    font-family: ArchivoNarrowRegular;
-    src: url('../fonts/ArchivoNarrow-Regular.otf');
-}
-
-@font-face {
     font-family: UniqueRegular;
     src: url('../fonts/Unique.ttf');
-}
-
-@font-face {
-    font-family: JPRegular;
-    src: url('../fonts/MPLUSRounded1c-Regular.ttf');
-}
-
-@font-face {
-    font-family: CNSerif;
-    src: url('../fonts/NotoSerifSC-Regular.otf');
-}
-
-@font-face {
-    font-family: CNSans;
-    src: url('../fonts/NotoSansSC-Light.otf');
 }
 
 * {box-sizing: border-box;}
@@ -44,7 +19,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    font-family: CuprumRegular;
+    font-family: 'Cuprum', sans-serif;
     font-size: 18pt;
     background: #303030;
     color: #bebcbc;
@@ -64,7 +39,7 @@ p {
 }
 
 .header {
-    font-family: ArchivoNarrowRegular;
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 1em;
     overflow: hidden;
     padding-top: 40px;
@@ -80,7 +55,7 @@ span.space {
 }
 
 .ajax-skills {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -105,15 +80,15 @@ span.space {
 }
 
 .en {
-    font-family: CuprumRegular;
+    font-family: 'Cuprum', sans-serif;
 }
 
 .jp {
-    font-family: JPRegular;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .cn {
-    font-family: CNSans;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .eng {
@@ -129,7 +104,7 @@ span.space {
 }
 
 .jap {
-    font-family: JPRegular;
+    font-family: 'Noto Sans JP', sans-serif;
     float: left;
     display: inline-block;
     font-size: 1.6em;
@@ -141,21 +116,21 @@ span.space {
 }
 
 .chn {
-    font-family: CNSans;
+    font-family: 'Noto Sans SC', sans-serif;
     float: left;
     display: inline-block;
     font-size: 1.6em;
 }
 
 .chnname {
-    font-family: CNSerif;
+    font-family: 'Noto Serif SC', serif;
     font-size: 2.6em;
     color: #ca9e60;
 }
 
 th, tr, td{
     text-align: center;
-    width: 250px;
+    width: 300px;
 }
 
 th {
@@ -234,7 +209,6 @@ article {
     }
 
     .ajax-skills {
-        width: 90%;
         font-size: 0.9em;
     }
 }
@@ -254,9 +228,5 @@ article {
 
     .ajax-skills {
         font-size: 0.8em;
-    }
-
-    th, tr, td {
-        width: 150px;
     }
 }
