@@ -22,7 +22,8 @@ VER 0.6.2 | 20/06/19
   1. website is still not fully optimised for mobile devices
   2. certain fonts and images are too big on mobile devices
   3. minor alignment issues on mobile devices
-
+  4. since VER 0.5.2, the navbar links are still unable to change language
+_____
 VER 0.6.1 | 19/06/19
 !! COMPLETE WEBSITE OVERHAUL !!
 - major changes:
@@ -41,13 +42,13 @@ VER 0.6.1 | 19/06/19
 - issues to be addressed:
   1. landing page does not align properly on mobile devies
   2. need to optimise the loading of fonts
-
+_____
 VER 0.6.1 | (WIP)
 - i wanted to add more interactive elements to the website
 - i found a few amazing libraries, but it requires GSAP, and advanced JavaScript knowledge
 - i am currently learning how to use GSAP and JavaScript in order to incorporate these elements into my website
 - MAJOR UPDATE INCOMING
-
+_____
 VER 0.5.2 | 13/05/19
 - bugfixes:
   1. navbar still behaving funky apparently - tried some new code, let's see how it goes
@@ -58,8 +59,8 @@ VER 0.5.2 | 13/05/19
   2. changed the layout of the contact details portion - it should be easier to scan the QR codes now that they're not side by side lol
   3. fixed some translation issues
 - issues to be addressed:
-  1. navbar links still don't change to the correct language - what the heck is going on??
-
+  1. navbar links still don't change language - what the heck is going on??
+_____
 VER 0.5.1 | 08/05/19
 - bugfixes:
   1. fixed funky navbar buttons - hopefully they stay that way
@@ -79,7 +80,7 @@ VER 0.5.1 | 08/05/19
   2. font sizes adjusted across all viewports
 - issues to be addressed:
   1. navbar buttons do not change language for some weird reason - possible spaghetti code?
-
+_____
 VER 0.4.1 | 16/02/19
 - languages:
   1. website now supports three languages: English, Simplified Chinese, Japanese
@@ -89,7 +90,7 @@ VER 0.4.1 | 16/02/19
 - issues to be addresssed:
   1. ~~create a language manager with JavaScript~~
   2. ~~navbar buttons displayed and behaved funky when viewed in different viewports~~
-
+_____
 VER 0.3.3 | 15/02/19
 - certain elements were not being centered properly:
   1. neon letters now centers within the parallax with a flex display instead of using absolute position and padding
@@ -99,7 +100,7 @@ VER 0.3.3 | 15/02/19
   1. cleaned up even more spaghetti code
   2. changed font-size to use em instead of pt and px
   3. working links and QR codes have been added to contact icons
-
+_____
 VER 0.3.2 | 03/02/19
 - bugfixes:
   1. fixed a bug where certain content was being served over HTTP instead of HTTPS whoops
@@ -108,7 +109,7 @@ VER 0.3.2 | 03/02/19
 - quality of life:
   1. spaghetti code cleaned up
   2. updated codes that are deprecated in HTML5
-
+_____
 VER 0.3.1 | 02/02/19\
 !! LOTS OF CHANGES !!
 - logo:
@@ -129,19 +130,19 @@ VER 0.3.1 | 02/02/19\
   2. incorporated JavaScript for sticky header and return to top button
 - issues to be addressed:
   1. actually add content lol
-
+_____
 VER 0.2.3 | 29/01/19
 - Lightbox is mobile friendly
 - website should be sufficiently mobile friendly
 - issues to be addressed:
   1. ~~font takes too long to load - change font library to Google Fonts instead?~~
   2. ~~touch up on website's mobile friendliness~~
-
+_____
 VER 0.2.2 | 29/01/19
 - added logo
 - issues to be addressed:
   1. ~~Lightbox still not mobile friendly~~
-
+_____
 VER 0.2.1 | 28/01/19
 - added Lightbox to 2D gallery page
 - issues to be addressed:
