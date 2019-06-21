@@ -18,6 +18,10 @@ VER 0.6.2 | 20/06/19
   1. fixed landing page alignment issue on mobile devices
   2. optimised the loading of fonts - updated almost every font to use Google's online font library
   3. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
+- issues to be addressed:
+  1. website is still not fully optimised for mobile devices
+  2. certain fonts and images are too big on mobile devices
+  3. minor alignment issues on mobile devices
 
 VER 0.6.1 | 19/06/19
 !! COMPLETE WEBSITE OVERHAUL !!
