@@ -6,8 +6,8 @@ VER x.y.z | dd/mm/yy\
 x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1\
-<br>
-VER 0.6.2 | 20/06/19
+_____
+VER 0.6.2 | 20/06/19\
 - quality of life:
   1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
