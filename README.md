@@ -147,7 +147,7 @@ VER 0.2.1 | 28/01/19
 - issues to be addressed:
   1. ~~make Lightbox mobile friendly~~
   2. ~~center images in Lightbox~~
-
+_____
 VER 0.1.1 | 27/01/19
 - portfolio website skeleton created
 - portfolio hosted on Netlify
