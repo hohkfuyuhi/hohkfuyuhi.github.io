@@ -21,7 +21,7 @@ VER 0.6.2 | 20/06/19
 - issues to be addressed:
   1. website is still not fully optimised for mobile devices
   2. certain fonts and images are too big on mobile devices
-  3. minor alignment issues on mobile devices
+  3. alignment issues when "Contact" content is loaded on mobile devices
   4. since VER 0.5.2, the navbar links are still unable to change language
 _____
 VER 0.6.1 | 19/06/19
