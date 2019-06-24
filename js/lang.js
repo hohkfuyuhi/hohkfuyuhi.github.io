@@ -75,18 +75,18 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("intro2").innerHTML = "マックス";
         document.getElementById("intro3").innerHTML = "僕はプログラマーです。更に、";
         document.getElementById("intro4").innerHTML = "様々なデザインスキルを持っています。";
-        skills.innerHTML = "<h2>僕のスキルを見せてやろう！</h2>";
+        skills.innerHTML = "<h2>僕のスキルを見せてやろう!</h2>";
         document.getElementById("head1").innerHTML = "プログラミング";
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
         document.getElementById("design1").innerHTML = "ベクターイラスト";
-        document.getElementById("design2").innerHTML = "パッケージデザイン";
-        document.getElementById("design3").innerHTML = "パンフレットデザイン";
-        document.getElementById("design4").innerHTML = "名刺デザイン";
-        document.getElementById("video1").innerHTML = "編集 ／ 色指定";
+        document.getElementById("design2").innerHTML = "パッケージ";
+        document.getElementById("design3").innerHTML = "パンフレット";
+        document.getElementById("design4").innerHTML = "名刺";
+        document.getElementById("video1").innerHTML = "編集 / 色指定";
         document.getElementById("video2").innerHTML = "音響技師";
         document.getElementById("video3").innerHTML = "照明技師";
-        document.getElementById("video4").innerHTML = "撮影監督 ／ 撮影技師";
+        document.getElementById("video4").innerHTML = "撮影監督 / 撮影技師";
         findme.innerHTML = "以下のサイトまたはQRコードで僕に連絡することができます";
         document.getElementById("clickme").innerHTML = "アイコンがクリックできます！";
     }
@@ -108,7 +108,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("intro2").innerHTML = "何浩杰";
         document.getElementById("intro3").innerHTML = "我的专长是编程，";
         document.getElementById("intro4").innerHTML = "但我也有各种的设计技能。";
-        skills.innerHTML = "<h2>看看我的厉害！</h2>";
+        skills.innerHTML = "<h2>看看我的厉害!</h2>";
         document.getElementById("head1").innerHTML = "编程语言";
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";
@@ -116,10 +116,10 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("design2").innerHTML = "包装设计";
         document.getElementById("design3").innerHTML = "宣传册设计";
         document.getElementById("design4").innerHTML = "名片设计";
-        document.getElementById("video1").innerHTML = "编辑 ／ 色指定";
+        document.getElementById("video1").innerHTML = "编辑 / 色指定";
         document.getElementById("video2").innerHTML = "录音师";
-        document.getElementById("video3").innerHTML = "照明师 ／ 灯光师";
-        document.getElementById("video4").innerHTML = "摄影指导 ／ 放映技师";
+        document.getElementById("video3").innerHTML = "照明师 / 灯光师";
+        document.getElementById("video4").innerHTML = "摄影指导 / 放映技师";
         findme.innerHTML = "你能用以下的链接或二维码找到我";
         document.getElementById("clickme").innerHTML = "这些图标是能单击的！";
     }

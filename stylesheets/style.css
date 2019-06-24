@@ -33,11 +33,6 @@ body {
     height: 100vh;
 }
 
-p {
-    text-align: center;
-    color: #ca9e60;
-}
-
 .header {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 1em;
@@ -54,9 +49,23 @@ span.space {
     padding-left: 50px;
 }
 
+.imglogo {
+    max-width: 15vw;
+}
+
+.about {
+    font-size: 1.5em;
+}
+
+.icons {
+    font-size: 2em;
+    color: #ca9e60;
+}
+
 .ajax-skills {
     width: 100%;
     margin: 0 auto;
+    font-size: 1.2em;
 }
 
 .ajax-intro {
@@ -69,10 +78,6 @@ span.space {
 .ajax-skills, .ajax-contact{
     display: none;
     text-align: center;
-}
-
-.imglogo {
-    max-width: 15vw;
 }
 
 #fontchange {
@@ -128,20 +133,18 @@ span.space {
     color: #ca9e60;
 }
 
-th, tr, td{
+table {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+th, tr, td {
     text-align: center;
     width: 300px;
 }
 
 th {
     color: #ca9e60;
-}
-
-article {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .lang {
@@ -211,9 +214,21 @@ article {
     .ajax-skills {
         font-size: 0.9em;
     }
+
+    .ajax-contact {
+        font-size: 0.8em;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+    
+    th, tr, td {
+        width: 250px;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     .eng {
         font-size: 1em;
     }
@@ -227,6 +242,18 @@ article {
     }
 
     .ajax-skills {
-        font-size: 0.8em;
+        font-size: 0.7em;
+    }
+
+    .ajax-contact {
+        font-size: 0.7em;
+    }
+
+    .icons {
+        font-size: 2.5em;
+    }
+
+    th, tr, td {
+        width: 200px;
     }
 }

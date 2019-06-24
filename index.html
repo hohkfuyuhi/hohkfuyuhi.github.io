@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="stylesheets/style.css" />
         <link rel="stylesheet" href="stylesheets/hipster.css" />
         <link rel="stylesheet" href="stylesheets/effects.css" />
+        <link rel="stylesheet" href="stylesheets/animate.min.css">
+        <link rel="stylesheet" href="stylesheets/light-modal.css">
         <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap" rel="stylesheet">
@@ -27,7 +29,7 @@
             </div>
 
             <div class="overlay2">
-                
+
             </div>
 
             <div class="content">
@@ -72,7 +74,6 @@
                         <div id="skills">
                             <h2>Look at what I can do!</h2>
                         </div>
-                        <article>
                             <table>
                                 <tr>
                                     <th id="head1">
@@ -106,7 +107,6 @@
                                     <td id="video4">Director of Photography / Camera Operator</td>
                                 </tr>
                             </table>
-                        </article>
                     </div>
                 </div>
 
@@ -114,20 +114,37 @@
                     <div class="about" id="contact">
                         <div id="findme">You can find me on the following platforms</div>
                         <br>
-                        <p>
-                            <span id="clickme">Click me!</span>
-                            <br>
-                            <span style="font-size: 2em; text-align: center">
-                                <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                                <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
-                                <br><br>
-                                <i class="fab fa-line"><br><img src="images/qr/qr_line.jpg"></i>
-                                <span class="space"/>
-                                <i class="fab fa-weixin"><br><img src="images/qr/qr_wechat.png"></i>
-                            </span>
-                        </p>
+                        <div>
+                            <div id="clickme" style="color: #ca9e60">Click me!</div>
+                            <div class="icons">
+                                <div style="padding: 20px;">
+                                    <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                    <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                </div>
+                                <div style="padding: 20px;">
+                                    <a href="#line"><i class="fab fa-line"></i></a>
+                                    <div class="light-modal" id="line" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                                        <div class="light-modal-content animated fadeIn">
+                                            <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>
+                                            <div class="light-modal-body">
+                                                <img src="images/qr/qr_line.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#wechat"><i class="fab fa-weixin"><br></i></a>
+                                    <div class="light-modal" id="wechat" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                                        <div class="light-modal-content animated fadeIn">
+                                            <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>
+                                            <div class="light-modal-body">
+                                                <img src="images/qr/qr_wechat.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,38 +191,38 @@
                     opacity: 0
                 });
 
-                TweenMax.to(".screen", 2, {
+                TweenMax.to(".screen", 1, {
                     y: -400,
                     opacity: 0,
                     ease: Power2.easeInOut,
-                    delay: 2
+                    delay: 1
                 });
 
-                TweenMax.from(".overlay1", 2, {
+                TweenMax.from(".overlay1", 0.8, {
                     ease: Power2.easeInOut
                 });
 
-                TweenMax.to(".overlay1", 2, {
-                    delay: 2.6,
-                    top: "-110%",
+                TweenMax.to(".overlay1", 1.5, {
+                    delay: 1,
+                    top: "-100%",
                     ease: Expo.easeInOut
                 });
 
-                TweenMax.to(".overlay2", 2, {
-                    delay: 3,
-                    top: "-110%",
+                TweenMax.to(".overlay2", 1.2, {
+                    delay: 1.5,
+                    top: "-100%",
                     ease: Expo.easeInOut
                 });
-                
+
                 TweenMax.from(".content", 2, {
-                    delay: 3.5,
+                    delay: 1.5,
                     opacity: 0,
                     ease: Power2.easeInOut
                 });
 
-                TweenMax.to(".content", 2, {
+                TweenMax.to(".content", 1.5, {
                     opacity: 1,
-                    delay: 3.2,
+                    delay: 3,
                     ease: Power2.easeInOut
                 });
             }
