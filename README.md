@@ -7,9 +7,19 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1
 _____
-VER 0.6.3 | 24/06/19
+VER 0.6.4 | 26/06/19
 - bugfixes:
-  1. website has been somewhat optimised for mobile devices
+  1. finally fixed the bug that causes the navbar links to not change language
+- changes:
+  1. font sizes have been optimised for mobile devices
+  2. landing page animation has been adjusted
+- issues to be addressed:
+  1. navbar links do not resize on mobile devices
+  2. the close button on the modal window either does not render properly or appears weirdly on mobile devices
+_____
+VER 0.6.3 | 24/06/19
+- changes:
+  1. website has been more or less optimised for mobile devices
       - various alignment issues have been fixed
       - Line and WeChat QR codes are now shown in a modal window when the user clicks on the respective icons
 - quality of life:
@@ -22,8 +32,9 @@ _____
 VER 0.6.2 | 20/06/19
 - bugfixes:
   1. fixed landing page alignment issue on mobile devices
-  2. optimised the loading of fonts - updated almost every font to use Google's online font library
-  3. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
+- changes:
+  1. optimised the loading of fonts - updated almost every font to use Google's online font library
+  2. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
 - quality of life:
   1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
