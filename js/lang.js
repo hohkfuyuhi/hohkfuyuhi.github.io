@@ -38,6 +38,9 @@ function lang(langon,langoff1,langoff2){
         findme.classList.add("en");
         findme.classList.remove("jp");
         findme.classList.remove("cn");
+        document.getElementById("btn-index").innerHTML = "Home";
+        document.getElementById("btn-skills").innerHTML = "Skills";
+        document.getElementById("btn-contact").innerHTML = "Contact";
         document.getElementById("intro1").innerHTML = "Hello! My name is";
         document.getElementById("intro2").innerHTML = "Max Ho";
         document.getElementById("intro3").innerHTML = "and I am a programmer";
@@ -71,11 +74,14 @@ function lang(langon,langoff1,langoff2){
         findme.classList.add("jp");
         findme.classList.remove("en");
         findme.classList.remove("cn");
+        document.getElementById("btn-index").innerHTML = "ホームページ";
+        document.getElementById("btn-skills").innerHTML = "経験とスキル";
+        document.getElementById("btn-contact").innerHTML = "連絡ページ";
         document.getElementById("intro1").innerHTML = "こんにちは！僕の名前は";
         document.getElementById("intro2").innerHTML = "マックス";
         document.getElementById("intro3").innerHTML = "僕はプログラマーです。更に、";
         document.getElementById("intro4").innerHTML = "様々なデザインスキルを持っています。";
-        skills.innerHTML = "<h2>僕のスキルを見せてやろう!</h2>";
+        skills.innerHTML = "<h2>僕の経験とスキルを見せてやろう!</h2>";
         document.getElementById("head1").innerHTML = "プログラミング";
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
@@ -87,7 +93,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video2").innerHTML = "音響技師";
         document.getElementById("video3").innerHTML = "照明技師";
         document.getElementById("video4").innerHTML = "撮影監督 / 撮影技師";
-        findme.innerHTML = "以下のサイトまたはQRコードで僕に連絡することができます";
+        findme.innerHTML = "以下のサイトか二次元コードで僕に連絡することができます";
         document.getElementById("clickme").innerHTML = "アイコンがクリックできます！";
     }
 
@@ -104,11 +110,14 @@ function lang(langon,langoff1,langoff2){
         findme.classList.add("cn");
         findme.classList.remove("jp");
         findme.classList.remove("en");
+        document.getElementById("btn-index").innerHTML = "主页";
+        document.getElementById("btn-skills").innerHTML = "经验和技能";
+        document.getElementById("btn-contact").innerHTML = "联系页面";
         document.getElementById("intro1").innerHTML = "你好！我的名字是";
         document.getElementById("intro2").innerHTML = "何浩杰";
         document.getElementById("intro3").innerHTML = "我的专长是编程，";
         document.getElementById("intro4").innerHTML = "但我也有各种的设计技能。";
-        skills.innerHTML = "<h2>看看我的厉害!</h2>";
+        skills.innerHTML = "<h2>瞧瞧我的厉害!</h2>";
         document.getElementById("head1").innerHTML = "编程语言";
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";

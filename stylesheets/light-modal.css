@@ -67,8 +67,12 @@ git+https://github.com/hunzaboy/Light-Modal.git
 }
 
 .light-modal-body {
-    padding: 20px;
+    padding: 50px;
     overflow: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .light-modal-footer {
@@ -87,8 +91,8 @@ git+https://github.com/hunzaboy/Light-Modal.git
     padding: 5px 10px;
     border-radius: .2em;
     background: #474448;
-    font-size: 1.2em;
-    line-height: 1;
+    font-size: 0.5em;
+    line-height: 0.7;
     transition: background .2s ease-in-out;
 }
 

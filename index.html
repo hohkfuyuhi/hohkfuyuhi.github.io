@@ -53,7 +53,7 @@
                         </span>
                     </section>
                 </div>
-                <br>
+                
                 <div class="ajax-intro" id="ajax-intro">
                     <div class="logo">
                         <img class="imglogo" src="images/logo/logo_new_grey.png">
@@ -68,7 +68,7 @@
                         <span id="intro4">with various design skills.</span>
                     </div>
                 </div>
-
+                
                 <div class="ajax-skills" id="ajax-skills">
                     <div class="skill">
                         <div id="skills">
@@ -102,7 +102,7 @@
                                     <td id="video3">Lighting Designer / Gaffer</td>
                                 </tr>
                                 <tr>
-                                    <td>HTML / CSS / SCSS</td>
+                                    <td>HTML / CSS</td>
                                     <td id="design4">Name cards</td>
                                     <td id="video4">Director of Photography / Camera Operator</td>
                                 </tr>
@@ -192,35 +192,35 @@
                 });
 
                 TweenMax.to(".screen", 1, {
-                    y: -400,
+                    y: -450,
                     opacity: 0,
                     ease: Power2.easeInOut,
                     delay: 1
                 });
 
-                TweenMax.from(".overlay1", 0.8, {
+                TweenMax.from(".overlay1", 0.5, {
                     ease: Power2.easeInOut
                 });
 
                 TweenMax.to(".overlay1", 1.5, {
                     delay: 1,
-                    top: "-100%",
+                    top: "-150%",
                     ease: Expo.easeInOut
                 });
 
-                TweenMax.to(".overlay2", 1.2, {
+                TweenMax.to(".overlay2", 1, {
                     delay: 1.5,
-                    top: "-100%",
+                    top: "-150%",
                     ease: Expo.easeInOut
                 });
 
-                TweenMax.from(".content", 2, {
-                    delay: 1.5,
+                TweenMax.from(".content", 0.7, {
+                    delay: 1.8,
                     opacity: 0,
                     ease: Power2.easeInOut
                 });
 
-                TweenMax.to(".content", 1.5, {
+                TweenMax.to(".content", 1, {
                     opacity: 1,
                     delay: 3,
                     ease: Power2.easeInOut
