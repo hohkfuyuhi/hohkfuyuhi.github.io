@@ -50,7 +50,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "Design";
         document.getElementById("head3").innerHTML = "Video";
         document.getElementById("design1").innerHTML = "Vectors";
-        document.getElementById("design2").innerHTML = "Packaging";
+        document.getElementById("design2").innerHTML = "User Interface (UI)";
         document.getElementById("design3").innerHTML = "Pamphlets";
         document.getElementById("design4").innerHTML = "Name cards";
         document.getElementById("video1").innerHTML = "Editor / Colourist";
@@ -86,14 +86,14 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
         document.getElementById("design1").innerHTML = "ベクターイラスト";
-        document.getElementById("design2").innerHTML = "パッケージ";
+        document.getElementById("design2").innerHTML = "ユーザーイ<br>ンターフェース (UI)";
         document.getElementById("design3").innerHTML = "パンフレット";
         document.getElementById("design4").innerHTML = "名刺";
         document.getElementById("video1").innerHTML = "編集 / 色指定";
         document.getElementById("video2").innerHTML = "音響技師";
         document.getElementById("video3").innerHTML = "照明技師";
         document.getElementById("video4").innerHTML = "撮影監督 / 撮影技師";
-        findme.innerHTML = "以下のサイトか二次元コードで僕に連絡することができます";
+        findme.innerHTML = "以下のサイトか二次元コードで<br>僕に連絡することができます";
         document.getElementById("clickme").innerHTML = "アイコンがクリックできます！";
     }
 
