@@ -76,7 +76,7 @@ function lang(langon,langoff1,langoff2){
         findme.classList.remove("cn");
         document.getElementById("btn-index").innerHTML = "ホームページ";
         document.getElementById("btn-skills").innerHTML = "経験とスキル";
-        document.getElementById("btn-contact").innerHTML = "連絡ページ";
+        document.getElementById("btn-contact").innerHTML = "連絡";
         document.getElementById("intro1").innerHTML = "こんにちは！僕の名前は";
         document.getElementById("intro2").innerHTML = "マックス";
         document.getElementById("intro3").innerHTML = "僕はプログラマーです。更に、";
@@ -86,7 +86,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
         document.getElementById("design1").innerHTML = "ベクターイラスト";
-        document.getElementById("design2").innerHTML = "ユーザーイ<br>ンターフェース (UI)";
+        document.getElementById("design2").innerHTML = "ユーザー<br>インターフェース (UI)";
         document.getElementById("design3").innerHTML = "パンフレット";
         document.getElementById("design4").innerHTML = "名刺";
         document.getElementById("video1").innerHTML = "編集 / 色指定";
