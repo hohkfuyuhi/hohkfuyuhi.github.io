@@ -11,7 +11,10 @@ VER 0.6.5 | 30/06/19
 - bugfixes:
   1. navbar links now resize properly on mobile devices
 - changes:
-  1. font overhaul - English font has been standardised across the board
+  1. font overhaul for English text
+      - there were previously four different fonts for English text
+      - all English text are now standardised with the "Inconsolata" font
+      - the only exception to this is the font used for my name
   2. navbar layout and arrangement has been changed
   3. added hover animations to langauge buttons and contact icons
   4. skills table has been redesigned
