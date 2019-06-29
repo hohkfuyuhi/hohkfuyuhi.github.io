@@ -39,9 +39,14 @@ body {
     text-align: center;
 }
 
+.links {
+    margin: 0 auto;
+}
+
 .lang {
     padding-top: 15px;
     font-size: 0.7em;
+    margin: 0 auto;
 }
 
 .button_lang {
@@ -50,7 +55,7 @@ body {
     margin: 0px 20px;
     border-radius: 15px;
     width: 100px;
-    display: block;
+    display: inline-block;
 }
 
 .current_lang {
@@ -457,6 +462,10 @@ th {
 
     .links {
         font-size: 0.7em;
+    }
+    
+    .lang {
+        font-size: 0.5em;
     }
 
     .tdlinks {
