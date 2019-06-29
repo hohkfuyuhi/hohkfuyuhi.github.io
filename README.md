@@ -7,6 +7,18 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1
 _____
+VER 0.6.5 | 30/06/19
+- bugfixes:
+  1. navbar links now resize properly on mobile devices
+- changes:
+  1. font overhaul - English font has been standardised across the board
+  2. navbar layout and arrangement has been changed
+  3. added hover animations to langauge buttons and contact icons
+  4. skills table has been redesigned
+- issues to be addressed:
+  1. hover animations do not play properly on mobile devices - need to find a fallback
+  2. skills table has alignment issues on mobile devices
+_____
 VER 0.6.4 | 26/06/19
 - bugfixes:
   1. finally fixed the bug that causes the navbar links to not change language
