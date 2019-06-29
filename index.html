@@ -4,19 +4,18 @@
         <title>hohk portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
         <link rel="stylesheet" href="stylesheets/style.css" />
         <link rel="stylesheet" href="stylesheets/hipster.css" />
         <link rel="stylesheet" href="stylesheets/effects.css" />
         <link rel="stylesheet" href="stylesheets/animate.min.css">
         <link rel="stylesheet" href="stylesheets/light-modal.css">
-        <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
 
     <body class="unselectable">
@@ -35,16 +34,22 @@
             <div class="content">
                 <div class="header" id="myHeader">
                     <div class="links">
-                        <li><a class="cool active" id="btn-index" href="#">Home</a></li>
-                        <span class="space"/>
-                        <li><a class="cool" id="btn-skills" href="#">Skills</a></li>
-                        <span class="space"/>
-                        <li><a class="cool" id="btn-contact" href="#">Contact</a></li>
+                        <table>
+                            <tr>
+                                <td class="tdlinks"><li><a class="cool" id="btn-skills" href="#">skills</a></li></td>
+                                <td class="tdlinks"><li><a class="cool active" id="btn-index" href="#">home</a></li></td>
+                                <td class="tdlinks"><li><a class="cool" id="btn-contact" href="#">contact</a></li></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="lang">
-                        <span id="en" class="button_lang current_lang">EN</span>
-                        <span id="cn" class="button_lang">中文</span>
-                        <span id="jp" class="button_lang">日本語</span>
+                        <table>
+                            <tr>
+                                <td class="tdlang"><span id="cn" class="rad-out button_lang">中文</span></td>
+                                <td class="tdlang"><span id="en" class="rad-out button_lang current_lang">EN</span></td>
+                                <td class="tdlang"><span id="jp" class="rad-out button_lang">日本語</span></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <br>
@@ -61,12 +66,12 @@
                         <img class="imglogo" src="images/logo/logo_new_grey.png">
                     </div>
                     <div id="fontchange" class="eng">
-                        <span id="intro1">Hello! My name is</span><br>
+                        <span id="intro1">hello! my name is</span><br>
                         <span id="intro2" class="engname">
-                            Max Ho
+                            MAX HO
                         </span>
                         <br>
-                        <span id="intro3">and I am a programmer,</span><br>
+                        <span id="intro3">and i am a programmer</span><br>
                         <span id="intro4">with various design skills.</span>
                     </div>
                 </div>
@@ -74,39 +79,39 @@
                 <div class="ajax-skills" id="ajax-skills">
                     <div class="skill">
                         <div id="skills">
-                            <h2>Look at what I can do!</h2>
+                            <h2>look at what i can do!</h2>
                         </div>
                         <table>
                             <tr>
                                 <th id="head1">
-                                    Programming
+                                    programming
                                 </th>
                                 <th id="head2">
-                                    Design
+                                    design
                                 </th>
                                 <th id="head3">
-                                    Video
+                                    video
                                 </th>
                             </tr>
                             <tr>
-                                <td>SQL</td>
-                                <td id="design1">Vectors</td>
-                                <td id="video1">Editor / Colourist</td>
+                                <td>sql</td>
+                                <td id="design1">vectors</td>
+                                <td id="video1">editor<hr>colourist</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
-                                <td id="design2">User Interface (UI)</td>
-                                <td id="video2">Audio Technician</td>
+                                <td>python</td>
+                                <td id="design2">user interface (UI)</td>
+                                <td id="video2">audio technician</td>
                             </tr>
                             <tr>
-                                <td>JavaScript</td>
-                                <td id="design3">Pamphlet</td>
-                                <td id="video3">Lighting Designer / Gaffer</td>
+                                <td>javascript</td>
+                                <td id="design3">pamphlets</td>
+                                <td id="video3">lighting designer<hr>gaffer</td>
                             </tr>
                             <tr>
-                                <td>HTML / CSS</td>
-                                <td id="design4">Name cards</td>
-                                <td id="video4">Director of Photography / Camera Operator</td>
+                                <td>html<hr>css</td>
+                                <td id="design4">name cards</td>
+                                <td id="video4">director of photography<hr>camera operator</td>
                             </tr>
                         </table>
                     </div>
@@ -114,19 +119,19 @@
 
                 <div class="ajax-contact" id="ajax-contact">
                     <div class="about" id="contact">
-                        <div id="findme">You can find me on the following platforms</div>
+                        <div id="findme">you can find me on the following platforms</div>
                         <br>
                         <div>
-                            <div id="clickme" style="color: #ca9e60">Click me!</div>
+                            <div id="clickme" style="color: #ca9e60">click me!</div>
                             <div class="icons">
                                 <div class="padding">
-                                    <a href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                    <a href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                                    <a href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                    <a class="shutter-right" href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                    <a class="shutter-bottom" href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a class="shutter-bottom" href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                    <a class="shutter-left" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
                                 </div>
                                 <div class="padding">
-                                    <a href="#line"><i class="fab fa-line"></i></a>
+                                    <a class="shutter-top" href="#line"><i class="fab fa-line"></i></a>
                                     <div class="light-modal" id="line" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
                                         <div class="light-modal-content animated fadeIn">
                                             <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>
@@ -135,7 +140,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#wechat"><i class="fab fa-weixin"><br></i></a>
+                                    <a class="shutter-top" href="#wechat"><i class="fab fa-weixin"><br></i></a>
                                     <div class="light-modal" id="wechat" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
                                         <div class="light-modal-content animated fadeIn">
                                             <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>

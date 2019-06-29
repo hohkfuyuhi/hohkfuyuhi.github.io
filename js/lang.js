@@ -38,27 +38,27 @@ function lang(langon,langoff1,langoff2){
         findme.classList.add("en");
         findme.classList.remove("jp");
         findme.classList.remove("cn");
-        document.getElementById("btn-index").innerHTML = "Home";
-        document.getElementById("btn-skills").innerHTML = "Skills";
-        document.getElementById("btn-contact").innerHTML = "Contact";
-        document.getElementById("intro1").innerHTML = "Hello! My name is";
-        document.getElementById("intro2").innerHTML = "Max Ho";
-        document.getElementById("intro3").innerHTML = "and I am a programmer";
+        document.getElementById("btn-index").innerHTML = "home";
+        document.getElementById("btn-skills").innerHTML = "skills";
+        document.getElementById("btn-contact").innerHTML = "contact";
+        document.getElementById("intro1").innerHTML = "hello! my name is";
+        document.getElementById("intro2").innerHTML = "MAX HO";
+        document.getElementById("intro3").innerHTML = "and i am a programmer";
         document.getElementById("intro4").innerHTML = "with various design skills";
-        skills.innerHTML = "<h2>Look at what I can do!</h2>";
-        document.getElementById("head1").innerHTML = "Programming";
-        document.getElementById("head2").innerHTML = "Design";
-        document.getElementById("head3").innerHTML = "Video";
-        document.getElementById("design1").innerHTML = "Vectors";
-        document.getElementById("design2").innerHTML = "User Interface (UI)";
-        document.getElementById("design3").innerHTML = "Pamphlets";
-        document.getElementById("design4").innerHTML = "Name cards";
-        document.getElementById("video1").innerHTML = "Editor / Colourist";
-        document.getElementById("video2").innerHTML = "Audio Technician";
-        document.getElementById("video3").innerHTML = "Lighting Designer / Gaffer";
-        document.getElementById("video4").innerHTML = "Director of Photography / Camera Operator";
-        findme.innerHTML = "You can find me on the following platforms";
-        document.getElementById("clickme").innerHTML = "Click me!";
+        skills.innerHTML = "<h2>look at what i can do!</h2>";
+        document.getElementById("head1").innerHTML = "programming";
+        document.getElementById("head2").innerHTML = "design";
+        document.getElementById("head3").innerHTML = "video";
+        document.getElementById("design1").innerHTML = "vectors";
+        document.getElementById("design2").innerHTML = "user interface (UI)";
+        document.getElementById("design3").innerHTML = "pamphlets";
+        document.getElementById("design4").innerHTML = "name cards";
+        document.getElementById("video1").innerHTML = "editor<hr>colourist";
+        document.getElementById("video2").innerHTML = "audio technician";
+        document.getElementById("video3").innerHTML = "lighting designer<hr>gaffer";
+        document.getElementById("video4").innerHTML = "director of photography<hr>camera operator";
+        findme.innerHTML = "you can find me on the following platforms";
+        document.getElementById("clickme").innerHTML = "click me!";
     }
 
     else if (langon.innerHTML == "日本語"){
@@ -89,11 +89,11 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("design2").innerHTML = "ユーザー<br>インターフェース (UI)";
         document.getElementById("design3").innerHTML = "パンフレット";
         document.getElementById("design4").innerHTML = "名刺";
-        document.getElementById("video1").innerHTML = "編集 / 色指定";
+        document.getElementById("video1").innerHTML = "編集<hr>色指定";
         document.getElementById("video2").innerHTML = "音響技師";
         document.getElementById("video3").innerHTML = "照明技師";
-        document.getElementById("video4").innerHTML = "撮影監督 / 撮影技師";
-        findme.innerHTML = "以下のサイトか二次元コードで<br>僕に連絡することができます";
+        document.getElementById("video4").innerHTML = "撮影監督<hr>撮影技師";
+        findme.innerHTML = "以下のサイトか二次元コードで僕に連絡することができます";
         document.getElementById("clickme").innerHTML = "アイコンがクリックできます！";
     }
 
@@ -122,13 +122,13 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";
         document.getElementById("design1").innerHTML = "矢量图";
-        document.getElementById("design2").innerHTML = "包装设计";
+        document.getElementById("design2").innerHTML = "用户界面设计 (UI)";
         document.getElementById("design3").innerHTML = "宣传册设计";
         document.getElementById("design4").innerHTML = "名片设计";
-        document.getElementById("video1").innerHTML = "编辑 / 色指定";
+        document.getElementById("video1").innerHTML = "编辑<hr>色指定";
         document.getElementById("video2").innerHTML = "录音师";
-        document.getElementById("video3").innerHTML = "照明师 / 灯光师";
-        document.getElementById("video4").innerHTML = "摄影指导 / 放映技师";
+        document.getElementById("video3").innerHTML = "照明师<hr>灯光师";
+        document.getElementById("video4").innerHTML = "摄影指导<hr>放映技师";
         findme.innerHTML = "你能用以下的链接或二维码找到我";
         document.getElementById("clickme").innerHTML = "这些图标是能单击的！";
     }
