@@ -18,12 +18,30 @@ Colour scheme
 
 .overlay1 p {
     font-size: 15vw;
-    letter-spacing: 0.5em;
-    margin-right: -0.5em;
 }
 
 .screen {
     color: #323232;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+
+.screen.shrink {
+    animation: shrink 0.6s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shrink {
+    from {
+        letter-spacing: 0.5em;
+        margin-right: -0.5em;
+    }
+    
+    to {
+        letter-spacing: 0em;
+        margin-right: 0em;
+    }
 }
 
 .overlay2 {

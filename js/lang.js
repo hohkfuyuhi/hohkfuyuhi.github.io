@@ -50,7 +50,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "design";
         document.getElementById("head3").innerHTML = "video";
         document.getElementById("design1").innerHTML = "vectors";
-        document.getElementById("design2").innerHTML = "user interface (UI)";
+        document.getElementById("design2").innerHTML = "user interface<br>(UI)";
         document.getElementById("design3").innerHTML = "pamphlets";
         document.getElementById("design4").innerHTML = "name cards";
         document.getElementById("video1").innerHTML = "editor<hr>colourist";
@@ -86,7 +86,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
         document.getElementById("design1").innerHTML = "ベクターイラスト";
-        document.getElementById("design2").innerHTML = "ユーザー<br>インターフェース (UI)";
+        document.getElementById("design2").innerHTML = "ユーザー<br>インターフェース<br>(UI)";
         document.getElementById("design3").innerHTML = "パンフレット";
         document.getElementById("design4").innerHTML = "名刺";
         document.getElementById("video1").innerHTML = "編集<hr>色指定";
@@ -122,7 +122,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";
         document.getElementById("design1").innerHTML = "矢量图";
-        document.getElementById("design2").innerHTML = "用户界面设计 (UI)";
+        document.getElementById("design2").innerHTML = "用户界面设计<br>(UI)";
         document.getElementById("design3").innerHTML = "宣传册设计";
         document.getElementById("design4").innerHTML = "名片设计";
         document.getElementById("video1").innerHTML = "编辑<hr>色指定";
