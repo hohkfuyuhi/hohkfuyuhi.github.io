@@ -275,6 +275,10 @@ hr {
     color: #ca9e60;
 }
 
+.noshow {
+    display: none;
+}
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
