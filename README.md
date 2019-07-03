@@ -10,8 +10,8 @@ _____
 VER 0.6.6 | 03/07/19
 - bugfixes:
   1. skills table now align and resize properly on mobile devices
-  2. there was a weird issue with the language changer where certain words wouldn't change - this should be fixed
-  3. the skills table sometimes doesn't resize properly when the screen is resized - this should be fixed
+  2. fixed and issue where where certain words wouldn't change when changing languages
+  3. fixed an issue where the skills table sometimes doesn't resize properly when the screen is resized
 - changes:
   1. added a new animation to the "EXPLORE" word in the landing page background
   2. changed the hover animation for the navbar links
