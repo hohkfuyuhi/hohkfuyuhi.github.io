@@ -7,6 +7,17 @@ x denotes build version: 0 for alpha, 1 for release\
 y denotes major changes: starts from 0\
 z denotes minor changes: starts from 1
 _____
+VER 0.6.6 | 03/07/19
+- bugfixes:
+  1. skills table now align and resize properly on mobile devices
+  2. there was a weird issue with the language changer where certain words wouldn't change - this should be fixed
+  3. the skills table sometimes doesn't resize properly when the screen is resized - this should be fixed
+- changes:
+  1. added a new animation to the "EXPLORE" word in the landing page background
+  2. changed the hover animation for the navbar links
+  3. added a new hover animation for the language buttons
+  4. added a new mousemove effect that shows up on the homepage
+_____
 VER 0.6.5 | 30/06/19
 - bugfixes:
   1. navbar links now resize properly on mobile devices
@@ -19,8 +30,7 @@ VER 0.6.5 | 30/06/19
   3. added hover animations to langauge buttons and contact icons
   4. skills table has been redesigned
 - issues to be addressed:
-  1. hover animations do not play properly on mobile devices - need to find a fallback
-  2. skills table has alignment issues on mobile devices
+  1. skills table has alignment issues on mobile devices
 _____
 VER 0.6.4 | 26/06/19
 - bugfixes:
