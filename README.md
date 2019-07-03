@@ -78,7 +78,7 @@ VER 0.6.1 | 19/06/19
 - major changes:
   1. removed every page except index.html
       - all content has been merged into index.html
-      - removed 2D and 3D gallery (for now)
+      - removed 2D and 3D gallery - i have no wish to do 2D and 3D work after graduation
       - navbar now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
       - navbar links now have a small animation that plays when hovering over it
       - all content except landing page content is hidden by default via css
