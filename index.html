@@ -28,6 +28,12 @@
         <link rel="stylesheet" href="stylesheets/effects.css">
         <link rel="stylesheet" href="stylesheets/animate.min.css">
         <link rel="stylesheet" href="stylesheets/light-modal.css">
+
+        <style>
+            #bg-canvas2 {
+                position: fixed;
+            }
+        </style>
     </head>
 
     <body class="unselectable">
@@ -43,7 +49,8 @@
 
             </div>
 
-            <div class="content">
+            <div class="content" id="bg-wrap">
+                <canvas id="bg-canvas2"></canvas>
                 <div class="header" id="myHeader">
                     <div class="links">
                         <table class="tablehead">
@@ -84,7 +91,7 @@
                         </span>
                         <br>
                         <span id="intro3">and i am a programmer</span><br>
-                        <span id="intro4">with various design skills.</span>
+                        <span id="intro4">with various design skills</span>
                     </div>
                 </div>
 
@@ -170,6 +177,7 @@
         </div>
 
         <script src="js/lang.js"></script>
+        <script src="js/mouse.js"></script>
 
         <script>
             $(document).ready(function() {

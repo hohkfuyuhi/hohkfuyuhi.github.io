@@ -20,7 +20,7 @@ html, body {
 body {
     margin: 0 auto;
     font-family: 'Inconsolata', monospace;
-    font-size: 18pt;
+    font-size: 1.5em;
     background: #303030;
     color: #bebcbc;
     display: flex;
@@ -82,7 +82,7 @@ body {
 }
 
 .imglogo {
-    max-width: 15vw;
+    max-width: 10vw;
     float: left;
 }
 
@@ -183,6 +183,49 @@ hr {
     padding-left: 20px;
 }
 
+.rad-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.rad-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ca9e60;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.rad-out:hover{
+    color: #303030;
+}
+
+.rad-out:hover:before{
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
 .en {
     font-family: 'Inconsolata', monospace;
 }
@@ -242,13 +285,47 @@ hr {
     cursor: default;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
     .eng {
         font-size: 1.5em;
     }
 
     .jap {
-        font-size: 1.1em;
+        font-size: 1.2em;
+    }
+
+    .chn {
+        font-size: 1.4em;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+
+    .tableskills {
+        width: 70%;
+    }
+
+    th, tr, td {
+        width: 300px;
+    }
+
+    .ajax-skills {
+        font-size: 0.9em;
+    }
+
+    .ajax-contact {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .eng {
+        font-size: 1.2em;
+    }
+
+    .jap {
+        font-size: 1em;
     }
 
     .chn {
@@ -260,7 +337,7 @@ hr {
     }
 
     .tableskills {
-        width: 70%;
+        width: 90%;
     }
 
     th, tr, td {
