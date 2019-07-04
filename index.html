@@ -16,13 +16,15 @@
         <meta name="twitter:image" content="https://hohkfuyuhi.github.io/images/thumbnail.png">
         <meta name="twitter:card" content="summary_large_image">
         <link rel=”canonical” href=”https://hohkfuyuhi.github.io”>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
         <link rel="stylesheet" href="stylesheets/style.css">
         <link rel="stylesheet" href="stylesheets/hipster.css">
         <link rel="stylesheet" href="stylesheets/effects.css">
@@ -35,18 +37,19 @@
                 z-index: -1;
             }
         </style>
-
-        <script>
-            
-        </script>
     </head>
 
     <body class="unselectable">
         <div class="main">
             <div class="overlay1">
                 <p class="screen" id="explore">EXPLORE</p>
-                <div class="intro">
+                <div>
                     <button class="btn" onclick="fadeOut()">EXPLORE</button>
+                    <div class="warning">
+                        this website is best experienced on a desktop device<br>
+                        为了最佳体验，请使用电脑看此网站<br>
+                        このサイトはパソコン上で見た方が良い
+                    </div>
                 </div>
             </div>
 
@@ -195,21 +198,21 @@
         </script>
 
         <script>
-            $(document).ready(function(){
-                $('#btn-index').click(function(){
-                    $('.ajax-skills, .ajax-contact').fadeOut(250, function(){
+            $(document).ready(function() {
+                $('#btn-index').click(function() {
+                    $('.ajax-skills, .ajax-contact').fadeOut(250, function() {
                         $('.ajax-intro').delay(250).fadeIn(250);
                     });
                 });
 
-                $('#btn-skills').click(function(){
-                    $('.ajax-intro, .ajax-contact').fadeOut(250, function(){
+                $('#btn-skills').click(function() {
+                    $('.ajax-intro, .ajax-contact').fadeOut(250, function() {
                         $('.ajax-skills').delay(250).fadeIn(250);
                     });
                 });
 
-                $('#btn-contact').click(function(){
-                    $('.ajax-intro, .ajax-skills').fadeOut(250, function(){
+                $('#btn-contact').click(function() {
+                    $('.ajax-intro, .ajax-skills').fadeOut(250, function() {
                         $('.ajax-contact').delay(250).fadeIn(250);
                     });
                 });

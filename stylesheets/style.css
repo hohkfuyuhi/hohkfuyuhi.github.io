@@ -279,6 +279,18 @@ hr {
     display: none;
 }
 
+.warning {
+    display: none;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -355,6 +367,10 @@ hr {
     .ajax-contact {
         font-size: 0.8em;
     }
+
+    .warning {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -404,5 +420,9 @@ hr {
 
     .ajax-contact {
         font-size: 0.5em;
+    }
+
+    .warning {
+        font-size: 0.6em;
     }
 }
