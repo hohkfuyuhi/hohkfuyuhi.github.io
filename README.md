@@ -1,11 +1,4 @@
 # hohk_portfolio
-  
-__LEGEND__\
-VER x.y.z | dd/mm/yy\
-\
-x denotes build version: 0 for alpha, 1 for release\
-y denotes major changes: starts from 0\
-z denotes minor changes: starts from 1
 _____
 VER 0.6.6 | 03/07/19
 - bugfixes:
@@ -22,7 +15,7 @@ _____
 VER 0.6.5 | 30/06/19
 - bugfixes:
   1. navbar links now resize properly on mobile devices
-- changes:
+- quality of life:
   1. font overhaul for English text
       - there were previously four different fonts for English text
       - all English text are now standardised with the "Inconsolata" font
@@ -36,7 +29,7 @@ _____
 VER 0.6.4 | 26/06/19
 - bugfixes:
   1. finally fixed the bug that causes the navbar links to not change language
-- changes:
+- quality of life:
   1. font sizes have been optimised for mobile devices
   2. landing page animation has been adjusted
 - issues to be addressed:
@@ -58,14 +51,13 @@ _____
 VER 0.6.2 | 20/06/19
 - bugfixes:
   1. fixed landing page alignment issue on mobile devices
-- changes:
-  1. optimised the loading of fonts - updated almost every font to use Google's online font library
-  2. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
 - quality of life:
   1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
       - Netlify has been flagged as dangerous by certain apps and firewalls
       - newly hosted portfolio link is as follows https://hohkfuyuhi.github.io/
+  2. optimised the loading of fonts - updated almost every font to use Google's online font library
+  3. adjusted the hit area of navbar links - the animation should not activate when hovering over blank space
   2. fixed some translation issues
 - issues to be addressed:
   1. website is still not fully optimised for mobile devices
@@ -85,7 +77,7 @@ VER 0.6.1 | 19/06/19
       - when a link is clicked, jQuery will hide all irrelevant content, and display the relevant content
   2. removed all parallax effects
   3. added an animated homepage intro
-- minor changes:
+- quality of life:
   1. optimised the neon letters to resize dynamically based on viewport width
   2. optimised logo to resize dynamically based on viewport width
 - issues to be addressed:
