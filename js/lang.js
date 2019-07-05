@@ -46,6 +46,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("intro3").innerHTML = "and i am a programmer";
         document.getElementById("intro4").innerHTML = "with various design skills";
         skills.innerHTML = "<h2>look at what i can do!</h2>";
+        document.getElementById("software").innerHTML = "<i class='fas fa-angle-right'></i>software knowledge<i class='fas fa-angle-left''></i>"
         document.getElementById("head1").innerHTML = "programming";
         document.getElementById("head2").innerHTML = "design";
         document.getElementById("head3").innerHTML = "video";
@@ -82,6 +83,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("intro3").innerHTML = "僕はプログラマーです。更に、";
         document.getElementById("intro4").innerHTML = "様々なデザインスキルを持っています。";
         skills.innerHTML = "<h2>僕の経験とスキルを見せてやろう!</h2>";
+        document.getElementById("software").innerHTML = "<i class='fas fa-angle-right'></i>ソフトウェア知識<i class='fas fa-angle-left''></i>"
         document.getElementById("head1").innerHTML = "プログラミング";
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
@@ -118,6 +120,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("intro3").innerHTML = "我的专长是编程，";
         document.getElementById("intro4").innerHTML = "但我也有各种的设计技能。";
         skills.innerHTML = "<h2>瞧瞧我的厉害!</h2>";
+        document.getElementById("software").innerHTML = "<i class='fas fa-angle-right'></i>软件知识<i class='fas fa-angle-left''></i>"
         document.getElementById("head1").innerHTML = "编程语言";
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";
