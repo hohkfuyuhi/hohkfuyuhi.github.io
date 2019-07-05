@@ -2,7 +2,7 @@
 _____
 VER 0.6.7 | 06/07/19
 - bugfixes:
-  1. close button on the modal window now resizes properly
+  1. close button on the modal window now resizes properly on mobile devices
   2. fixed a bug where English words were showing up in the chinese translation
   3. fixed a bug where certain JavaScript scripts were not being disabled when on a mobile device
 - changes:
@@ -44,10 +44,9 @@ VER 0.6.5 | 30/06/19
 _____
 VER 0.6.4 | 26/06/19
 - bugfixes:
-  1. finally fixed the bug that causes the navbar links to not change language
+  1. finally fixed the bug that prevented the navbar links from changing language
 - quality of life:
-  1. font sizes have been optimised for mobile devices
-  2. landing page animation has been adjusted
+  1. font sizes have been adjusted for mobile devices
 - issues to be addressed:
   1. navbar links do not resize on mobile devices
   2. the close button on the modal window either does not render properly or appears weirdly on mobile devices
@@ -68,7 +67,7 @@ VER 0.6.2 | 20/06/19
 - bugfixes:
   1. fixed landing page alignment issue on mobile devices
 - quality of life:
-  1. Netlify deployment has been deleted, and the portfolio is now hosted via GitHub Pages instead:
+  1. Netlify deployment has been purged, and the portfolio is now hosted via GitHub Pages instead:
       - Netlify cannot be accessed in certain organisations
       - Netlify has been flagged as dangerous by certain apps and firewalls
       - newly hosted portfolio link is as follows https://hohkfuyuhi.github.io/
