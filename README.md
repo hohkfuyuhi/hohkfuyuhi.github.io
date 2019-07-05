@@ -1,10 +1,24 @@
 # hohk_portfolio
 _____
+VER 0.6.7 | 06/07/19
+- bugfixes:
+  1. close button on the modal window now resizes properly
+  2. fixed a bug where English words were showing up in the chinese translation
+  3. fixed a bug where certain JavaScript scripts were not being disabled when on a mobile device
+- changes:
+  1. added a "software knowledge" link under the skills section:
+      - clicking the link brings up a modal window
+      - modal window contains a list of software that i am proficient in
+  2. added a warning message on the landing page that shows up when a mobile device is detected
+  3. added a link to my YouTube page under the contact section
+- quality of life:
+  1. optimised the mousemove code to make it less taxing on lower end computers
+_____
 VER 0.6.6 | 03/07/19
 - bugfixes:
   1. skills table now align and resize properly on mobile devices
-  2. fixed and issue where where certain words wouldn't change when changing languages
-  3. fixed an issue where the skills table sometimes doesn't resize properly when the screen is resized
+  2. fixed a bug where where certain words wouldn't change when changing languages
+  3. fixed a bug where the skills table sometimes doesn't resize properly when the screen is resized
 - changes:
   1. added a new animation to the "EXPLORE" word in the landing page background
   2. changed the hover animation for the navbar links
