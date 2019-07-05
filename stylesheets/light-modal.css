@@ -97,7 +97,7 @@ git+https://github.com/hunzaboy/Light-Modal.git
 }
 
 .light-modal-close-icon:hover, .light-modal-close-btn:hover {
-    background: #ff3c6a;
+    background: #de1616;
 }
 
 .light-modal-close-icon {
@@ -186,12 +186,23 @@ git+https://github.com/hunzaboy/Light-Modal.git
     animation-name: basic;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1280px) {
     .light-modal {
         font-size: 1em;
     }
+    
     .light-modal:target .light-modal-content {
         width: 70%;
+    }
+    
+    .light-modal-close-icon, .light-modal-close-btn {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 500px) {
+    .light-modal-close-icon, .light-modal-close-btn {
+        font-size: 1em;
     }
 }
 

@@ -48,6 +48,7 @@ body {
 }
 
 .lang {
+    cursor: pointer;
     padding-top: 15px;
     font-size: 0.7em;
     margin: 0 auto;
@@ -115,6 +116,42 @@ hr {
     width: 50%;
 }
 
+.software {
+    padding: 30px;
+}
+
+.software a{
+    text-decoration: none;
+    color: rgb(150, 150, 150, 0.8);
+    transition: color .3s ease;
+}
+
+.software a:hover {
+    color: #ca9e60;
+}
+
+.software .fas {
+    padding: 0px 10px;
+}
+
+.software .light-modal-close-icon {
+    font-size: 1em;
+}
+
+.software ul {
+    padding-left: 0;
+    font-size: 0.8em;
+}
+
+.software li i {
+    padding-right: 20px;
+}
+
+.software li {
+    float: left;
+    padding: 10px 10px;
+}
+
 .icons {
     font-size: 2em;
 }
@@ -133,6 +170,10 @@ hr {
 
 .fa-instagram:hover {
     color: #000;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
 }
 
 .fa-twitter-square:hover {
@@ -333,6 +374,10 @@ hr {
     .ajax-contact {
         font-size: 0.8em;
     }
+
+    .software li {
+        padding: 10px 10px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -370,6 +415,10 @@ hr {
 
     .warning {
         display: block;
+    }
+
+    .software .light-modal-close-icon {
+        font-size: 1.5em;
     }
 }
 
@@ -424,5 +473,13 @@ hr {
 
     .warning {
         font-size: 0.6em;
+    }
+
+    .software .light-modal-close-icon {
+        font-size: 2em;
+    }
+
+    .software ul {
+        font-size: 1.2em;
     }
 }
