@@ -11,6 +11,8 @@ VER 0.6.6 | 03/07/19
   3. added a new hover animation for the language buttons
   4. added a new mousemove effect that shows up on the homepage
   5. added code to disable certain JS scripts if on a mobile device
+- issues to be addressed:
+  1. close button on the modal window shows up at the wrong size on mobile
 _____
 VER 0.6.5 | 30/06/19
 - bugfixes:
