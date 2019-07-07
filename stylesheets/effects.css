@@ -103,7 +103,7 @@ li a {
     position: relative;
     padding-bottom: 5px;
     color: rgb(150, 150, 150, 0.8);
-    transition: color .4s ease;
+    transition: color .2s ease;
 }
 
 li a:hover {
@@ -118,7 +118,7 @@ li a:hover {
     bottom: 0;
     height: 2px;
     width: 0;
-    transition: width 0s ease, background .4s ease;
+    transition: width 0s ease, background .2s ease;
 }
 
 .cool:after {
@@ -130,13 +130,13 @@ li a:hover {
     height: 2px;
     width: 0;
     background: #ca9e60;
-    transition: width .4s ease;
+    transition: width .2s ease;
 }
 
 .cool:hover:before {
     width: 100%;
     background: #ca9e60;
-    transition: width .4s ease;
+    transition: width .2s ease;
 }
 
 .cool:hover:after {
