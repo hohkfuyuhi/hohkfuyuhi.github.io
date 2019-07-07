@@ -321,9 +321,10 @@ hr {
     font-family: 'Inconsolata', monospace;
     text-align: center;
     font-size: 1em;
+    color: rgb(188, 188, 188, 0.5);
     width: 100%;
     position: absolute;
-    bottom: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
