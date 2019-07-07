@@ -7,6 +7,7 @@ VER 0.6.7 | 06/07/19
 - quality of life:
   1. warning message has been moved up in order to make it easier to read
   2. colours have been adjusted across the board in order to make text easier to read
+  3. fixed translation mistakes
 _____
 VER 0.6.7 | 06/07/19
 - bugfixes:
