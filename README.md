@@ -6,9 +6,10 @@ _____
   2. fixed a bug where the contact icons scaled to the wrong size when hovering over them
 - *changes:*
   1. added more media queries to cater to various devices
-  2. added jQuery code to remove certain css classes when on mobile devices
-  3. modified the mousemove effect when on mobile devices
-  4. changed the hover animation for the contact icons
+  2. added Open Graph and Twitter Card meta tags
+  3. added jQuery code to remove certain css classes when on mobile devices
+  4. modified the mousemove effect when on mobile devices
+  5. changed the hover animation for the contact icons
 - *quality of life:*
   1. warning message has been moved higher up in order to make it easier to read
   2. colours have been adjusted across the board in order to make text easier to read
