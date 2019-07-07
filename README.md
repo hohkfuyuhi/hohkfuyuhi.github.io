@@ -2,6 +2,14 @@
 _____
 VER 0.6.7 | 06/07/19
 - bugfixes:
+  1. fixed a bug where certain animations played faster or slower than usual
+  2. fixed a bug where the contact icons scaled to the wrong size when hovering over them
+- quality of life:
+  1. warning message has been moved up in order to make it easier to read
+  2. colours have been adjusted across the board in order to make text easier to read
+_____
+VER 0.6.7 | 06/07/19
+- bugfixes:
   1. close button on the modal window now resizes properly on mobile devices
   2. fixed a bug where English words were showing up in the chinese translation
   3. fixed a bug where certain JavaScript scripts were not being disabled when on a mobile device
