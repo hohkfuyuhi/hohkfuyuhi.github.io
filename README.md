@@ -95,7 +95,7 @@ _____
   4. since VER 0.5.2, the navbar links still do not change when the website language is changed
 _____
 **VER 0.6.1 | 19/06/19**  
-**!! COMPLETE WEBSITE DESIGN OVERHAUL !!**
+**!! COMPLETE OVERHAUL OF WEBSITE DESIGN !!**
 - *__MAJOR CHANGES:__*
   1. removed every page except index.html
       - all content has been merged into index.html
