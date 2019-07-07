@@ -74,7 +74,8 @@ _____
   1. navbar links still do not change language
   2. font sizes not properly optimised for mobile devices
 _____
-**VER 0.6.2 | 20/06/19**
+**VER 0.6.2 | 20/06/19**  
+**!! CHANGE IN WEBSITE HOST !!**
 - *__MAJOR CHANGE:__*
   1. goodbye Netlify, hello GitHub:
       - Netlify cannot be accessed in certain organisations
@@ -93,8 +94,8 @@ _____
   3. contact section is not properly aligned on mobile devices
   4. since VER 0.5.2, the navbar links still do not change when the website language is changed
 _____
-**VER 0.6.1 | 19/06/19**
-**!! COMPLETE WEBSITE OVERHAUL !!**
+**VER 0.6.1 | 19/06/19**  
+**!! COMPLETE WEBSITE DESIGN OVERHAUL !!**
 - *__MAJOR CHANGES:__*
   1. removed every page except index.html
       - all content has been merged into index.html
