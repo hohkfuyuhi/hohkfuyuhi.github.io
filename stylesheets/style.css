@@ -98,6 +98,11 @@ table {
     text-align: center;
 }
 
+h2 {
+    margin: 0;
+    padding: 10px;
+}
+
 .tableskills {
     width: 60%;
 }
@@ -345,7 +350,7 @@ hr {
     cursor: default;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1680px) {
     .eng {
         font-size: 1.5em;
     }
@@ -362,10 +367,6 @@ hr {
         padding-top: 15px;
     }
 
-    .icons {
-        font-size: 2em;
-    }
-
     .tableskills {
         width: 70%;
     }
@@ -375,15 +376,21 @@ hr {
     }
 
     .ajax-skills {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .ajax-contact {
         font-size: 0.8em;
     }
+}
 
-    .software li {
-        padding: 10px 10px;
+@media screen and (max-width: 1440px) {
+    .tableskills {
+        width: 80%;
+    }
+
+    th, tr, td {
+        width: 300px;
     }
 }
 
@@ -400,24 +407,8 @@ hr {
         font-size: 1.2em;
     }
 
-    .icons {
-        font-size: 2em;
-    }
-
     .tableskills {
         width: 90%;
-    }
-
-    th, tr, td {
-        width: 300px;
-    }
-
-    .ajax-skills {
-        font-size: 0.9em;
-    }
-
-    .ajax-contact {
-        font-size: 0.8em;
     }
 
     .warning {
@@ -443,7 +434,7 @@ hr {
     }
 
     .header {
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .links {
@@ -451,15 +442,11 @@ hr {
     }
 
     .lang {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 
     .tdlinks {
         width: 150px;
-    }
-
-    .icons {
-        font-size: 2em;
     }
 
     .padding {

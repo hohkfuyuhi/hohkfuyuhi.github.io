@@ -1,9 +1,3 @@
-/*!
-light-modal v1.1.0: A new lightweight css modal.
-(c) 2017 
-MIT License
-git+https://github.com/hunzaboy/Light-Modal.git
-*/
 .light-modal {
     display: none;
     position: fixed;
@@ -192,7 +186,7 @@ git+https://github.com/hunzaboy/Light-Modal.git
     }
     
     .light-modal:target .light-modal-content {
-        width: 70%;
+        width: 50%;
     }
     
     .light-modal-close-icon, .light-modal-close-btn {

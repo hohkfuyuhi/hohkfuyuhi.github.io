@@ -46,7 +46,7 @@
                 <div>
                     <button class="btn" onclick="fadeOut()">EXPLORE</button>
                     <div class="warning">
-                        this website is best experienced on a desktop device<br>
+                        this website is best experienced on a monitor<br>
                         为了最佳体验，请使用电脑看此网站<br>
                         このサイトはパソコン上で見た方が良い
                     </div>
@@ -166,14 +166,14 @@
                             <div id="clickme">click me!</div>
                             <div class="icons">
                                 <div class="icon-top">
-                                    <a class="shutter-right" href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                    <a class="shutter-insta" href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    <a class="shutter-youtube" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    <a class="shutter-twitter" href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                                    <a class="shutter-left" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                    <a id="icon-fb" href="https://www.facebook.com/fuyuhiMax" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                    <a id="icon-in" href="https://www.instagram.com/fuyuhi_max/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a id="icon-tw" href="https://twitter.com/fuyuhi_Max" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                    <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
                                 </div>
                                 <div class="icon-bot">
-                                    <a class="shutter-line" href="#line"><i class="fab fa-line"></i></a>
+                                    <a id="icon-li" href="#line"><i class="fab fa-line"></i></a>
                                     <div class="light-modal" id="line" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
                                         <div class="light-modal-content animated fadeIn">
                                             <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>
@@ -182,7 +182,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="shutter-wc" href="#wechat"><i class="fab fa-weixin"><br></i></a>
+                                    <a id="icon-wc" href="#wechat"><i class="fab fa-weixin"><br></i></a>
                                     <div class="light-modal" id="wechat" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
                                         <div class="light-modal-content animated fadeIn">
                                             <a href="#" class="light-modal-close-icon" aria-label="close" style="color: #ca9e60">&times;</a>
@@ -209,6 +209,31 @@
                     $('#myHeader a').removeClass('active');
                     $(this).addClass('active');
                 });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var alter = function() {
+                    var width = document.body.clientWidth;
+                    if (width <= 1280) {
+                        $('.button_lang').removeClass('rad-out');
+                        $('#btn-skills').removeClass('cool');
+                        $('#btn-index').removeClass('cool');
+                        $('#btn-contact').removeClass('cool');
+                    } else if (width > 1280) {
+                        $('.button_lang').addClass('rad-out');
+                        $('#btn-skills').addClass('cool');
+                        $('#btn-index').addClass('cool');
+                        $('#btn-contact').addClass('cool');
+                    };
+                };
+
+                $(window).resize(function() {
+                    alter();
+                });
+
+                alter();
             });
         </script>
 
