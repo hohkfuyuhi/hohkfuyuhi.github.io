@@ -1,6 +1,16 @@
 # portfolio patch notes
 _____
-**VER 0.6.8 | 07/07/19**
+**VER 0.7.0 | (WIP)**
+- made the decision to convert everything to the Bootstrap framework
+- reasons as follows:
+  1. easier code management
+  2. scalability
+  3. consistent framework avoids cross browser bugs as much as possible
+  4. built-in responsive structures and styles
+  5. great mobile support
+- **SECOND MAJOR UPDATE INCOMING**
+_____
+**VER 0.6.7 | 07/07/19**
 - *bugfixes:*
   1. fixed a bug where certain animations played faster or slower than usual
   2. fixed a bug where the contact icons scaled to the wrong size when hovering over them
@@ -16,7 +26,7 @@ _____
   3. fixed translation mistakes
   4. cleaned up code
 _____
-**VER 0.6.7 | 06/07/19**
+**VER 0.6.6 | 06/07/19**
 - *bugfixes:*
   1. fixed a bug where English words were showing up in the Japanese translation
 - *changes:*
@@ -27,7 +37,7 @@ _____
       - modal window contains a list of software that i am proficient in
   4. added a link to my YouTube page under the contact section
 _____
-**VER 0.6.6 | 03/07/19**
+**VER 0.6.5 | 03/07/19**
 - *bugfixes:*
   1. fixed a bug where where certain words wouldn't change when changing languages
   2. fixed a bug where the skills table sometimes doesn't resize properly when the screen is resized
@@ -40,7 +50,7 @@ _____
 - *issues to be addressed:*
   1. close button on the modal window shows up at the wrong size on mobile
 _____
-**VER 0.6.5 | 30/06/19**
+**VER 0.6.4 | 30/06/19**
 - *changes:*
   1. navbar links now resize properly on mobile devices
   2. added hover animations to langauge buttons and contact icons
@@ -54,7 +64,7 @@ _____
 - *issues to be addressed:*
   1. skills table has alignment issues on mobile devices
 _____
-**VER 0.6.4 | 26/06/19**
+**VER 0.6.3 | 26/06/19**
 - *bugfixes:*
   1. finally fixed the bug that prevented the navbar links from changing language
 - *quality of life:*
@@ -63,7 +73,7 @@ _____
   1. navbar links do not resize on mobile devices
   2. the close button on the modal window either does not render properly on mobile devices
 _____
-**VER 0.6.3 | 24/06/19**
+**VER 0.6.2 | 24/06/19**
 - *changes:*
   1. website has been more or less optimised for mobile devices
       - various alignment issues have been fixed
@@ -75,7 +85,7 @@ _____
   1. navbar links still do not change language
   2. font sizes not properly optimised for mobile devices
 _____
-**VER 0.6.2 | 20/06/19**  
+**VER 0.6.1 | 20/06/19**  
 **!! CHANGE IN WEBSITE HOST !!**
 - *__MAJOR CHANGE:__*
   1. goodbye Netlify, hello GitHub:
@@ -95,7 +105,7 @@ _____
   3. contact section is not properly aligned on mobile devices
   4. since VER 0.5.2, the navbar links still do not change when the website language is changed
 _____
-**VER 0.6.1 | 19/06/19**  
+**VER 0.6.0 | 19/06/19**  
 **!! COMPLETE OVERHAUL OF WEBSITE DESIGN !!**
 - *__MAJOR CHANGES:__*
   1. removed every page except index.html
@@ -114,13 +124,13 @@ _____
   1. landing page does not align properly on mobile devies
   2. fonts are loading too slowly
 _____
-**VER 0.6.1 | (WIP)**
+**VER 0.6.0 | (WIP)**
 - i wanted to add more interactive elements to the website
 - i found a few amazing libraries, but it requires GSAP and JavaScript
 - i am currently learning how to use GSAP and JavaScript in order to incorporate these elements into my website
-- **MAJOR UPDATE INCOMING**
+- **FIRST MAJOR UPDATE INCOMING**
 _____
-**VER 0.5.2 | 13/05/19**
+**VER 0.5.1 | 13/05/19**
 - *bugfixes:*
   1. navbar still behaving funky apparently - tried some new code, let's see how it goes
   2. fixed a bug where certain css elements were not working properly
@@ -132,7 +142,7 @@ _____
 - *issues to be addressed:*
   1. navbar links still don't change language
 _____
-**VER 0.5.1 | 08/05/19**
+**VER 0.5.0 | 08/05/19**
 - *bugfixes:*
   1. fixed funky navbar buttons - hopefully they stay that way
   2. "Contact" button in navbar should now correctly jump to the bottom of the home page instead of redirecting to a broken page
@@ -149,7 +159,7 @@ _____
 - issues to be addressed:
   1. navbar buttons do not change language for some weird reason
 _____
-**VER 0.4.1 | 16/02/19**
+**VER 0.4.0 | 16/02/19**
 - *changes:*
   1. website language:
       - website has been partially translated into three languages, English, Simplified Chinese, and Japanese
@@ -161,7 +171,7 @@ _____
       - need to create a language manager with JavaScript
   2. navbar buttons display and function weirdly on mobile devices
 _____
-**VER 0.3.3 | 15/02/19**
+**VER 0.3.2 | 15/02/19**
 - *changes:*
   1. certain elements were not being centered properly:
       - neon letters now centers within the parallax with a flex display instead of using absolute position and padding
@@ -170,7 +180,7 @@ _____
 - *quality of life:*
   1. changed font-size to use em instead of pt and px
 _____
-**VER 0.3.2 | 03/02/19**
+**VER 0.3.1 | 03/02/19**
 - *bugfixes:*
   1. fixed a bug where certain content was being served over HTTP instead of HTTPS (whoops)
   2. fixed a bug where the return to top button was not showing up correctly
@@ -178,7 +188,7 @@ _____
   1. spaghetti code cleaned up
   2. updated codes that are deprecated in HTML5
 _____
-**VER 0.3.1 | 02/02/19\**
+**VER 0.3.0 | 02/02/19\**
 **!! LOTS OF CHANGES !!**
 - *changes:*
   1. logo:
@@ -193,14 +203,14 @@ _____
       - contact and skills page have been merged into the home page
   4. added a neon sign effect
 _____
-**VER 0.2.3 | 29/01/19**
+**VER 0.2.2 | 29/01/19**
 - *changes:*
   1. Lightbox is now mobile friendly
   2. website should be sufficiently mobile friendly
 - *issues to be addressed:*
   1. fonts take too long to load
 _____
-**VER 0.2.2 | 29/01/19**
+**VER 0.2.1 | 29/01/19**
 - *bugfixes:*
   1. images in Lightbox are now centered properly
 - *changes:*
@@ -208,13 +218,13 @@ _____
 - *issues to be addressed:*
   1. Lightbox still not mobile friendly
 _____
-**VER 0.2.1 | 28/01/19**
+**VER 0.2.0 | 28/01/19**
 - *changes:*
   1. added Lightbox to 2D gallery page
 - *issues to be addressed:*
   1. make Lightbox mobile friendly
   2. center images in Lightbox
 _____
-**VER 0.1.1 | 27/01/19**
+**VER 0.1.0 | 27/01/19**
 - portfolio website skeleton created
 - portfolio hosted on Netlify
