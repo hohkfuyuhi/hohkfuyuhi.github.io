@@ -10,6 +10,10 @@ Colour scheme
     src: url('../fonts/Unique.ttf');
 }
 
+body {
+    background-color: black;
+}
+
 .notice-en {
     font-family: 'Inconsolata', monospace;
 }
@@ -24,5 +28,7 @@ Colour scheme
 
 .notice {
     color: #bebcbc;
-    font-size: 1em;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
 }
