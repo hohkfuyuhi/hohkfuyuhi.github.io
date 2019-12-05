@@ -1,0 +1,28 @@
+/*
+Colour scheme
+#303030
+#bebcbc
+#ca9e60
+*/
+
+@font-face {
+    font-family: UniqueRegular;
+    src: url('../fonts/Unique.ttf');
+}
+
+.notice-en {
+    font-family: 'Inconsolata', monospace;
+}
+
+.notice-jp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.notice-cn {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.notice {
+    color: #bebcbc;
+    font-size: 1em;
+}
