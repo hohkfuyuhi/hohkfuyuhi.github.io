@@ -10,8 +10,22 @@ Colour scheme
     src: url('../fonts/Unique.ttf');
 }
 
-body {
+html, body {
     background-color: black;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.notice {
+    color: #bebcbc;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .notice-en {
@@ -24,11 +38,4 @@ body {
 
 .notice-cn {
     font-family: 'Noto Sans SC', sans-serif;
-}
-
-.notice {
-    color: #bebcbc;
-    font-size: 1.5em;
-    margin: 0 auto;
-    text-align: center;
 }
