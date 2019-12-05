@@ -8,7 +8,7 @@ _____
   3. consistent framework avoids cross browser bugs as much as possible
   4. built-in responsive structures and styles
   5. great mobile support
-- **WEBSITE HAS BEEN REPLACED WITH A PLACEHOLDER**
+- **WEBSITE HAS BEEN REPLACED WITH A PLACEHOLDER FOR NOW**
 - **SECOND MAJOR UPDATE INCOMING**
 _____
 **VER 0.6.7 | 07/07/19**
