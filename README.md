@@ -1,7 +1,8 @@
 # portfolio patch notes
 _____
-**VER 0.7.0 | 09/12/19**
-**!! CHANGE IN FRAMEWORK !!**
+**VER 0.7.0 | 09/12/19**  
+**!! CHANGE IN FRAMEWORK !!**  
+**!! NEW WEBSITE IS NOW ONLINE !!**
 - *__MAJOR CHANGES:__*
   1. overhauled code to use the Bootstrap framework for the following reasons
       - easier code management
