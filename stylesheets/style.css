@@ -13,8 +13,74 @@ Colour scheme
 * {box-sizing: border-box;}
 
 html, body {
+    min-height: 100%;
     min-height: 100vh;
     overflow: hidden;
+}
+
+.en {
+    font-family: 'Inconsolata', monospace;
+}
+
+.jp {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.cn {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.eng {
+    float: left;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.engname {
+    font-family: UniqueRegular;
+    font-size: 3em;
+    color: #ca9e60;
+}
+
+.jap {
+    font-family: 'Noto Sans JP', sans-serif;
+    float: left;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.japname {
+    font-size: 3em;
+    color: #ca9e60;
+}
+
+.chn {
+    font-family: 'Noto Sans SC', sans-serif;
+    float: left;
+    display: inline-block;
+    font-size: 2.15em;
+}
+
+.chnname {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.5em;
+    color: #ca9e60;
+}
+
+.noshow {
+    display: none;
+}
+
+.warning {
+    display: none;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    color: rgb(188, 188, 188, 0.5);
+    width: 95%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body {
@@ -36,199 +102,35 @@ body {
 .header {
     font-size: 1em;
     text-align: center;
-    padding-top: 30px;
-}
-
-.tablehead {
-    max-width: 100%;
+    padding-top: 1em;
 }
 
 .links {
     margin: 0 auto;
 }
 
+.tdlinks {
+    width: 10em;
+}
+
 .lang {
     cursor: pointer;
-    padding-top: 15px;
-    font-size: 0.7em;
+    font-size: 0.85em;
     margin: 0 auto;
+    width: 30%;
 }
 
 .button_lang {
     color: #bebcbc;
-    padding: 5px 20px;
-    margin: 0px 5px;
+    padding: 0.1em 0em;
     border-radius: 15px;
-    width: 100px;
+    width: 7em;
     display: inline-block;
 }
 
 .current_lang {
     background: #ca9e60;
     color: #303030;
-}
-
-.tdlinks {
-    width: 250px;
-    padding: 0px;
-}
-
-.tdlang {
-    width: 100px;
-    padding: 0px;
-}
-
-.active {
-    color: #ca9e60;
-}
-
-.imglogo {
-    max-width: 10vw;
-    float: left;
-}
-
-.about {
-    font-size: 1.5em;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-table {
-    margin: 0 auto;
-    text-align: center;
-}
-
-h2 {
-    margin: 0;
-    padding: 10px;
-}
-
-.tableskills {
-    width: 60%;
-}
-
-th, tr, td {
-    text-align: center;
-    width: 400px;
-    padding: 10px 0px;
-}
-
-th {
-    color: #ca9e60;
-}
-
-hr {
-    width: 50%;
-}
-
-.software a{
-    text-decoration: none;
-    color: rgb(150, 150, 150, 0.8);
-    transition: color .2s ease;
-}
-
-.software a:hover {
-    color: #ca9e60;
-}
-
-.software .fas {
-    padding: 0px 10px;
-}
-
-.software .light-modal-close-icon {
-    font-size: 1em;
-}
-
-.software ul {
-    padding-left: 0;
-    font-size: 0.8em;
-}
-
-.software li i {
-    padding-right: 20px;
-}
-
-.software li {
-    float: left;
-    padding: 10px 10px;
-}
-
-.icons {
-    font-size: 2em;
-}
-
-.icons i {
-    color: #ca9e60;
-    transition: transform .2s ease;
-}
-
-.icons i:hover {
-    transform: scale(1.3);
-}
-
-#clickme {
-    color: #ca9e60;
-    font-size: 0.8em;
-}
-
-.fa-facebook-square:hover {
-    color: #3b5998;
-}
-
-.fa-instagram:hover {
-    color: #000;
-}
-
-.fa-youtube:hover {
-    color: #ff0000;
-}
-
-.fa-twitter-square:hover {
-    color: #38A1F3;
-}
-
-.fa-telegram:hover {
-    color: #0088cc;
-}
-
-.fa-line:hover {
-    color: #00b900;
-}
-
-.fa-weixin:hover {
-    color: #1AAD19;
-}
-
-.icon-top, .icon-bot {
-    padding-top: 20px;
-}
-
-.ajax-intro {
-    margin: 0 auto;
-    width: 80%;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ajax-skills {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 1em;
-}
-
-.ajax-contact {
-    padding-top: 20px;
-}
-
-.ajax-skills, .ajax-contact{
-    display: none;
-    text-align: center;
-}
-
-#fontchange {
-    padding-left: 20px;
 }
 
 .rad-out {
@@ -274,70 +176,116 @@ hr {
     transform: scale(2);
 }
 
-.en {
-    font-family: 'Inconsolata', monospace;
-}
-
-.jp {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.cn {
-    font-family: 'Noto Sans SC', sans-serif;
-}
-
-.eng {
+.imglogo {
+    width: 10vw;
     float: left;
-    display: inline-block;
-    font-size: 2em;
 }
 
-.engname {
-    font-family: UniqueRegular;
-    font-size: 3.1em;
-    color: #CA9E60;
-}
-
-.jap {
-    font-family: 'Noto Sans JP', sans-serif;
-    float: left;
-    display: inline-block;
-    font-size: 1.6em;
-}
-
-.japname {
-    font-size: 3.1em;
-    color: #ca9e60;
-}
-
-.chn {
-    font-family: 'Noto Sans SC', sans-serif;
-    float: left;
-    display: inline-block;
-    font-size: 1.6em;
-}
-
-.chnname {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 2.6em;
-    color: #ca9e60;
-}
-
-.noshow {
-    display: none;
-}
-
-.warning {
-    display: none;
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
-    font-size: 1em;
-    color: rgb(188, 188, 188, 0.5);
-    width: 100%;
+.ajax-intro, .ajax-skills, .ajax-contact {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.ajax-skills, .ajax-contact {
+    display: none;
+    text-align: center;
+}
+
+.ajax-intro {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fontchange {
+    padding-left: 0.5em;
+}
+
+#skills {
+    font-size: 1.5em;
+}
+
+#software {
+    font-size: 1em;
+}
+
+.table-responsive {
+    padding-top: 0.5em;
+}
+
+.tableskills, .tableabout {
+    color: #bebcbc;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.tableskills th, .tableabout th {
+    color: #ca9e60;
+}
+
+.tableskills th, .tableskills td, .tableabout th, .tableabout td {
+    padding: 0.3em;
+}
+
+#findme {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+}
+
+.icons {
+    line-height: 0;
+}
+
+.icons i {
+    font-size: 2em;
+    color: #ca9e60;
+    transition: transform 0.2s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #000;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.fa-twitter-square:hover {
+    color: #38A1F3;
+}
+
+.fa-telegram:hover {
+    color: #0088cc;
+}
+
+.fa-line:hover {
+    color: #00b900;
+}
+
+.fa-weixin:hover {
+    color: #1AAD19;
+}
+
+.sep hr {
+    border: 1px solid rgb(190, 188, 188);
+    width: 50%;
+}
+
+.about1 {
+    font-size: 1.5em;
+}
+
+.about2 {
+    color: rgba(190, 188, 188, 0.5);
 }
 
 .unselectable {
@@ -350,138 +298,170 @@ hr {
     cursor: default;
 }
 
-@media screen and (max-width: 1680px) {
-    .eng {
-        font-size: 1.5em;
-    }
-
-    .jap {
-        font-size: 1.2em;
+@media screen and (max-width: 1600px) {
+    .eng, .jap {
+        font-size: 1.75em;
     }
 
     .chn {
-        font-size: 1.4em;
+        font-size: 1.9em;
     }
 
-    .header {
-        padding-top: 15px;
-    }
-
-    .tableskills {
-        width: 70%;
-    }
-
-    th, tr, td {
-        width: 300px;
-    }
-
-    .ajax-skills {
-        font-size: 0.8em;
-    }
-
-    .ajax-contact {
-        font-size: 0.8em;
+    .ajax-skills, .ajax-contact {
+        font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 1440px) {
-    .tableskills {
-        width: 80%;
-    }
-
-    th, tr, td {
-        width: 300px;
+    .tableskills, .tableabout {
+        width: 70%;
     }
 }
 
-@media screen and (max-width: 1280px) {
-    .eng {
-        font-size: 1.2em;
-    }
-
-    .jap {
-        font-size: 1em;
+@media screen and (max-width: 1366px) {
+    .eng, .jap {
+        font-size: 1.5em;
     }
 
     .chn {
-        font-size: 1.2em;
+        font-size: 1.65em;
     }
 
-    .tableskills {
+    .ajax-skills, .ajax-contact {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .eng, .jap {
+        font-size: 1.25em;
+    }
+
+    .chn {
+        font-size: 1.35em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .imglogo {
+        width: 15vw;
+    }
+    
+    .eng, .jap {
+        font-size: 1.25em;
+    }
+
+    .chn {
+        font-size: 1.35em;
+    }
+
+    .ajax-skills, .ajax-contact {
+        font-size: 0.8em;
+    }
+    
+    .tableskills, .tableabout {
         width: 90%;
     }
-
-    .warning {
-        display: block;
+    
+    #findme {
+        font-size: 1.3em;
     }
-
-    .software .light-modal-close-icon {
-        font-size: 1.5em;
+    
+    .warning {
+        display: initial;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .eng {
-        font-size: 0.8em;
+    .eng, .jap {
+        font-size: 0.75em;
     }
 
-    .jap {
+    .chn {
+        font-size: 0.8em;
+    }
+    
+    .links {
+        display: none;
+    }
+    
+    .lang {
+        font-size: 0.65em;
+    }
+    
+    .ajax-skills {
+        font-size: 0.7em;
+    }
+    
+    .ajax-contact {
         font-size: 0.6em;
+    }
+    
+    .tableskills, .tableabout {
+        width: 100%;
+    }
+    
+    .warning {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .eng, .jap {
+        font-size: 0.65em;
     }
 
     .chn {
         font-size: 0.7em;
     }
-
-    .header {
-        padding-top: 20px;
-    }
-
-    .links {
-        font-size: 0.7em;
-    }
-
+    
     .lang {
         font-size: 0.6em;
     }
-
-    .tdlinks {
-        width: 150px;
-    }
-
-    .padding {
-        padding: 10px;
-    }
-
-    .tableskills {
-        width: 90%;
-    }
-
-    th, tr, td {
-        width: 100px;
-    }
-
+    
     .ajax-skills {
         font-size: 0.6em;
     }
-
+    
     .ajax-contact {
-        font-size: 0.5em;
+        font-size: 0.55em;
     }
-
+    
     .warning {
         font-size: 0.6em;
     }
+}
 
-    .software .light-modal-close-icon {
-        font-size: 2em;
+@media screen and (max-width: 320px) {
+    .eng, .jap {
+        font-size: 0.55em;
     }
 
-    .software ul {
-        font-size: 0.8em;
+    .chn {
+        font-size: 0.6em;
     }
-
-    .software li {
-        padding: 10px 0px;
+    
+    .lang {
+        font-size: 0.5em;
+    }
+    
+    .ajax-skills {
+        font-size: 0.5em;
+    }
+    
+    .ajax-contact {
+        font-size: 0.45em;
+    }
+    
+    #findme {
+        font-size: 1.5em;
+    }
+    
+    .icons a {
+        font-size: 1.5em;
+    }
+    
+    .warning {
+        font-size: 0.6em;
     }
 }

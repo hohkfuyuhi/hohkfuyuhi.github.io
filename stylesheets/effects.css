@@ -16,14 +16,18 @@ Colour scheme
     align-items: center;
 }
 
-.overlay1 p {
-    font-size: 15vw;
+.overlay2 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #ca9e60;
 }
 
 .screen {
     color: #303030;
     letter-spacing: 0.5em;
     margin-right: -0.5em;
+    font-size: 15vw;
 }
 
 .screen.shrink {
@@ -44,26 +48,18 @@ Colour scheme
     }
 }
 
-.overlay2 {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: #ca9e60;
-}
-
-.btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+canvas {
+    height: 105%;
+    width: 100%;
 }
 
 button {
     display: block;
-    padding: 25px 50px;
+    padding: 15px 40px;
+    font-size: 0.75em;
     font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 6px;
+    letter-spacing: 1em;
+    text-indent: 1em;
     color: #fff;
     border: solid 2px #fff;
     outline: none;
@@ -73,12 +69,24 @@ button {
     transition: 0.5s ease-out;
 }
 
-.btn:hover {
-    color: #101010;
+.explorebtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.btn:before {
-    content: '';
+.explorebtn:hover {
+    color: #101010;
+    font-weight: bold;
+}
+
+.explorebtn:hover:before {
+    top: 0;
+}
+
+.explorebtn:before {
+    content: "";
     position: absolute;
     background: #fff;
     bottom: 0;
@@ -89,25 +97,24 @@ button {
     transition: top 0.5s ease-out;
 }
 
-.btn:hover:before {
-    top: 0;
+.tdlinks .active {
+    color: #ca9e60;
 }
 
-li {
+.tdlinks {
     display: inline-block;
 }
 
-li a {
-    text-decoration: none;
+.tdlinks a {
     display: inline-block;
     position: relative;
-    padding-bottom: 5px;
     color: rgb(150, 150, 150, 0.8);
-    transition: color .2s ease;
+    transition: color 0.2s ease;
 }
 
-li a:hover {
+.tdlinks a:hover {
     color: #ca9e60;
+    text-decoration: none;
 }
 
 .cool:before {
@@ -130,17 +137,62 @@ li a:hover {
     height: 2px;
     width: 0;
     background: #ca9e60;
-    transition: width .2s ease;
+    transition: width 0.2s ease;
 }
 
 .cool:hover:before {
     width: 100%;
     background: #ca9e60;
-    transition: width .2s ease;
+    transition: width 0.2s ease;
 }
 
 .cool:hover:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+}
+
+@media screen and (max-width: 1440px) {
+    button {
+        padding: 15px 40px;
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    button {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    button {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    button {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    button {
+        padding: 15px 30px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        padding: 15px 40px;
+        font-size: 0.65em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    button {
+        font-size: 0.6em;
+    }
 }

@@ -7,14 +7,15 @@
     box-sizing: border-box;
 }
 
-.container {
+.neoncontainer {
     overflow-y: hidden;
     width: 100%;
     text-align: center;
+    padding: 0.5em 0em;
 }
 
 .text {
-    font-size: 4vw;
+    font-size: 4.5vw;
     z-index: 10;
 }
 
@@ -22,7 +23,7 @@
     animation: emerge-glow 0.6s ease 0.4s both;
 }
 
-.container .neon .text {
+.neoncontainer .neon .text {
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     font-family: 'Klaxons';
@@ -37,23 +38,23 @@
         5px 0.3rem 0.5rem rgba(107, 24, 57, 0.5);
 }
 
-.container .neon .text .blink {
+.neoncontainer .neon .text .blink {
     animation: blink 4s ease infinite;
 }
 
-.container .neon .text .blink:nth-child(1) {
+.neoncontainer .neon .text .blink:nth-child(1) {
     animation-delay: 0.5s;
 }
 
-.container .neon .text .blink:nth-child(2) {
+.neoncontainer .neon .text .blink:nth-child(2) {
     animation-delay: 3s;
 }
 
-.container .neon .text .blink:nth-child(3) {
+.neoncontainer .neon .text .blink:nth-child(3) {
     animation-delay: 1s;
 }
 
-.container .neon .text .blink:nth-child(4) {
+.neoncontainer .neon .text .blink:nth-child(4) {
     animation-delay: 2s;
 }
 

@@ -1,0 +1,121 @@
+/*
+Colour scheme
+#303030
+#bebcbc
+#ca9e60
+*/
+
+.modal {
+    color: #303030;
+}
+
+.modal-content {
+    background-color: #bebcbc;
+}
+
+.modal-header {
+    align-items: center;
+}
+
+.modal-header .modal-title {
+    font-size: 1em;
+}
+
+.modal-header .close {
+    padding: 0.7em 0;
+    font-size: 1em;
+    text-indent: 0.5em;
+    transition: 0.5s;
+}
+
+.modal-header .close:hover {
+    color: red;
+    transition: 0.25s;
+}
+
+.modal-body {
+    margin: 0 auto;
+}
+
+.modal-body ul {
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.modal-body li {
+    list-style: none;
+    text-align: left;
+}
+
+.softwarebtn {
+    color: rgba(190, 188, 188, 0.5);
+    transition: color 0.2s ease;
+}
+
+.softwarebtn:hover {
+    text-decoration: none;
+    color: #ca9e60;
+}
+
+@media screen and (max-width: 375px) {
+    .modal {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .modal {
+        font-size: 1.3em;
+    }
+}
+
+/*
+@media screen and (max-width: 1440px) {
+#softwareclose, #contactclose {
+font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 1024px) {
+#softwareclose {
+font-size: 1.35em;
+}
+
+#contactclose {
+font-size: 1.2em;
+}
+
+#softwaremodaltitle {
+font-size: 0.9em;
+}
+
+#softwaremodalbody {
+font-size: 1em;
+}
+
+#linemodaltitle, #wcmodaltitle {
+font-size: 0.8em;
+}
+}
+
+@media screen and (max-width: 500px) {
+#softwareclose {
+font-size: 1.5em;
+}
+
+#contactclose {
+font-size: 0.95em;
+}
+
+#softwaremodaltitle {
+font-size: 1em;
+}
+
+#softwaremodalbody {
+font-size: 1.1em;
+}
+
+#linemodaltitle, #wcmodaltitle {
+font-size: 0.55em;
+}
+}*/

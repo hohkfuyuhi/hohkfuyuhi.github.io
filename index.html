@@ -17,27 +17,404 @@
         <meta name="twitter:card" content="summary_large_image">
         <link rel=”canonical” href=”https://hohkfuyuhi.github.io”>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-        <link rel="stylesheet" href="stylesheets/temp.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/hipster.css">
+        <link rel="stylesheet" href="stylesheets/effects.css">
+        <link rel="stylesheet" href="stylesheets/animate.min.css">
+        <link rel="stylesheet" href="stylesheets/modal.css">
+        <link rel="stylesheet" href="stylesheets/gooey.css">
+
+        <style>
+            #bg-canvas {
+                position: fixed;
+                z-index: -1;
+            }
+        </style>
     </head>
 
     <body class="unselectable">
-        <div class="wrap">
-            <div class="notice">
-                <div class="notice-en">
-                    this website is being redeveloped, sorry for any inconvenience caused
+        <div class="main">
+            <div class="overlay1">
+                <div class="screen" id="explore">EXPLORE</div>
+                <div>
+                    <button class="explorebtn" onclick="fadeOut()">EXPLORE</button>
+                    <div class="warning container">
+                        best experienced on a computer<br>
+                        为了最佳体验，请使用电脑<br>
+                        このサイトはパソコンで見るの方がいい
+                    </div>
                 </div>
-                <div class="notice-cn">
-                    非常抱歉，这个网站目前正在修改中
+            </div>
+
+            <div class="overlay2"></div>
+
+            <div class="content" id="bg-wrap">
+                <canvas id="bg-canvas"></canvas>
+                <div class="header container-fluid">
+                    <table class="table w-100 table-sm table-borderless links">
+                        <tr>
+                            <td class="tdlinks"><a class="cool" id="btn-skills" href="#">skills</a></td>
+                            <td class="tdlinks"><a class="cool active" id="btn-index" href="#">home</a></td>
+                            <td class="tdlinks"><a class="cool" id="btn-contact" href="#">contact</a></td>
+                        </tr>
+                    </table>
+                    <table class="table table-sm table-borderless lang">
+                        <tr>
+                            <td class="tdlang"><span id="cn" class="rad-out button_lang">中文</span></td>
+                            <td class="tdlang"><span id="en" class="rad-out button_lang current_lang">EN</span></td>
+                            <td class="tdlang"><span id="jp" class="rad-out button_lang">日本語</span></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="notice-jp">
-                    申し訳ありません、このサイトは現在改訂中です
+
+                <div class="neoncontainer">
+                    <section class="neon">
+                        <span class="text">
+                            <span class="blink">N</span>EON F<span class="blink">U</span>EL<span class="blink">E</span>D DRE<span class="blink">A</span>MS
+                        </span>
+                    </section>
+                </div>
+
+                <div class="ajax-intro container-fluid" id="ajax-intro">
+                    <div class="logo">
+                        <img class="imglogo" src="images/logo/logo_new_grey.png">
+                    </div>
+                    <div id="fontchange" class="eng">
+                        <span id="intro1">hello! my name is</span><br>
+                        <span id="intro2" class="engname">
+                            MAX HO
+                        </span>
+                        <br>
+                        <span id="intro3">and i am a programmer</span><br>
+                        <span id="intro4">with various design skills</span>
+                    </div>
+                </div>
+
+                <div class="ajax-skills container-fluid" id="ajax-skills">
+                    <div class="skill">
+                        <div id="skills">
+                            look at what i can do
+                        </div>
+                        <a class="softwarebtn" id="software" href="#linemodal" data-toggle="modal" data-target="#softwaremodal">&#62; software knowledge &#60;</a>
+                        <div class="modal fade" id="softwaremodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="softwaremodaltitle">includes, but not limited to</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><span class="fas fa-times"></span></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body" id="softwaremodalbody">
+                                        <ul>
+                                            <li><img src="images/icons/as.png"> Aegisub</li>
+                                            <li><img src="images/icons/ae.png"> Adobe After Effects</li>
+                                            <li><img src="images/icons/ai.png"> Adobe Illustrator</li>
+                                            <li><img src="images/icons/pr.png"> Adobe Premiere Pro</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-borderless tableskills">
+                            <tr>
+                                <th class="w-25" id="head1">
+                                    programming
+                                </th>
+                                <th class="w-25" id="head2">
+                                    design
+                                </th>
+                                <th class="w-25" id="head3">
+                                    video
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">html / css </td>
+                                <td class="align-middle" id="design1">UI / UX</td>
+                                <td class="align-middle" id="video1">editor / colourist</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">javascript / jquery</td>
+                                <td class="align-middle" id="design2">web design</td>
+                                <td class="align-middle" id="video2">audio technician</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">python</td>
+                                <td class="align-middle" id="design3">logos</td>
+                                <td class="align-middle"id="video3">gaffer</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">basic sql / php</td>
+                                <td class="align-middle"id="design4">name cards</td>
+                                <td class="align-middle"id="video4">camera operator</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="ajax-contact container-fluid" id="ajax-contact">
+                    <div class="contact">
+                        <div id="findme">
+                            you can find Max on the following platforms
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <a id="icon-fb" href="https://www.facebook.com/hohkfuyuhi" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                <a id="icon-in" href="https://www.instagram.com/hohkfuyuhi/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <!-- enable only when ready 
+<a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>-->
+                                <a id="icon-tw" href="https://twitter.com/hohkfuyuhi" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                                <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="linebtn" id="icon-line" data-toggle="modal" data-target="#linemodal"><i class="fab fa-line"></i></a>
+                                <div class="modal fade" id="linemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="linemodaltitle">LINE QR code</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><span class="fas fa-times"></span></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/qr/qr_line.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="wcbtn" id="icon-wc" data-toggle="modal" data-target="#wcmodal"><i class="fab fa-weixin"></i></a>
+                                <div class="modal fade" id="wcmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="wcmodaltitle">WeChat QR code</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><span class="fas fa-times"></span></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/qr/qr_wechat.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sep">
+                        <hr>
+                    </div>
+                    <div class="about">
+                        <div class="aboutme">
+                            <div class="about1" id="about1">let's talk about Max</div>
+                            <div class="about2" id="about2">
+                                usually listening to hi-res music on a NW-ZX300
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless tableabout">
+                                <tr>
+                                    <th class="w-25 align-middle" id="aboutnorm">ew normie</th>
+                                    <th class="w-25 align-middle" id="aboutdiff">mainstream sucks</th>
+                                    <th class="w-25 align-middle" id="aboutwtf">yeah nah mate</th>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle" id="dev1">pc master race</td>
+                                    <td class="align-middle">3ds xl</td>
+                                    <td class="align-middle">ps vita</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">illenium</td>
+                                    <td class="align-middle">disco hue</td>
+                                    <td class="align-middle">electrico</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">alstroemeria records</td>
+                                    <td class="align-middle" id="touhou2">hatsunetsumiko's</td>
+                                    <td class="align-middle">a-one</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle" id="mtg1">atraxa</td>
+                                    <td class="align-middle" id="mtg2">sliver overlord</td>
+                                    <td class="align-middle" id="mtg3">freyalise</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gooey">
+                    <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
+                        <label class="menu-open-button" for="menu-open">
+                            <span>menu</span>
+                        </label>
+                        <a id="mobile-contact" href="#" class="menu-item"><i class="fas fa-phone"></i></a>
+                        <a id="mobile-index" href="#" class="menu-item"><i class="fas fa-home"></i></a>
+                        <a id="mobile-skills" href="#" class="menu-item"><i class="fas fa-th-list"></i></a>
+                    </nav>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="shadowed-goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                                <feBlend in2="shadow" in="goo" result="goo" />
+                                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </div>
+
+        <script src="js/lang.js"></script>
+        <script src="js/mouse.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.header a').click(function(e) {
+                    e.preventDefault();
+                    $('.header a').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                var alter = function() {
+                    var width = document.body.clientWidth;
+                    if (width <= 1280) {
+                        $('.button_lang').removeClass('rad-out');
+                        $('#btn-skills').removeClass('cool');
+                        $('#btn-index').removeClass('cool');
+                        $('#btn-contact').removeClass('cool');
+                    } else if (width > 1280) {
+                        $('.button_lang').addClass('rad-out');
+                        $('#btn-skills').addClass('cool');
+                        $('#btn-index').addClass('cool');
+                        $('#btn-contact').addClass('cool');
+                    };
+                };
+
+                $(window).resize(function() {
+                    alter();
+                });
+
+                alter();
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $('#btn-index').click(function() {
+                    $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
+                        $('.ajax-intro').delay(50).fadeIn(200);
+                    });
+                });
+
+                $('#btn-skills').click(function() {
+                    $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
+                        $('.ajax-skills').delay(50).fadeIn(200);
+                    });
+                });
+
+                $('#btn-contact').click(function() {
+                    $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
+                        $('.ajax-contact').delay(50).fadeIn(200);
+                    });
+                });
+
+                $('#mobile-index').click(function() {
+                    $('#menu-open').click();
+                    $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
+                        $('.ajax-intro').delay(50).fadeIn(200);
+                    });
+                });
+
+                $('#mobile-skills').click(function() {
+                    $('#menu-open').click();
+                    $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
+                        $('.ajax-skills').delay(50).fadeIn(200);
+                    });
+                });
+
+                $('#mobile-contact').click(function() {
+                    $('#menu-open').click();
+                    $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
+                        $('.ajax-contact').delay(50).fadeIn(200);
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            function fadeOut() {
+                document.getElementById("explore");
+                explore.classList.add('shrink');
+
+                TweenMax.to(".explorebtn", 0.5, {
+                    y: -111,
+                    opacity: 0,
+                });
+
+                TweenMax.to(".screen", 1, {
+                    y: -450,
+                    opacity: 0,
+                    ease: Power2.easeInOut,
+                    delay: 1
+                });
+
+                TweenMax.from(".overlay1", 1, {
+                    ease: Power0.easeInOut
+                });
+
+                TweenMax.to(".overlay1", 1.5, {
+                    delay: 1,
+                    top: "-150%",
+                    ease: Expo.easeInOut
+                });
+
+                TweenMax.to(".overlay2", 1, {
+                    delay: 1.5,
+                    top: "-150%",
+                    ease: Expo.easeInOut
+                });
+
+                TweenMax.from(".content", 0.7, {
+                    opacity: 0,
+                    ease: Power2.easeInOut,
+                    delay: 1.8
+                });
+
+                TweenMax.to(".content", 1, {
+                    opacity: 1,
+                    ease: Power2.easeInOut,
+                    delay: 3
+                });
+            }
+        </script>
     </body>
 </html>

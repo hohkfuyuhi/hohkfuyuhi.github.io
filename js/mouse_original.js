@@ -124,12 +124,12 @@ if (!isMobile()) {
                 for(var i in points) {
                     // detect points in range
                     if(Math.abs(getDistance(target, points[i])) < 4000) {
-                        points[i].active = 0.2;
-                        points[i].circle.active = 0.2;
+                        points[i].active = 0.3;
+                        points[i].circle.active = 0.6;
                     } else if(Math.abs(getDistance(target, points[i])) < 20000) {
                         points[i].active = 0.1;
                         points[i].circle.active = 0.3;
-                    } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                    } else if(Math.abs(getDistance(target, points[i])) < 40000) {
                         points[i].active = 0.02;
                         points[i].circle.active = 0.1;
                     } else {
@@ -145,8 +145,8 @@ if (!isMobile()) {
         }
 
         function shiftPoint(p) {
-            TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*50,
-                                                y: p.originY-50+Math.random()*50, ease:Circ.easeInOut,
+            TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
+                                                y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
                                                 onComplete: function() {
                                                     shiftPoint(p);
                                                 }});
@@ -159,7 +159,7 @@ if (!isMobile()) {
                 ctx.beginPath();
                 ctx.moveTo(p.x, p.y);
                 ctx.lineTo(p.closest[i].x, p.closest[i].y);
-                ctx.strokeStyle = 'rgba(125,210,255,'+ p.active+')';
+                ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
                 ctx.stroke();
             }
         }
@@ -178,7 +178,7 @@ if (!isMobile()) {
                 if(!_this.active) return;
                 ctx.beginPath();
                 ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-                ctx.fillStyle = 'rgba(125,210,255,'+ _this.active+')';
+                ctx.fillStyle = 'rgba(156,217,249,'+ _this.active+')';
                 ctx.fill();
             };
         }
