@@ -1,5 +1,22 @@
 # portfolio patch notes
 _____
+**VER 0.7.0 | 09/12/19**
+**!! CHANGE IN FRAMEWORK !!**
+- *__MAJOR CHANGES:__*
+  1. overhauled code to use the Bootstrap framework for the following reasons
+      - easier code management
+      - code is scalable
+  2. overhauled all media queries
+      - media queries now support more viewport sizes
+  3. added a mobile navigation that appears only when on a mobile device
+  4. replaced light modal with Bootstrap modal
+  5. replaced existing table code with Bootstrap table
+- *minor changes:*
+  1. overhauled the design of the modal
+  2. added a short self introduction to the contact panel
+  3. cleaned up translations
+  4. cleaned up code in various places
+_____
 **VER 0.7.0 | (WIP)**
 - made the decision to convert everything to the Bootstrap framework
 - reasons as follows:
