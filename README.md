@@ -1,5 +1,15 @@
 # portfolio patch notes
 _____
+**VER 0.7.1 | 09/12/19**
+- *bugfixes*
+  1. fixed a bug where the correct font sizes were not being served on their respective viewports
+- *changes*
+  1. added email to the list of contact links
+  2. removed certain social media links
+- *quality of life*
+  1. cleaned up translations
+  2. standardised font sizes over all viewports
+_____
 **VER 0.7.0 | 09/12/19**  
 **!! CHANGE IN FRAMEWORK !!**  
 **!! NEW WEBSITE IS NOW ONLINE !!**
