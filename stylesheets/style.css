@@ -50,7 +50,7 @@ html, body {
 }
 
 .japname {
-    font-size: 3em;
+    font-size: 3.2em;
     color: #ca9e60;
 }
 
@@ -63,7 +63,7 @@ html, body {
 
 .chnname {
     font-family: 'Noto Serif SC', serif;
-    font-size: 2.5em;
+    font-size: 2.6em;
     color: #ca9e60;
 }
 
@@ -76,9 +76,8 @@ html, body {
     font-family: 'Inconsolata', monospace;
     text-align: center;
     color: rgb(188, 188, 188, 0.5);
-    width: 95%;
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -209,6 +208,10 @@ body {
     font-size: 1em;
 }
 
+.tableskills td span, .tableabout td span, .about2 span {
+    display: inline-block;
+}
+
 .table-responsive {
     padding-top: 0.5em;
 }
@@ -232,6 +235,14 @@ body {
     padding-bottom: 0.3em;
 }
 
+.modal-body div.email {
+    padding: 1.5em;
+}
+
+span.sep {
+    padding: 1em;
+}
+
 .icons {
     line-height: 0;
 }
@@ -247,8 +258,8 @@ body {
     cursor: pointer;
 }
 
-.fa-facebook-square:hover {
-    color: #3b5998;
+.fa-envelope:hover {
+    color: #bebcbc;
 }
 
 .fa-instagram:hover {
@@ -257,10 +268,6 @@ body {
 
 .fa-youtube:hover {
     color: #ff0000;
-}
-
-.fa-twitter-square:hover {
-    color: #38A1F3;
 }
 
 .fa-telegram:hover {
@@ -346,27 +353,19 @@ body {
     .imglogo {
         width: 15vw;
     }
-    
-    .eng, .jap {
-        font-size: 1.25em;
-    }
-
-    .chn {
-        font-size: 1.35em;
-    }
 
     .ajax-skills, .ajax-contact {
         font-size: 0.8em;
     }
-    
+
     .tableskills, .tableabout {
         width: 90%;
     }
-    
+
     #findme {
         font-size: 1.3em;
     }
-    
+
     .warning {
         display: initial;
     }
@@ -374,33 +373,45 @@ body {
 
 @media screen and (max-width: 500px) {
     .eng, .jap {
-        font-size: 0.75em;
+        font-size: 0.85em;
     }
 
     .chn {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
-    
+
     .links {
         display: none;
     }
-    
+
     .lang {
         font-size: 0.65em;
     }
-    
+
     .ajax-skills {
         font-size: 0.7em;
     }
-    
+
     .ajax-contact {
         font-size: 0.6em;
     }
+
+    #findme {
+        font-size: 1.5em;
+    }
     
+    span.sep {
+        padding: 0.5em;
+    }
+
+    .icons a {
+        font-size: 1.4em;
+    }
+
     .tableskills, .tableabout {
         width: 100%;
     }
-    
+
     .warning {
         font-size: 0.7em;
     }
@@ -408,60 +419,64 @@ body {
 
 @media screen and (max-width: 375px) {
     .eng, .jap {
-        font-size: 0.65em;
+        font-size: 0.8em;
     }
 
     .chn {
-        font-size: 0.7em;
+        font-size: 0.85em;
     }
-    
+
     .lang {
         font-size: 0.6em;
     }
-    
+
     .ajax-skills {
         font-size: 0.6em;
     }
-    
+
     .ajax-contact {
         font-size: 0.55em;
     }
-    
+
     .warning {
         font-size: 0.6em;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .eng, .jap {
-        font-size: 0.55em;
+    .eng {
+        font-size: 0.7em;
+    }
+
+    .jap {
+        font-size: 0.65em;
     }
 
     .chn {
-        font-size: 0.6em;
+        font-size: 0.75em;
     }
-    
+
     .lang {
         font-size: 0.5em;
     }
-    
+
     .ajax-skills {
-        font-size: 0.5em;
+        font-size: 0.65em;
     }
-    
+
     .ajax-contact {
-        font-size: 0.45em;
+        font-size: 0.55em;
     }
-    
+
     #findme {
         font-size: 1.5em;
     }
-    
+
     .icons a {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-    
+
     .warning {
-        font-size: 0.6em;
+        font-size: 0.65em;
     }
 }

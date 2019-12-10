@@ -51,9 +51,9 @@
                 <div>
                     <button class="explorebtn" onclick="fadeOut()">EXPLORE</button>
                     <div class="warning container">
-                        best experienced on a computer<br>
-                        为了最佳体验，请使用电脑<br>
-                        このサイトはパソコンで見るの方がいい
+                        <p>best experienced on a computer</p>
+                        <p>为了最佳体验，请使用电脑</p>
+                        <p>このサイトの最適の体験のために、<br>パソコンを使ってください</p>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@
                             MAX HO
                         </span>
                         <br>
-                        <span id="intro3">and i am a programmer</span><br>
-                        <span id="intro4">with various design skills</span>
+                        <span id="intro3">i am a front-end dev,</span><br>
+                        <span id="intro4">and a visual designer.</span>
                     </div>
                 </div>
 
@@ -133,7 +133,7 @@
                         <table class="table table-borderless tableskills">
                             <tr>
                                 <th class="w-25" id="head1">
-                                    programming
+                                    coding
                                 </th>
                                 <th class="w-25" id="head2">
                                     design
@@ -143,7 +143,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <td class="align-middle">html / css </td>
+                                <td class="align-middle">html / css</td>
                                 <td class="align-middle" id="design1">UI / UX</td>
                                 <td class="align-middle" id="video1">editor / colourist</td>
                             </tr>
@@ -169,23 +169,37 @@
                 <div class="ajax-contact container-fluid" id="ajax-contact">
                     <div class="contact">
                         <div id="findme">
-                            you can find Max on the following platforms
+                            find Max here
                         </div>
                         <div class="icons">
                             <div class="icon">
-                                <a id="icon-fb" href="https://www.facebook.com/hohkfuyuhi" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                                <a id="icon-in" href="https://www.instagram.com/hohkfuyuhi/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="emailbtn" id="icon-email" data-toggle="modal" data-target="#emailmodal"><i class="fas fa-envelope"></i></a>
+                                <div class="modal fade" id="emailmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="emailmodaltitle">email</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><span class="fas fa-times"></span></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="email">hohk93@gmail.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="sep"></span>
+                                <a id="icon-in" href="https://www.instagram.com/hohkfuyuhi/" target="_blank"><i class="fab fa-instagram"></i></a><span class="sep"></span>
+                                <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a><span class="sep"></span>
                                 <!-- enable only when ready 
 <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>-->
-                                <a id="icon-tw" href="https://twitter.com/hohkfuyuhi" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                                <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a><span class="sep"></span>
                                 <a class="linebtn" id="icon-line" data-toggle="modal" data-target="#linemodal"><i class="fab fa-line"></i></a>
                                 <div class="modal fade" id="linemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="linemodaltitle">LINE QR code</h5>
+                                                <h5 class="modal-title" id="linemodaltitle">line qr code</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true"><span class="fas fa-times"></span></span>
                                                 </button>
@@ -195,13 +209,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div><span class="sep"></span>
                                 <a class="wcbtn" id="icon-wc" data-toggle="modal" data-target="#wcmodal"><i class="fab fa-weixin"></i></a>
                                 <div class="modal fade" id="wcmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="wcmodaltitle">WeChat QR code</h5>
+                                                <h5 class="modal-title" id="wcmodaltitle">wechat qr code</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true"><span class="fas fa-times"></span></span>
                                                 </button>
@@ -222,7 +236,7 @@
                         <div class="aboutme">
                             <div class="about1" id="about1">let's talk about Max</div>
                             <div class="about2" id="about2">
-                                usually listening to hi-res music on a NW-ZX300
+                                usually listening to hi-res music <span>on a NW-ZX300</span>
                             </div>
                         </div>
                         <div class="table-responsive">

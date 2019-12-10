@@ -19,6 +19,11 @@ Colour scheme
 
 .modal-header .modal-title {
     font-size: 1em;
+    text-align: left;
+}
+
+.modal-header .modal-title span {
+    display: inline-block;
 }
 
 .modal-header .close {
@@ -57,65 +62,20 @@ Colour scheme
     color: #ca9e60;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .modal {
-        font-size: 1.1em;
+        font-size: 1.15em;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .modal {
         font-size: 1.3em;
     }
 }
 
-/*
-@media screen and (max-width: 1440px) {
-#softwareclose, #contactclose {
-font-size: 1.2em;
+@media screen and (max-width: 320px) {
+    .modal {
+        font-size: 1.05em;
+    }
 }
-}
-
-@media screen and (max-width: 1024px) {
-#softwareclose {
-font-size: 1.35em;
-}
-
-#contactclose {
-font-size: 1.2em;
-}
-
-#softwaremodaltitle {
-font-size: 0.9em;
-}
-
-#softwaremodalbody {
-font-size: 1em;
-}
-
-#linemodaltitle, #wcmodaltitle {
-font-size: 0.8em;
-}
-}
-
-@media screen and (max-width: 500px) {
-#softwareclose {
-font-size: 1.5em;
-}
-
-#contactclose {
-font-size: 0.95em;
-}
-
-#softwaremodaltitle {
-font-size: 1em;
-}
-
-#softwaremodalbody {
-font-size: 1.1em;
-}
-
-#linemodaltitle, #wcmodaltitle {
-font-size: 0.55em;
-}
-}*/

@@ -40,6 +40,10 @@ Colour scheme
     font-size: 0.8em;
 }
 
+.menu-item:active {
+    color: #303030;
+}
+
 .menu-open {
     display: none;
 }
