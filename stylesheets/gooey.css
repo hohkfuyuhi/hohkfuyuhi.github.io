@@ -14,21 +14,21 @@ Colour scheme
     filter: url("#shadowed-goo");
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 6.5em;
     box-sizing: border-box;
 }
 
 .menu-item, .menu-open-button {
     background: #bebcbc;
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    margin-left: -40px;
+    width: 60px;
+    height: 60px;
+    top: -1em;
+    margin-left: -30px;
     position: absolute;
-    top: 20px;
     color: #303030;
     text-align: center;
-    line-height: 80px;
+    line-height: 60px;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: -webkit-transform ease-out 200ms;
@@ -79,22 +79,38 @@ Colour scheme
 }
 .menu-open:checked ~ .menu-item:nth-child(3) {
     transition-duration: 300ms;
-    -webkit-transform: translate3d(77.18543px, 85.2491px, 0);
-    transform: translate3d(77.18543px, -85.2491px, 0);
+    -webkit-transform: translate3d(50px, -60px, 0);
+    transform: translate3d(50px, -60px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
     transition-duration: 200ms;
-    -webkit-transform: translate3d(0.09158px, 114.99996px, 0);
-    transform: translate3d(0.09158px, -114.99996px, 0);
+    -webkit-transform: translate3d(0px, -85px, 0);
+    transform: translate3d(0px, -85px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
     transition-duration: 300ms;
-    -webkit-transform: translate3d(-77.04956px, 85.37192px, 0);
-    transform: translate3d(-77.04956px, -85.37192px, 0);
+    -webkit-transform: translate3d(-50px, -60px, 0);
+    transform: translate3d(-50px, -60px, 0);
 }
 
 @media screen and (max-width: 500px) {
     .gooey {
         display: initial;
+    }
+    
+    .menu-item, .menu-open-button {
+        top: -1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu-item, .menu-open-button {
+        top: -0.5em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .menu-item, .menu-open-button {
+        top: 0;
     }
 }

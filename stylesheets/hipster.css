@@ -17,6 +17,7 @@
 .text {
     font-size: 4.5vw;
     z-index: 10;
+    margin-right: -0.3rem;
 }
 
 .enter .neon .text {
@@ -88,5 +89,29 @@
     82%, 97% {
         color: #ff2483;
         text-shadow: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text {
+        font-size: 6.5vw;
     }
 }

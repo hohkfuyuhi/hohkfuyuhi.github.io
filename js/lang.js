@@ -1,6 +1,9 @@
 var english = document.getElementById("en"),
     japanese = document.getElementById("jp"),
     chinese = document.getElementById("cn"),
+    enbot = document.getElementById("enbot"),
+    jpbot = document.getElementById("jpbot"),
+    cnbot = document.getElementById("cnbot"),
     font = document.getElementById("fontchange"),
     myname = document.getElementById("intro2"),
     skills = document.getElementById("skills"),
@@ -8,13 +11,31 @@ var english = document.getElementById("en"),
 
 english.addEventListener("click",function(){
     lang(english,japanese,chinese);
+    lang(enbot,jpbot,cnbot);
 }, false);
 
 japanese.addEventListener("click",function(){
     lang(japanese,english,chinese);
+    lang(jpbot,enbot,cnbot);
 }, false);
 
 chinese.addEventListener("click",function(){
+    lang(chinese,english,japanese);
+    lang(cnbot,enbot,jpbot);
+}, false);
+
+enbot.addEventListener("click",function(){
+    lang(enbot,jpbot,cnbot);
+    lang(english,japanese,chinese);
+}, false);
+
+jpbot.addEventListener("click",function(){
+    lang(jpbot,enbot,cnbot);
+    lang(japanese,english,chinese);
+}, false);
+
+cnbot.addEventListener("click",function(){
+    lang(cnbot,enbot,jpbot);
     lang(chinese,english,japanese);
 }, false);
 
@@ -62,10 +83,10 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("linemodaltitle").innerHTML = "LINE QR code";
         document.getElementById("wcmodaltitle").innerHTML = "WeChat QR code";
         document.getElementById("about1").innerHTML = "let's talk about Max";
-        document.getElementById("about2").innerHTML = "usually listening to hi-res music <span>on a NW-ZX300</span>";
-        document.getElementById("aboutnorm").innerHTML = "ew normie";
-        document.getElementById("aboutdiff").innerHTML = "mainstream sucks";
-        document.getElementById("aboutwtf").innerHTML = "yeah nah mate";
+        document.getElementById("about2").innerHTML = "usually plugged into a NW-ZX300";
+        document.getElementById("aboutnorm").innerHTML = "urgh normie";
+        document.getElementById("aboutdiff").innerHTML = "ew mainstream";
+        document.getElementById("aboutwtf").innerHTML = "yeah nah";
         document.getElementById("dev1").innerHTML = "pc master race";
         document.getElementById("touhou2").innerHTML = "hatsunetsumiko's";
         document.getElementById("mtg1").innerHTML = "atraxa";
