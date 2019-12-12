@@ -125,7 +125,7 @@ body {
     position: absolute;
     font-size: 0.5em;
     left: 50%;
-    bottom: 3em;
+    bottom: 1em;
     transform: translate(-50%, -50%);
 }
 

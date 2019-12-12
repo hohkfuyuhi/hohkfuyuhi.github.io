@@ -14,7 +14,7 @@ Colour scheme
     filter: url("#shadowed-goo");
     position: absolute;
     left: 50%;
-    bottom: 6.5em;
+    bottom: 5.5em;
     box-sizing: border-box;
 }
 
@@ -23,7 +23,6 @@ Colour scheme
     border-radius: 100%;
     width: 60px;
     height: 60px;
-    top: -1em;
     margin-left: -30px;
     position: absolute;
     color: #303030;
@@ -97,20 +96,14 @@ Colour scheme
     .gooey {
         display: initial;
     }
-    
-    .menu-item, .menu-open-button {
-        top: -1em;
-    }
-}
 
-@media screen and (max-width: 375px) {
-    .menu-item, .menu-open-button {
-        top: -0.5em;
+    .menu {
+        bottom: 6em;
     }
 }
 
 @media screen and (max-width: 325px) {
-    .menu-item, .menu-open-button {
-        top: 0;
+    .menu {
+        bottom: 5.5em;
     }
 }
