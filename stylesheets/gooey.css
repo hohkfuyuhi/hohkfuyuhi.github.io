@@ -21,13 +21,13 @@ Colour scheme
 .menu-item, .menu-open-button {
     background: #bebcbc;
     border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
     position: absolute;
     color: #303030;
     text-align: center;
-    line-height: 60px;
+    line-height: 80px;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transition: -webkit-transform ease-out 200ms;
@@ -79,17 +79,17 @@ Colour scheme
 .menu-open:checked ~ .menu-item:nth-child(3) {
     transition-duration: 300ms;
     -webkit-transform: translate3d(50px, -60px, 0);
-    transform: translate3d(50px, -60px, 0);
+    transform: translate3d(65px, -70px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(4) {
     transition-duration: 200ms;
     -webkit-transform: translate3d(0px, -85px, 0);
-    transform: translate3d(0px, -85px, 0);
+    transform: translate3d(0px, -100px, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
     transition-duration: 300ms;
     -webkit-transform: translate3d(-50px, -60px, 0);
-    transform: translate3d(-50px, -60px, 0);
+    transform: translate3d(-65px, -70px, 0);
 }
 
 @media screen and (max-width: 500px) {
@@ -98,12 +98,18 @@ Colour scheme
     }
 
     .menu {
-        bottom: 6em;
+        bottom: 6.3em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu {
+        bottom: 6.3em;
     }
 }
 
 @media screen and (max-width: 325px) {
     .menu {
-        bottom: 5.5em;
+        bottom: 6.2em;
     }
 }

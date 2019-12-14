@@ -112,29 +112,39 @@ body {
     width: 10em;
 }
 
-.lang, .langbot {
+.lang {
     cursor: pointer;
-    font-size: 0.85em;
+    font-size: 0.8em;
     margin: 0 auto;
     width: 30%;
 }
 
 .langbot {
+    margin: 0 auto;
+    width: 50%;
     visibility: hidden;
     text-align: center;
     position: absolute;
-    font-size: 0.5em;
     left: 50%;
-    bottom: 1em;
+    bottom: -1em;
     transform: translate(-50%, -50%);
 }
 
 .button_lang {
+    display: inline-block;
     color: #bebcbc;
     padding: 0.1em 0em;
     border-radius: 15px;
     width: 7em;
+}
+
+.button_bot {
     display: inline-block;
+    color: #bebcbc;
+    padding: 0.5em 0em;
+    border-radius: 10px;
+    width: 5.5em;
+    font-size: 1.2em;
 }
 
 .current_lang {
@@ -386,7 +396,7 @@ span.sep {
     .content {
         padding-top: 2em;
     }
-    
+
     .eng, .jap {
         font-size: 0.85em;
     }
@@ -402,10 +412,10 @@ span.sep {
     .lang {
         display: none;
     }
-    
+
     .langbot {
         visibility: visible;
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .ajax-skills {
@@ -419,7 +429,7 @@ span.sep {
     #findme {
         font-size: 1.5em;
     }
-    
+
     span.sep {
         padding: 0.5em;
     }
@@ -441,17 +451,13 @@ span.sep {
     .content {
         padding-top: 1em;
     }
-    
+
     .eng, .jap {
         font-size: 0.8em;
     }
 
     .chn {
         font-size: 0.85em;
-    }
-    
-    .langbot {
-        font-size: 0.65em;
     }
 
     .ajax-skills {
@@ -461,7 +467,7 @@ span.sep {
     .ajax-contact {
         font-size: 0.6em;
     }
-    
+
     .icons a {
         font-size: 1.3em;
     }
@@ -475,7 +481,7 @@ span.sep {
     .content {
         padding-top: 1em;
     }
-    
+
     .eng {
         font-size: 0.7em;
     }
@@ -487,7 +493,7 @@ span.sep {
     .chn {
         font-size: 0.75em;
     }
-    
+
     .langbot {
         font-size: 0.55em;
     }
