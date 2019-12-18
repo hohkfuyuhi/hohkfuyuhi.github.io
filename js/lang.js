@@ -112,8 +112,8 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("btn-contact").innerHTML = "連絡";
         document.getElementById("intro1").innerHTML = "こんにちは！僕の名前は";
         document.getElementById("intro2").innerHTML = "マックス";
-        document.getElementById("intro3").innerHTML = "僕はフロントエンド開発者です";
-        document.getElementById("intro4").innerHTML = "僕もビジュアルデザイナーです";
+        document.getElementById("intro3").innerHTML = "僕はフロントエンド開発者兼";
+        document.getElementById("intro4").innerHTML = "ビジュアルデザイナーです";
         skills.innerHTML = "僕の力、見せてあげるよ";
         document.getElementById("software").innerHTML = "&#62; ソフトウェア知識 &#60;"
         document.getElementById("softwaremodaltitle").innerHTML = "以下のものに限定されない";
