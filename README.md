@@ -1,5 +1,18 @@
 # portfolio patch notes
 _____
+**VER 0.7.2 | 06/01/20**
+- *bugfixes*
+  1. fixed a bug where certain translations do not appear or disappear after changing languages
+- *changes*
+  1. added a "gooey menu" to replace the navigation menu
+      - the gooey menu will appear at the bottom of the screen for devices with a viewport width of 500px and below
+      - gooey menu has three icons, in order from left to right:
+        - the pencil and ruler for the skills panel
+        - the house for the home panel
+        - the phone for the contact panel
+- *quality of life*
+  1. cleaned up translations
+_____
 **VER 0.7.1 | 09/12/19**
 - *bugfixes*
   1. fixed a bug where the correct font sizes were not being served on their respective viewports
