@@ -137,13 +137,46 @@ Colour scheme
 
 @media screen and (max-width: 320px) {
     .menu {
-        bottom: 6em;
+        bottom: 5.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        bottom: 5em;
+    }
+
+    .menu-item, .menu-open-button {
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        line-height: 60px;
+    }
+
+    .menu-open-button {
+        font-size: 0.8em;
+    }
+
+    .menu-open:checked ~ .menu-item:nth-child(3) {
+        transition-duration: 300ms;
+        -webkit-transform: translate3d(45px, -50px, 0);
+        transform: translate3d(45px, -60px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(4) {
+        transition-duration: 200ms;
+        -webkit-transform: translate3d(0, -70px, 0);
+        transform: translate3d(0, -80px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(5) {
+        transition-duration: 300ms;
+        -webkit-transform: translate3d(-45px, -50px, 0);
+        transform: translate3d(-45px, -60px, 0);
     }
 }
 
 @media screen and (max-height: 570px) {
     .menu {
-        bottom: 4.3em;
+        bottom: 4.5em;
     }
 
     .menu-item, .menu-open-button {

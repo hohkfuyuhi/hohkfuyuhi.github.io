@@ -80,12 +80,13 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video3").innerHTML = "gaffer";
         document.getElementById("video4").innerHTML = "camera operator";
         findme.innerHTML = "find Max here";
-        document.getElementById("linemodaltitle").innerHTML = "LINE QR code";
-        document.getElementById("wcmodaltitle").innerHTML = "WeChat QR code";
+        document.getElementById("emailmodaltitle").innerHTML = "email";
+        document.getElementById("linemodaltitle").innerHTML = "line qr code";
+        document.getElementById("wcmodaltitle").innerHTML = "wechat qr code";
         document.getElementById("about1").innerHTML = "let's talk about Max";
-        document.getElementById("about2").innerHTML = "usually plugged into a NW-ZX300";
+        document.getElementById("about2").innerHTML = "usually plugged into his NW-ZX300";
         document.getElementById("aboutnorm").innerHTML = "urgh normie";
-        document.getElementById("aboutdiff").innerHTML = "ew mainstream";
+        document.getElementById("aboutdiff").innerHTML = "indie wow";
         document.getElementById("aboutwtf").innerHTML = "yeah nah";
         document.getElementById("dev1").innerHTML = "pc master race";
         document.getElementById("touhou2").innerHTML = "hatsunetsumiko's";
@@ -129,10 +130,10 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video4").innerHTML = "撮影技師";
         findme.innerHTML = "連絡方法";
         document.getElementById("emailmodaltitle").innerHTML = "メール";
-        document.getElementById("linemodaltitle").innerHTML = "LINE二次元コード";
-        document.getElementById("wcmodaltitle").innerHTML = "WeChat二次元コード";
+        document.getElementById("linemodaltitle").innerHTML = "line二次元コード";
+        document.getElementById("wcmodaltitle").innerHTML = "wechat二次元コード";
         document.getElementById("about1").innerHTML = "マックスを紹介しましょう";
-        document.getElementById("about2").innerHTML = "通常はNW-ZX300でハイレゾを聴く";
+        document.getElementById("about2").innerHTML = "通常はNW-ZX300でハイレゾを聴きます";
         document.getElementById("aboutnorm").innerHTML = "一般人だよ";
         document.getElementById("aboutdiff").innerHTML = "特別ですね";
         document.getElementById("aboutwtf").innerHTML = "マジやばい";
@@ -178,17 +179,17 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video4").innerHTML = "放映技师";
         findme.innerHTML = "联络方式";
         document.getElementById("emailmodaltitle").innerHTML = "电子邮件";
-        document.getElementById("linemodaltitle").innerHTML = "LINE二维码";
-        document.getElementById("wcmodaltitle").innerHTML = "WeChat二维码";
+        document.getElementById("linemodaltitle").innerHTML = "line二维码";
+        document.getElementById("wcmodaltitle").innerHTML = "微信二维码";
         document.getElementById("about1").innerHTML = "介绍一下浩杰吧";
-        document.getElementById("about2").innerHTML = "通常在NW-ZX300上听着高分辨率音频";
+        document.getElementById("about2").innerHTML = "通常会在NW-ZX300上听着高分辨率音频";
         document.getElementById("aboutnorm").innerHTML = "正常人啦";
         document.getElementById("aboutdiff").innerHTML = "有点不同";
         document.getElementById("aboutwtf").innerHTML = "完蛋了";
         document.getElementById("dev1").innerHTML = "台式机最棒";
         document.getElementById("touhou2").innerHTML = "发热巫女";
-        document.getElementById("mtg1").innerHTML = "魔判官之声<span>亚崔夏</span>";
+        document.getElementById("mtg1").innerHTML = "亚崔夏";
         document.getElementById("mtg2").innerHTML = "裂片妖大王";
-        document.getElementById("mtg3").innerHTML = "罗堰之怒<span>妃雅丽兹</span>";
+        document.getElementById("mtg3").innerHTML = "妃雅丽兹";
     }
 }
