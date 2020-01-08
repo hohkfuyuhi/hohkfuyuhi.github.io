@@ -1,5 +1,18 @@
 # portfolio patch notes
 _____
+**VER 0.7.3 | 08/01/20**
+- *bugfixes*
+  1. fixed a bug where certain elements appeared off screen
+  2. fixed a bug where animations were not playing properly
+  3. fixed a bug where fonts were not preloading
+- *changes*
+  1. gooey menu and mobile navigation have been placed higher on the screen
+  2. gooey menu has been enlarged
+- *quality of life*
+  1. cleaned up css precedence
+  2. cleaned up css specificity
+  3. cleaned up font sizes across all viewports
+_____
 **VER 0.7.2 | 06/01/20**
 - *bugfixes*
   1. fixed a bug where certain translations do not appear or disappear after changing languages
@@ -12,6 +25,7 @@ _____
         - the phone for the contact panel
 - *quality of life*
   1. cleaned up translations
+  2. cleaned up text
 _____
 **VER 0.7.1 | 09/12/19**
 - *bugfixes*
@@ -21,7 +35,7 @@ _____
   2. removed certain social media links
 - *quality of life*
   1. cleaned up translations
-  2. standardised font sizes over all viewports
+  2. font sizes have been standardised across all viewports
 _____
 **VER 0.7.0 | 09/12/19**  
 **!! CHANGE IN FRAMEWORK !!**  
