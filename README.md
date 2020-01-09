@@ -1,5 +1,15 @@
 # portfolio patch notes
 _____
+**VER 0.7.4 | 09/01/20**
+- *bugfixes*
+  1. fixed a bug where fonts were not being applied correctly
+  2. fixed a bug where scripts were not loading correctly
+- *changes*
+  1. changed media queries for gooey menu
+- *quality of life*
+  1. shifted all script code from head to right before end of body
+  2. cleaned up the order of css precedence
+_____
 **VER 0.7.3 | 08/01/20**
 - *bugfixes*
   1. fixed a bug where certain elements appeared off screen
@@ -7,7 +17,7 @@ _____
   3. fixed a bug where fonts were not preloading
 - *changes*
   1. gooey menu and mobile navigation have been placed higher on the screen
-  2. gooey menu has been enlarged
+  2. gooey menu has been enlarged for mobile screens
 - *quality of life*
   1. cleaned up css precedence
   2. cleaned up css specificity
