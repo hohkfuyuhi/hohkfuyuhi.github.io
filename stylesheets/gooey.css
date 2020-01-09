@@ -126,9 +126,16 @@ Colour scheme
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (max-height: 570px) {
     .menu {
-        bottom: 6.75em;
+        bottom: 6em;
+    }
+    
+    .menu-item, .menu-open-button {
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        line-height: 60px;
     }
 
     .menu-open-button {
@@ -149,20 +156,20 @@ Colour scheme
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (max-height: 570px) {
     .menu {
-        bottom: 6em;
+        bottom: 5.5em;
     }
 
     .menu-open-button {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .menu-item, .menu-open-button {
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-        line-height: 60px;
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+        line-height: 50px;
     }
 
     .menu-open:checked ~ .menu-item:nth-child(3) {
@@ -176,11 +183,5 @@ Colour scheme
     .menu-open:checked ~ .menu-item:nth-child(5) {
         -webkit-transform: translate3d(-50px, -55px, 0);
         transform: translate3d(-50px, -55px, 0);
-    }
-}
-
-@media screen and (max-height: 570px) {
-    .menu {
-        bottom: 6em;
     }
 }
