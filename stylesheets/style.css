@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-    animation: 3s ease 0s 1 fadeIn;
+    animation: fadeIn 2s ease 0s 1;
 }
 
 @keyframes fadeIn {
@@ -215,7 +215,6 @@ body {
 }
 
 .ajax-skills, .ajax-contact {
-    display: none;
     text-align: center;
 }
 
