@@ -1,9 +1,9 @@
 # portfolio patch notes
 _____
-**VER 0.7.4 | 09/01/20**
+**VER 0.7.4 | 11/01/20**
 - *bugfixes*
-  1. fixed a bug where fonts were not being applied correctly
-  2. fixed a bug where scripts were not loading correctly
+  1. fixed a bug where fonts were being applied in places they shouldn't be
+  2. fixed a bug where font awesome icons were taking too long to load
 - *changes*
   1. changed media queries for gooey menu
 - *quality of life*
