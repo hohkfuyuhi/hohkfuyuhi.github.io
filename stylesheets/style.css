@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-    animation: 4s ease 0s 1 fadeIn;
+    animation: 3s ease 0s 1 fadeIn;
 }
 
 @keyframes fadeIn {
@@ -81,10 +81,6 @@ body {
     color: #ca9e60;
 }
 
-.noshow {
-    display: none;
-}
-
 .warning {
     display: none;
     font-family: 'Inconsolata', monospace;
@@ -92,14 +88,6 @@ body {
     color: rgb(188, 188, 188, 0.5);
     position: absolute;
     top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.spock {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
 }
