@@ -26,6 +26,10 @@ body {
     0% {
         opacity: 0;
     }
+    
+    50% {
+        opacity: 0;
+    }
 
     100% {
         opacity: 1;
@@ -97,7 +101,6 @@ body {
 }
 
 .spock {
-    color: #101010;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -288,6 +291,7 @@ span.sep {
 }
 
 .icons {
+    font-family: FontAwesome;
     line-height: 0;
 }
 
