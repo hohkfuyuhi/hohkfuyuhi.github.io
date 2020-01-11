@@ -16,12 +16,6 @@ Colour scheme
     align-items: center;
 }
 
-.spock {
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-}
-
 .overlay2 {
     width: 100vw;
     height: 100vh;
