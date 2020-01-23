@@ -13,7 +13,7 @@ _____
 - *bugfixes*
   1. fixed a bug where content doesn't fade in or out properly
 - *changes*
-  1. changed the imaged used for all image meta tags
+  1. changed the image used for all image meta tags
 - *quality of life*
   1. instead of having one script tag for each jQuery function, all jQuery code and functions (except script src) have been consolidated into one large script tag
 - *issues to be addressed:*
