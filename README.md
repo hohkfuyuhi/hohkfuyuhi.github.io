@@ -1,5 +1,24 @@
 # portfolio patch notes
 _____
+**VER 0.8.1 | 23/01/20**
+- *__MAJOR CHANGES:__*
+  1. added a noscript tag to warn users that the website requires JavaScript to be enabled
+  2. created a pseudo preloader
+      - the preloader animation is a diamond folding and unfolding
+      - majority of content should load together with the website, so this preloader is mostly a precautionary measure, but is also an aesthetic decision
+      - the preloader has a pseudo random number generator to determine the length of the animation, ranges from 1000ms to 3000ms
+  3. brand new intro animation
+      - preloader now plays before the new intro animation
+      - all existing GSAP code has been replaced with anime.js code (goodbye GSAP, you were a pain to work with, and i won't miss you one bit)
+- *bugfixes*
+  1. fixed a bug where content doesn't fade in or out properly
+- *changes*
+  1. changed the imaged used for all image meta tags
+- *quality of life*
+  1. instead of having one script tag for each jQuery function, all jQuery code and functions (except script src) have been consolidated into one large script tag
+- *issues to be addressed:*
+  1. clicking the "welcome" button multiple times will cause the rest of the intro animation to play that many times
+_____
 **VER 0.7.4 | 11/01/20**
 - *bugfixes*
   1. fixed a bug where fonts were being applied in places they shouldn't be
@@ -30,9 +49,9 @@ _____
   1. added a "gooey menu" to replace the navigation menu
       - the gooey menu will appear at the bottom of the screen for devices with a viewport width of 500px and below
       - gooey menu has three icons, in order from left to right:
-        - the pencil and ruler for the skills panel
-        - the house for the home panel
-        - the phone for the contact panel
+        1. the pencil and ruler for the skills panel
+        2. the house for the home panel
+        3. the phone for the contact panel
 - *quality of life*
   1. cleaned up translations
   2. cleaned up text
@@ -97,7 +116,7 @@ _____
   1. fixed a bug where English words were showing up in the Japanese translation
 - *changes:*
   1. close button on the modal window now resizes properly on mobile devices
-  2. added a warning message on the landing page that shows up when a mobile device is detected
+  2. added a warning message on the intro screen that shows up when a mobile device is detected
   3. added a "software knowledge" link under the skills section:
       - clicking the link brings up a modal window
       - modal window contains a list of software that i am proficient in
@@ -109,7 +128,7 @@ _____
   2. fixed a bug where the skills table sometimes doesn't resize properly when the screen is resized
 - *changes:*
   1. skills table now align and resize properly on mobile devices
-  2. added a new animation to the "EXPLORE" word in the landing page background
+  2. added a new animation to the "EXPLORE" word in the intro animation
   3. changed the hover animation for the navbar links
   4. added a new hover animation for the language buttons
   5. added a new mousemove effect that shows up on the homepage with JavaScript
@@ -145,7 +164,7 @@ _____
       - various alignment issues have been fixed
       - Line and WeChat QR codes are now shown in a modal window when the user clicks on the respective icons
 - *quality of life:*
-  1. landing page animation has been sped up
+  1. intro animation has been sped up
   2. font sizes have been enlarged across the board
 - *issues to be addressed:*
   1. navbar links still do not change language
@@ -160,7 +179,7 @@ _____
       - portfolio website is how hosted on GitHub Pages
       - newly hosted portfolio link is as follows https://hohkfuyuhi.github.io/
 - *bugfixes:*
-  1. fixed a bug that caused the landing page to not be aligned properly on mobile devices
+  1. fixed a bug that caused content to not be aligned properly on mobile devices
 - *quality of life:*
   1. optimised the loading of fonts - updated every font except the neon font to use Google's online font library
   2. adjusted the hit area of navbar links - the hover animation should not play when hovering over blank space any more
@@ -179,15 +198,15 @@ _____
       - removed 2D and 3D gallery - i have no wish to do 2D and 3D work after graduation
       - navbar now only has the "Home", "Skills", and "Contact" links, as well as the language changer buttons
       - navbar links (except the language changer buttons) now have a hover animation
-      - all content except landing page content is hidden by default via css
+      - all content except main page content is hidden by default via css
       - when a navbar link is clicked, jQuery will hide all irrelevant content, and display the relevant content
   2. removed all parallax effects
-  3. added a landing page animation with JavaScript and GSAP
+  3. added an intro animation with JavaScript and GSAP
 - *quality of life:*
   1. optimised the neon letters to resize dynamically based on viewport width
   2. optimised logo to resize dynamically based on viewport width
 - *issues to be addressed:*
-  1. landing page does not align properly on mobile devies
+  1. content does not align properly on mobile devies
   2. fonts are loading too slowly
 _____
 **VER 0.6.0 | (WIP)**
