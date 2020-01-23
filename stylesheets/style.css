@@ -32,6 +32,14 @@ body {
     }
 }
 
+noscript {
+    z-index: 100;
+    position: absolute;
+    background-color: #101010;
+    width: 100%;
+    text-align: center;
+}
+
 .en {
     font-family: 'Inconsolata', monospace;
 }
@@ -87,7 +95,7 @@ body {
     text-align: center;
     color: rgb(188, 188, 188, 0.5);
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -312,11 +320,11 @@ span.sep {
     color: #1AAD19;
 }
 
-.sep {
+.divide {
     padding: 0.5em 0;
 }
 
-.sep hr {
+.divide hr {
     border: 0.5px solid rgb(190, 188, 188);
     width: 20%;
 }
@@ -378,7 +386,7 @@ span.sep {
         font-size: 1em;
     }
 
-    .sep hr {
+    .divide hr {
         width: 30%;
     }
 }
@@ -392,7 +400,7 @@ span.sep {
         font-size: 1.35em;
     }
 
-    .sep hr {
+    .divide hr {
         width: 35%;
     }
 }
@@ -424,7 +432,7 @@ span.sep {
         font-size: 1.3em;
     }
 
-    .sep hr {
+    .divide hr {
         width: 40%;
     }
 
@@ -480,7 +488,11 @@ span.sep {
         font-size: 1.4em;
     }
 
-    .sep hr {
+    .divide {
+        padding: 0;
+    }
+
+    .divide hr {
         width: 50%;
     }
 

@@ -23,9 +23,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap">
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap">
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300&display=swap">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
         <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/preloader.css">
         <link rel="stylesheet" href="stylesheets/effects.css">
         <link rel="stylesheet" href="stylesheets/gooey.css">
         <link rel="stylesheet" href="stylesheets/hipster.css">
@@ -36,15 +37,36 @@
                 position: fixed;
                 z-index: -1;
             }
+
+            .content {
+                opacity: 0;
+            }
         </style>
     </head>
 
     <body class="unselectable">
         <div class="main">
             <div class="overlay1">
-                <div class="screen" id="explore">EXPLORE</div>
+                <noscript>
+                    This website requires JavaScript in order to run.<br>Please enable JavaScript and refresh this page.
+                </noscript>
+                <div class="preloader-wrap">
+                    <div class="foldingcube">
+                        <div class="cube1 cube"></div>
+                        <div class="cube2 cube"></div>
+                        <div class="cube4 cube"></div>
+                        <div class="cube3 cube"></div>
+                    </div>
+                </div>
+                <div class="ml5">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters letters-left" id="letterleft">EXP</span><span class="letters middle"  id="lettermid">L</span><span class="letters letters-right" id="letterright">ORE</span>
+                        <span class="line line2"></span>
+                    </span>
+                </div>
                 <div>
-                    <button class="explorebtn" onclick="fadeOut()">WELCOME</button>
+                    <button class="explorebtn">WELCOME</button>
                     <div class="warning container">
                         <p>best experienced on a computer</p>
                         <p>为了最佳体验，请使用电脑</p>
@@ -186,8 +208,6 @@
                                 </div><span class="sep"></span>
                                 <a id="icon-in" href="https://www.instagram.com/hohkfuyuhi/" target="_blank"><i class="fab fa-instagram"></i></a><span class="sep"></span>
                                 <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a><span class="sep"></span>
-                                <!-- enable only when ready 
-<a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a>-->
                                 <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a><span class="sep"></span>
                                 <a class="linebtn" id="icon-line" data-toggle="modal" data-target="#linemodal"><i class="fab fa-line"></i></a>
                                 <div class="modal fade" id="linemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -224,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sep"><hr></div>
+                    <div class="divide"><hr></div>
                     <div class="about">
                         <div class="aboutme">
                             <div class="about1" id="about1">let's talk about Max</div>
@@ -306,135 +326,178 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
         <script src="js/lang.js"></script>
         <script src="js/mouse.js"></script>
-
         <script>
             $(document).ready(function() {
-                $('.header a').click(function(e) {
-                    e.preventDefault();
-                    $('.header a').removeClass('active');
-                    $(this).addClass('active');
-                });
+                function buttonbind() {
+                    $(".explorebtn").bind("click", fadeaway);
+                }
+                setTimeout(buttonbind, 5000);
             });
-        </script>
 
-        <script>
-            $(document).ready(function() {
-                var alter = function() {
-                    var width = document.body.clientWidth;
-                    if (width <= 1280) {
-                        $('.button_lang').removeClass('rad-out');
-                        $('#btn-skills').removeClass('cool');
-                        $('#btn-index').removeClass('cool');
-                        $('#btn-contact').removeClass('cool');
-                    } else if (width > 1280) {
-                        $('.button_lang').addClass('rad-out');
-                        $('#btn-skills').addClass('cool');
-                        $('#btn-index').addClass('cool');
-                        $('#btn-contact').addClass('cool');
-                    };
+            var randDelay = function() {
+                return anime.random(1000, 3000)
+            };
+            anime.timeline({loop: false})
+                .add({
+                targets: '.preloader-wrap',
+                opacity: [1, 0],
+                easing: "easeOutCubic",
+                duration: 1000,
+                delay: randDelay
+            }).add({
+                targets: '.ml5 .line',
+                opacity: [0.5, 1],
+                scaleX: [0, 1],
+                easing: "easeInOutExpo",
+                duration: 600,
+            }).add({
+                targets: '.ml5 .line',
+                duration: 800,
+                translateY: (el, i) => (-0.625 + 0.625*2*i) + "em",
+                easing: "easeOutExpo"
+            }).add({
+                targets: '.ml5 .middle',
+                opacity: [0, 1],
+                scaleY: [0.5, 1],
+                easing: "easeOutCubic",
+                duration: 600,
+                offset: '-=800'
+            }).add({
+                targets: '.ml5 .letters-left',
+                opacity: [0, 1],
+                translateX: ["0.85em", 0],
+                easing: "easeOutCubic",
+                duration: 600,
+                offset: '-=300'
+            }).add({
+                targets: '.ml5 .letters-right',
+                opacity: [0, 1],
+                translateX: ["-0.85em", 0],
+                easing: "easeOutCubic",
+                duration: 600,
+                offset: '-=600'
+            }).add({
+                targets: '.ml5 .line',
+                scaleX: [1, 0],
+                translateY: (el, i) => (-0.625 + 0.625*2*i) + "em",
+                duration: 600,
+                easing: "easeOutQuart"
+            }).add({
+                targets: '.explorebtn',
+                opacity: [0, 1],
+                easing: "easeOutCubic"
+            });
+
+            $('.header a').click(function(e) {
+                e.preventDefault();
+                $('.header a').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            var alter = function() {
+                var width = document.body.clientWidth;
+                if (width <= 1280) {
+                    $('.button_lang').removeClass('rad-out');
+                    $('#btn-skills').removeClass('cool');
+                    $('#btn-index').removeClass('cool');
+                    $('#btn-contact').removeClass('cool');
+                } else if (width > 1280) {
+                    $('.button_lang').addClass('rad-out');
+                    $('#btn-skills').addClass('cool');
+                    $('#btn-index').addClass('cool');
+                    $('#btn-contact').addClass('cool');
                 };
-
-                $(window).resize(function() {
-                    alter();
-                });
-
+            };
+            $(window).resize(function() {
                 alter();
             });
-        </script>
+            alter();
 
-        <script>
-            $(document).ready(function() {
-                $('.ajax-skills, .ajax-contact').fadeOut(100);
-
-                $('#btn-index').click(function() {
-                    $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
-                        $('.ajax-intro').delay(50).fadeIn(200);
-                    });
-                });
-
-                $('#btn-skills').click(function() {
-                    $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
-                        $('.ajax-skills').delay(50).fadeIn(200);
-                    });
-                });
-
-                $('#btn-contact').click(function() {
-                    $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
-                        $('.ajax-contact').delay(50).fadeIn(200);
-                    });
-                });
-
-                $('#mobile-index').click(function() {
-                    $('#menu-open').click();
-                    $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
-                        $('.ajax-intro').delay(50).fadeIn(200);
-                    });
-                });
-
-                $('#mobile-skills').click(function() {
-                    $('#menu-open').click();
-                    $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
-                        $('.ajax-skills').delay(50).fadeIn(200);
-                    });
-                });
-
-                $('#mobile-contact').click(function() {
-                    $('#menu-open').click();
-                    $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
-                        $('.ajax-contact').delay(50).fadeIn(200);
-                    });
+            $('.ajax-skills, .ajax-contact').fadeOut(100);
+            $('#btn-index').click(function() {
+                $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
+                    $('.ajax-intro').delay(50).fadeIn(200);
                 });
             });
-        </script>
-
-        <script>
-            function fadeOut() {
-                document.getElementById("explore");
-                explore.classList.add('shrink');
-
-                TweenMax.to(".explorebtn", 0.5, {
-                    y: -111,
-                    opacity: 0,
+            $('#btn-skills').click(function() {
+                $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
+                    $('.ajax-skills').delay(50).fadeIn(200);
                 });
-
-                TweenMax.to(".screen", 1, {
-                    y: -450,
-                    opacity: 0,
-                    ease: Power2.easeInOut,
-                    delay: 1
+            });
+            $('#btn-contact').click(function() {
+                $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
+                    $('.ajax-contact').delay(50).fadeIn(200);
                 });
-
-                TweenMax.from(".overlay1", 1, {
-                    ease: Power0.easeInOut
+            });
+            $('#mobile-index').click(function() {
+                $('#menu-open').click();
+                $('.ajax-skills, .ajax-contact').fadeOut(200, function() {
+                    $('.ajax-intro').delay(50).fadeIn(200);
                 });
+            });
+            $('#mobile-skills').click(function() {
+                $('#menu-open').click();
+                $('.ajax-intro, .ajax-contact').fadeOut(200, function() {
+                    $('.ajax-skills').delay(50).fadeIn(200);
+                });
+            });
+            $('#mobile-contact').click(function() {
+                $('#menu-open').click();
+                $('.ajax-intro, .ajax-skills').fadeOut(200, function() {
+                    $('.ajax-contact').delay(50).fadeIn(200);
+                });
+            });
 
-                TweenMax.to(".overlay1", 1.5, {
-                    delay: 1,
+            function fadeaway() {
+                document.getElementById("letterleft");
+                letterleft.classList.add('shrink1');
+                document.getElementById("letterright");
+                letterright.classList.add('shrink1');
+                document.getElementById("lettermid");
+                lettermid.classList.add('shrink1');
+                lettermid.classList.add('shrink2');
+
+                anime.timeline({loop: false})
+                    .add({
+                    targets: '.ml5',
+                    scaleY: [1, 0],
+                    easing: "easeInOutExpo",
+                    duration: 500,
+                    delay: 500
+                }).add({
+                    targets: '.explorebtn',
+                    opacity: [1, 0],
+                    easing: "easeOutExpo",
+                    duration: 100,
+                    offset: '-=750'
+                }).add({
+                    targets: '.explorebtn',
+                    top: "30%",
+                    easing: "easeOutCubic",
+                    duration: 500,
+                    offset: '-=1000'
+                }).add({
+                    targets: '.overlay1',
                     top: "-150%",
-                    ease: Expo.easeInOut
-                });
-
-                TweenMax.to(".overlay2", 1, {
-                    delay: 1.5,
+                    easing: "easeOutQuint",
+                    duration: 2500
+                }).add({
+                    targets: '.overlay2',
                     top: "-150%",
-                    ease: Expo.easeInOut
+                    easing: "easeOutExpo",
+                    duration: 2000,
+                    offset: "-=2300"
+                }).add({
+                    targets: '.content',
+                    opacity: [0, 1],
+                    easing: "easeOutCubic",
+                    duration: 1000,
+                    offset: "-=2000"
                 });
-
-                TweenMax.from(".content", 0.7, {
-                    opacity: 0,
-                    ease: Power2.easeInOut,
-                    delay: 1.8
-                });
-
-                TweenMax.to(".content", 1, {
-                    opacity: 1,
-                    ease: Power2.easeInOut,
-                    delay: 3
-                });
-            }
+            };
         </script>
     </body>
 </html>
