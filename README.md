@@ -1,5 +1,9 @@
 # portfolio patch notes
 _____
+**VER 0.8.1 HOTFIX | 23/01/20**
+- *__HOTFIX__*
+  1. GSAP is back because i forgot that the mouse animation requires GSAP oops
+_____
 **VER 0.8.1 | 23/01/20**
 - *__MAJOR CHANGES:__*
   1. added a noscript tag to warn users that the website requires JavaScript to be enabled
@@ -9,7 +13,7 @@ _____
       - the preloader has a pseudo random number generator to determine the length of the animation, ranges from 1000ms to 3000ms
   3. brand new intro animation
       - preloader now plays before the new intro animation
-      - all existing GSAP code has been replaced with anime.js code (goodbye GSAP, you were a pain to work with, and i won't miss you one bit)
+      - all existing GSAP code used for the intro animation has been replaced with anime.js code ~~(goodbye GSAP, you were a pain to work with, and i won't miss you one bit)~~
 - *bugfixes*
   1. fixed a bug where content doesn't fade in or out properly
 - *changes*
