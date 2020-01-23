@@ -85,7 +85,7 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("wcmodaltitle").innerHTML = "wechat qr code";
         document.getElementById("about1").innerHTML = "let's talk about Max";
         document.getElementById("about2").innerHTML = "usually plugged into his NW-ZX300";
-        document.getElementById("aboutnorm").innerHTML = "urgh normie";
+        document.getElementById("aboutnorm").innerHTML = "ew mainstream";
         document.getElementById("aboutdiff").innerHTML = "indie wow";
         document.getElementById("aboutwtf").innerHTML = "yeah nah";
         document.getElementById("dev1").innerHTML = "pc master race";

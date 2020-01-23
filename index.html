@@ -255,7 +255,7 @@
                         <div class="table-responsive">
                             <table class="table table-borderless tableabout">
                                 <tr>
-                                    <th class="align-middle" id="aboutnorm">urgh normie</th>
+                                    <th class="align-middle" id="aboutnorm">ew mainstream</th>
                                     <th class="align-middle" id="aboutdiff">indie wow</th>
                                     <th class="align-middle" id="aboutwtf">yeah nah</th>
                                 </tr>
@@ -327,8 +327,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
         <script src="js/lang.js"></script>
         <script src="js/mouse.js"></script>
+
         <script>
             $(document).ready(function() {
                 function buttonbind() {
@@ -391,12 +393,6 @@
                 easing: "easeOutCubic"
             });
 
-            $('.header a').click(function(e) {
-                e.preventDefault();
-                $('.header a').removeClass('active');
-                $(this).addClass('active');
-            });
-
             var alter = function() {
                 var width = document.body.clientWidth;
                 if (width <= 1280) {
@@ -415,6 +411,12 @@
                 alter();
             });
             alter();
+
+            $('.header a').click(function(e) {
+                e.preventDefault();
+                $('.header a').removeClass('active');
+                $(this).addClass('active');
+            });
 
             $('.ajax-skills, .ajax-contact').fadeOut(100);
             $('#btn-index').click(function() {
@@ -452,6 +454,7 @@
             });
 
             function fadeaway() {
+                $(".explorebtn").unbind();
                 document.getElementById("letterleft");
                 letterleft.classList.add('shrink1');
                 document.getElementById("letterright");
@@ -472,13 +475,13 @@
                     opacity: [1, 0],
                     easing: "easeOutExpo",
                     duration: 100,
-                    offset: '-=750'
+                    offset: '-=1500'
                 }).add({
                     targets: '.explorebtn',
                     top: "30%",
                     easing: "easeOutCubic",
                     duration: 500,
-                    offset: '-=1000'
+                    offset: '-=1500'
                 }).add({
                     targets: '.overlay1',
                     top: "-150%",
@@ -495,7 +498,7 @@
                     opacity: [0, 1],
                     easing: "easeOutCubic",
                     duration: 1000,
-                    offset: "-=2000"
+                    offset: "-=2250"
                 });
             };
         </script>
