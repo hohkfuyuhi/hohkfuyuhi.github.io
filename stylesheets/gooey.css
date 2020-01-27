@@ -12,9 +12,8 @@ Colour scheme
 .menu {
     -webkit-filter: url("#shadowed-goo");
     filter: url("#shadowed-goo");
-    position: absolute;
+    position: fixed;
     left: 50%;
-    bottom: 5.5em;
     box-sizing: border-box;
 }
 
@@ -98,7 +97,7 @@ Colour scheme
     }
 
     .menu {
-        bottom: 6.75em;
+        bottom: 6.5em;
     }
 
     .menu-item, .menu-open-button {
@@ -126,9 +125,9 @@ Colour scheme
     }
 }
 
-@media screen and (max-width: 375px) and (max-height: 570px) {
+@media screen and (max-width: 375px) and (max-height: 850px) {
     .menu {
-        bottom: 6em;
+        bottom: 5.75em;
     }
     
     .menu-item, .menu-open-button {
@@ -139,12 +138,12 @@ Colour scheme
     }
 
     .menu-open-button {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .menu-open:checked ~ .menu-item:nth-child(3) {
         -webkit-transform: translate3d(50px, -55px, 0);
-        transform: translate3d(60px, -55px, 0);
+        transform: translate3d(50px, -55px, 0);
     }
     .menu-open:checked ~ .menu-item:nth-child(4) {
         -webkit-transform: translate3d(0, -80px, 0);
@@ -152,17 +151,17 @@ Colour scheme
     }
     .menu-open:checked ~ .menu-item:nth-child(5) {
         -webkit-transform: translate3d(-50px, -55px, 0);
-        transform: translate3d(-60px, -55px, 0);
+        transform: translate3d(-50px, -55px, 0);
     }
 }
 
 @media screen and (max-width: 320px) and (max-height: 570px) {
     .menu {
-        bottom: 5.5em;
+        bottom: 5.25em;
     }
 
     .menu-open-button {
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 
     .menu-item, .menu-open-button {
@@ -173,15 +172,15 @@ Colour scheme
     }
 
     .menu-open:checked ~ .menu-item:nth-child(3) {
-        -webkit-transform: translate3d(50px, -55px, 0);
-        transform: translate3d(50px, -55px, 0);
+        -webkit-transform: translate3d(45px, -55px, 0);
+        transform: translate3d(45px, -55px, 0);
     }
     .menu-open:checked ~ .menu-item:nth-child(4) {
         -webkit-transform: translate3d(0, -75px, 0);
         transform: translate3d(0, -75px, 0);
     }
     .menu-open:checked ~ .menu-item:nth-child(5) {
-        -webkit-transform: translate3d(-50px, -55px, 0);
-        transform: translate3d(-50px, -55px, 0);
+        -webkit-transform: translate3d(-45px, -55px, 0);
+        transform: translate3d(-45px, -55px, 0);
     }
 }

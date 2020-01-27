@@ -75,7 +75,8 @@
                 </div>
             </div>
 
-            <div class="overlay2"></div>
+            <div class="overlay2-left"></div>
+            <div class="overlay2-right"></div>
 
             <div class="content" id="bg-wrap">
                 <canvas id="bg-canvas"></canvas>
@@ -484,21 +485,28 @@
                     offset: '-=1500'
                 }).add({
                     targets: '.overlay1',
-                    top: "-150%",
+                    opacity: [1, 0],
+                    scale: [1, 0.5],
                     easing: "easeOutQuint",
-                    duration: 2500
+                    duration: 1000
                 }).add({
-                    targets: '.overlay2',
-                    top: "-150%",
-                    easing: "easeOutExpo",
+                    targets: '.overlay2-left',
+                    left: "-75%",
+                    easing: "easeOutQuint",
                     duration: 2000,
-                    offset: "-=2300"
+                    offset: "-=800"
+                }).add({
+                    targets: '.overlay2-right',
+                    right: "-75%",
+                    easing: "easeOutQuint",
+                    duration: 2000,
+                    offset: "-=2000"
                 }).add({
                     targets: '.content',
                     opacity: [0, 1],
                     easing: "easeOutCubic",
                     duration: 1000,
-                    offset: "-=2250"
+                    offset: "-=1850"
                 });
             };
         </script>

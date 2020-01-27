@@ -142,10 +142,10 @@ body {
     width: 50%;
     visibility: hidden;
     text-align: center;
-    position: absolute;
+    position: fixed;
     left: 50%;
-    bottom: -1em;
-    transform: translate(-50%, -50%);
+    bottom: 2em;
+    transform: translate(-50%, 0%);
 }
 
 .button_lang {
@@ -443,7 +443,7 @@ span.sep {
 
 @media screen and (max-width: 500px) {
     .content {
-        padding-top: 2em;
+        padding-top: 1em;
     }
 
     .eng, .jap {
@@ -465,7 +465,6 @@ span.sep {
     .langbot {
         visibility: visible;
         font-size: 0.5em;
-        bottom: 1.5em;
     }
 
     .ajax-skills {
@@ -584,10 +583,6 @@ span.sep {
 @media screen and (max-height: 570px) {
     .content {
         padding-top: 0em;
-    }
-
-    .langbot {
-        bottom: 1em;
     }
 
     .ajax-skills {
