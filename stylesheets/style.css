@@ -122,8 +122,19 @@ body {
     padding-top: 1em;
 }
 
-.links {
+.bottom {
+    position: fixed;
+    bottom: 1em;
+    width: 100vw;
+}
+
+.links{
     margin: 0 auto;
+}
+
+.linksbot {
+    margin: 0 auto;
+    visibility: hidden;
 }
 
 .tdlinks {
@@ -142,10 +153,6 @@ body {
     width: 50%;
     visibility: hidden;
     text-align: center;
-    position: fixed;
-    left: 50%;
-    bottom: 2em;
-    transform: translate(-50%, 0%);
 }
 
 .button_lang {
@@ -462,6 +469,16 @@ span.sep {
         display: none;
     }
 
+    .linksbot {
+        visibility: visible;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .tdlinks {
+        width: 5em;
+    }
+
     .langbot {
         visibility: visible;
         font-size: 0.5em;
@@ -517,6 +534,10 @@ span.sep {
         font-size: 0.85em;
     }
 
+    .linksbot {
+        font-size: 0.8em;
+    }
+
     .langbot {
         font-size: 0.45em;
     }
@@ -553,6 +574,10 @@ span.sep {
 
     .chn {
         font-size: 0.75em;
+    }
+
+    .linksbot {
+        font-size: 0.7em;
     }
 
     .langbot {
