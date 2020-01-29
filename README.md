@@ -1,5 +1,14 @@
 # portfolio patch notes
 _____
+**VER 0.8.2 | 29/01/20**
+- *changes*
+  1. completely removed gooey menu, replaced with a normal navigation menu
+      - a lot of issues with fixed positioning
+      - icons could not be pressed sometimes
+      - certain icons are confusing
+- *quality of life*
+  1. cleaned up jQuery code
+_____
 **VER 0.8.1 HOTFIX | 23/01/20**
 - *__HOTFIX__*
   1. GSAP is back because i forgot that the mouse animation requires GSAP oops
