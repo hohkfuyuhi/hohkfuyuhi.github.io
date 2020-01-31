@@ -1,5 +1,15 @@
 # portfolio patch notes
 _____
+**VER 0.8.3 | 01/02/20**
+- *bugfixes*
+  1. fixed a bug where certain icons could not be clicked
+  2. fixed a bug where the intro animation did not remove certain HTML elements properly
+- *quality of life*
+  1. added a transition animation to buttons
+  2. cleaned up animation timings
+  3. cleaned up and standardised CSS
+  4. cleaned up media queries
+_____
 **VER 0.8.2 | 29/01/20**
 - *changes*
   1. completely removed gooey menu, replaced with a normal navigation menu
