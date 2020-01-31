@@ -239,7 +239,7 @@ body {
     font-size: 1.5em;
 }
 
-#software {
+#software, #works {
     font-size: 1.15em;
 }
 
@@ -269,10 +269,6 @@ body {
 #findme {
     font-size: 1.5em;
     padding-bottom: 0.3em;
-}
-
-.modal-body div.email {
-    padding: 1.5em;
 }
 
 span.sep {

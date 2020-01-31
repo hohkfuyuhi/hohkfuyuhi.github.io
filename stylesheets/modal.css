@@ -9,6 +9,10 @@ Colour scheme
     color: #303030;
 }
 
+.modal-dialog {
+    max-width: 40%;
+}
+
 .modal-content {
     background-color: #bebcbc;
 }
@@ -52,19 +56,44 @@ Colour scheme
     text-align: left;
 }
 
-.softwarebtn {
+.modal-body div.email {
+    padding: 1.5em;
+}
+
+.softwarebtn, .worksbtn {
     color: rgba(190, 188, 188, 0.5);
     transition: color 0.2s ease;
 }
 
-.softwarebtn:hover {
+.softwarebtn:hover, .worksbtn:hover {
     text-decoration: none;
     color: #ca9e60;
+}
+
+.modal-works {
+    padding: 1em 0em;
+}
+
+.modal-body li a {
+    color: #303030;
+    transition: 0.3s ease;
+    padding: 0.25em;
+    border-radius: 10px;
+}
+
+.modal-body li a:hover {
+    text-decoration: none;
+    color: #ca9e60;
+    background: #303030;
 }
 
 @media screen and (max-width: 500px) {
     .modal {
         font-size: 1.15em;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
     }
 }
 
