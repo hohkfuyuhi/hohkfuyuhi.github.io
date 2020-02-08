@@ -1,12 +1,25 @@
 # portfolio patch notes
 _____
+**VER 0.8.4 | 08/02/20**
+- *bugfixes*
+  1. fixed a bug where certain modals did not open when clicked
+  2. fixed a bug where certain HTML elements were not in the correct colour
+  3. fixed a bug where clicking the "welcome" button multiple times will cause the rest of the intro animation to play that many times
+- *changes*
+  1. added a new entry to the "stuff ive done" modal
+  2. added animations to certain links
+  3. added new translations for new content
+- *quality of life*
+  1. cleaned up css files
+  2. cleaned up translations
+_____
 **VER 0.8.3 | 01/02/20**
 - *bugfixes*
   1. fixed a bug where certain icons could not be clicked
   2. fixed a bug where the intro animation did not remove certain HTML elements properly
 - *changes*
-  1. added a codepen icon in the contact page that links to my codepen page
-  2. added a modal with links to my other works in the skills page
+  1. added a codepen icon on the contact page that links to my codepen page
+  2. added a "stuff i've done" modal on the skills page that contains links to some of my coding works
   3. added a link to the aegisub website in case people have no idea what aegisub is
 - *quality of life*
   1. added the transition property to buttons
