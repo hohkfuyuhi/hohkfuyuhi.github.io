@@ -56,35 +56,40 @@ Colour scheme
     text-align: left;
 }
 
+.modal-body li div {
+    display: inline-block;
+    transition: all 0.25s ease-in-out;
+}
+
+.modal-body li a {
+    color: #303030;
+}
+
+.modal-body li div:hover {
+    transform: translateX(10px);
+}
+
+.modal-body li div:hover a {
+    text-decoration: none;
+}
+
 .modal-body div.email {
     padding: 1.5em;
 }
 
 .softwarebtn, .worksbtn {
     color: rgba(190, 188, 188, 0.5);
-    transition: color 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .softwarebtn:hover, .worksbtn:hover {
     text-decoration: none;
     color: #ca9e60;
+    letter-spacing: 1px;
 }
 
 .modal-works {
     padding: 1em 0em;
-}
-
-.modal-body li a {
-    color: #303030;
-    transition: 0.3s ease;
-    padding: 0.25em;
-    border-radius: 10px;
-}
-
-.modal-body li a:hover {
-    text-decoration: none;
-    color: #ca9e60;
-    background: #303030;
 }
 
 @media screen and (max-width: 500px) {

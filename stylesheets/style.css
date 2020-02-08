@@ -240,7 +240,7 @@ body {
 }
 
 #software, #works {
-    font-size: 1.15em;
+    font-size: 1.25em;
 }
 
 .tableskills td span, .tableabout td span {
@@ -282,7 +282,7 @@ span.sep {
 .icons i {
     font-size: 2em;
     color: #ca9e60;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .icons i:hover {
@@ -374,8 +374,12 @@ span.sep {
         width: 35%;
     }
 
-    .eng, .jap {
+    .eng {
         font-size: 1.3em;
+    }
+
+    .jap {
+        font-size: 1.2em;
     }
 
     .chn {
@@ -454,8 +458,12 @@ span.sep {
         padding-top: 0.5em;
     }
 
-    .eng, .jap {
+    .eng {
         font-size: 0.8em;
+    }
+
+    .jap {
+        font-size: 0.75em;
     }
 
     .chn {
@@ -523,8 +531,12 @@ span.sep {
 }
 
 @media screen and (max-width: 375px) {
-    .eng, .jap {
+    .eng {
         font-size: 0.75em;
+    }
+
+    .jap {
+        font-size: 0.7em;
     }
 
     .chn {
@@ -561,8 +573,12 @@ span.sep {
         padding-top: 0em;
     }
 
-    .eng, .jap {
+    .eng {
         font-size: 0.65em;
+    }
+
+    .jap {
+        font-size: 0.6em;
     }
 
     .chn {

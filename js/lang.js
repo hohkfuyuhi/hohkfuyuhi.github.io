@@ -69,6 +69,11 @@ function lang(langon,langoff1,langoff2){
         skills.innerHTML = "look at what i can do";
         document.getElementById("software").innerHTML = "&#62; software knowledge &#60;"
         document.getElementById("softwaremodaltitle").innerHTML = "includes, but not limited to";
+        document.getElementById("what-aegisub").innerHTML = "&#40;what is aegisub?&#41;"
+        document.getElementById("works").innerHTML = "&#62; stuff i've done &#60;"
+        document.getElementById("worksmodaltitle").innerHTML = "updated whenever i feel like it";
+        document.getElementById("works-langchanger").innerHTML = "&#62; super simple javascript language changer"
+        document.getElementById("works-csshover").innerHTML = "&#62; explaining css3 hover effects"
         document.getElementById("head1").innerHTML = "coding";
         document.getElementById("head2").innerHTML = "design";
         document.getElementById("head3").innerHTML = "video";
@@ -118,6 +123,11 @@ function lang(langon,langoff1,langoff2){
         skills.innerHTML = "僕の力、見せてあげるよ";
         document.getElementById("software").innerHTML = "&#62; ソフトウェア知識 &#60;"
         document.getElementById("softwaremodaltitle").innerHTML = "以下のものに限定されない";
+        document.getElementById("what-aegisub").innerHTML = "（aegisubとは？）"
+        document.getElementById("works").innerHTML = "&#62; 僕の作品のいくつか &#60;"
+        document.getElementById("worksmodaltitle").innerHTML = "更新したいときに更新します（英語版のみ）";
+        document.getElementById("works-langchanger").innerHTML = "&#62; JavaScriptで超シンプルな言語交換"
+        document.getElementById("works-csshover").innerHTML = "&#62; CSS3のホバー効果の説明"
         document.getElementById("head1").innerHTML = "コーディング";
         document.getElementById("head2").innerHTML = "デザイン";
         document.getElementById("head3").innerHTML = "ビデオ制作";
@@ -167,6 +177,11 @@ function lang(langon,langoff1,langoff2){
         skills.innerHTML = "瞧瞧我的厉害";
         document.getElementById("software").innerHTML = "&#62; 软件知识 &#60;"
         document.getElementById("softwaremodaltitle").innerHTML = "包括但不限于";
+        document.getElementById("what-aegisub").innerHTML = "（什么是 aegisub？）"
+        document.getElementById("works").innerHTML = "&#62; 我的一些作品 &#60;"
+        document.getElementById("worksmodaltitle").innerHTML = "我爽就更新（仅提供英语）";
+        document.getElementById("works-langchanger").innerHTML = "&#62; 使用JavaScript的超简单语言转换器"
+        document.getElementById("works-csshover").innerHTML = "&#62; CSS3悬停效果的说明"
         document.getElementById("head1").innerHTML = "编程语言";
         document.getElementById("head2").innerHTML = "设计知识";
         document.getElementById("head3").innerHTML = "视频经验";
