@@ -2,8 +2,9 @@
 _____
 **VER 0.8.5 | 23/02/20**
 - *changes*
-  1. changed intro animation
-  2. changed certain links
+  1. added favicon
+  2. adjusted intro animation
+  3. changed certain links
 _____
 **VER 0.8.4 | 08/02/20**
 - *bugfixes*
