@@ -1,5 +1,10 @@
 # portfolio patch notes
 _____
+**VER 0.8.5 | 23/02/20**
+- *changes*
+  1. changed intro animation
+  2. changed certain links
+_____
 **VER 0.8.4 | 08/02/20**
 - *bugfixes*
   1. fixed a bug where certain modals did not open when clicked
