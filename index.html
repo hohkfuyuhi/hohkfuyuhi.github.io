@@ -19,6 +19,7 @@
         <meta name="twitter:image" content="https://hohkfuyuhi.github.io/images/thumbnail.png">
         <meta name="twitter:card" content="summary_large_image">
         <link rel=”canonical” href=”https://hohkfuyuhi.github.io”>
+        <link rel="icon" type="image/png" href="images/favicon.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -57,7 +58,7 @@
                         <div class="cube3 cube"></div>
                     </div>
                 </div>
-                <div class="ml5">
+                <div class="introanim">
                     <span class="text-wrapper">
                         <span class="line line1"></span>
                         <span class="letters letters-left" id="letterleft">EXP</span><span class="letters middle"  id="lettermid">L</span><span class="letters letters-right" id="letterright">ORE</span>
@@ -231,7 +232,6 @@
                                 </div><span class="sep"></span>
                                 <a id="icon-in" href="https://www.instagram.com/hohkfuyuhi/" target="_blank"><i class="fab fa-instagram"></i></a><span class="sep"></span>
                                 <a id="icon-yt" href="https://www.youtube.com/c/hohkfuyuhi" target="_blank"><i class="fab fa-youtube"></i></a><span class="sep"></span>
-                                <a id="icon-cp" href="https://codepen.io/hohkfuyuhi" target="_blank"><i class="fab fa-codepen"></i></a><span class="sep"></span>
                                 <a id="icon-te" href="http://t.me/hohkfuyuhi" target="_blank"><i class="fab fa-telegram"></i></a><span class="sep"></span>
                                 <a class="linebtn" id="icon-line" data-toggle="modal" data-target="#linemodal"><i class="fab fa-line"></i></a>
                                 <div class="modal fade" id="linemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -352,47 +352,53 @@
                 duration: 1000,
                 delay: randDelay
             }).add({
-                targets: '.ml5 .line',
+                targets: '.introanim .line',
                 opacity: [0.5, 1],
                 scaleX: [0, 1],
                 easing: "easeInOutExpo",
                 duration: 600,
             }).add({
-                targets: '.ml5 .line',
+                targets: '.introanim .line',
                 duration: 800,
                 translateY: (el, i) => (-0.625 + 0.625*2*i) + "em",
                 easing: "easeOutExpo"
             }).add({
-                targets: '.ml5 .middle',
+                targets: '.introanim .middle',
                 opacity: [0, 1],
                 scaleY: [0.5, 1],
                 easing: "easeOutCubic",
                 duration: 600,
                 offset: '-=800'
             }).add({
-                targets: '.ml5 .letters-left',
+                targets: '.introanim .letters-left',
                 opacity: [0, 1],
-                translateX: ["0.85em", 0],
+                translateX: ["1em", 0],
                 easing: "easeOutCubic",
                 duration: 600,
                 offset: '-=300'
             }).add({
-                targets: '.ml5 .letters-right',
+                targets: '.introanim .letters-right',
                 opacity: [0, 1],
-                translateX: ["-0.85em", 0],
+                translateX: ["-1em", 0],
                 easing: "easeOutCubic",
                 duration: 600,
                 offset: '-=600'
             }).add({
-                targets: '.ml5 .line',
+                targets: '.introanim .line',
+                translateY: (el, i) => (-0.625 + 0.625) + "em",
+                duration: 300,
+                easing: "easeOutExpo"
+            }).add({
+                targets: '.introanim .line',
                 scaleX: [1, 0],
-                translateY: (el, i) => (-0.625 + 0.625*2*i) + "em",
-                duration: 600,
-                easing: "easeOutQuart"
+                duration: 250,
+                easing: "easeOutExpo",
+                offset: '-=100'
             }).add({
                 targets: '.explorebtn',
                 opacity: [0, 1],
-                easing: "easeOutCubic"
+                duration: 100,
+                easing: "easeOutExpo"
             });
 
             var alter = function() {
@@ -473,17 +479,12 @@
 
                 anime.timeline({loop: false})
                     .add({
-                    targets: '.ml5',
-                    scaleY: [1, 0],
-                    easing: "easeInOutExpo",
-                    duration: 500,
-                    delay: 500
-                }).add({
-                    targets: '.warning',
+                    targets: '.introanim',
+                    scale: [1, 10],
                     opacity: [1, 0],
                     easing: "easeInOutExpo",
                     duration: 500,
-                    offset: '-=500'
+                    delay: 500
                 }).add({
                     targets: '.explorebtn',
                     opacity: [1, 0],
@@ -497,29 +498,53 @@
                     duration: 500,
                     offset: '-=1500'
                 }).add({
+                    targets: '.warning',
+                    opacity: [1, 0],
+                    easing: "easeOutExpo",
+                    duration: 500,
+                    offset: '-=1000'
+                }).add({
+                    targets: '.overlay1',
+                    scale: [1, 0.9],
+                    easing: "easeOutCubic",
+                    duration: 500,
+                    offset: '-=400'
+                }).add({
+                    targets: '.overlay2-left',
+                    translateX: "-1.5em",
+                    easing: "easeOutCubic",
+                    duration: 500,
+                    offset: '-=500'
+                }).add({
+                    targets: '.overlay2-right',
+                    translateX: "1.5em",
+                    easing: "easeOutCubic",
+                    duration: 500,
+                    offset: '-=500'
+                }).add({
                     targets: '.overlay1',
                     opacity: [1, 0],
-                    scale: [1, 0],
-                    easing: "easeOutQuint",
+                    scale: [0.9, 0],
+                    easing: "easeOutExpo",
                     duration: 1000
                 }).add({
                     targets: '.overlay2-left',
                     left: "-75%",
-                    easing: "easeOutQuint",
-                    duration: 2000,
-                    offset: "-=900"
+                    easing: "easeOutCubic",
+                    duration: 1000,
+                    offset: "-=1000"
                 }).add({
                     targets: '.overlay2-right',
                     right: "-75%",
-                    easing: "easeOutQuint",
-                    duration: 2000,
-                    offset: "-=2000"
+                    easing: "easeOutCubic",
+                    duration: 1000,
+                    offset: "-=1000"
                 }).add({
                     targets: '.content',
                     opacity: [0, 1],
-                    easing: "easeOutCubic",
+                    easing: "easeInOutSine",
                     duration: 1000,
-                    offset: "-=1850"
+                    offset: "-=1250"
                 });
             };
         </script>

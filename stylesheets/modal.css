@@ -75,6 +75,7 @@ Colour scheme
 
 .modal-body div.email {
     padding: 1.5em;
+    user-select: text;
 }
 
 .softwarebtn, .worksbtn {
@@ -85,7 +86,7 @@ Colour scheme
 .softwarebtn:hover, .worksbtn:hover {
     text-decoration: none;
     color: #ca9e60;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .modal-works {

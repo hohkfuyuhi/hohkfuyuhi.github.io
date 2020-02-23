@@ -32,14 +32,14 @@ Colour scheme
     right: 0%;
 }
 
-.ml5 {
+.introanim {
     font-size: 15vw;
     color: #303030;
     text-align: center;
     letter-spacing: 0.5em;
 }
 
-.ml5 .text-wrapper {
+.introanim .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.1em;
@@ -48,7 +48,7 @@ Colour scheme
     line-height: 1em;
 }
 
-.ml5 .line {
+.introanim .line {
     position: absolute;
     left: 0;
     top: 0;
@@ -60,16 +60,16 @@ Colour scheme
     transform-origin: 0.5 0;
 }
 
-.ml5 .letters {
+.introanim .letters {
     display: inline-block;
     opacity: 0;
 }
 
-.ml5 .letters-left, .ml5 .letters-right {
+.introanim .letters-left, .introanim .letters-right {
     margin-right: -0.5em;
 }
 
-.ml5 .middle {
+.introanim .middle {
     margin-right: -0.5em;
     padding: 0 0.5em;
 }
@@ -152,7 +152,7 @@ button {
     right: 0;
     top: 100%;
     z-index: -1;
-    transition: top 0.5s ease-out;
+    transition: top 0.4s ease-out;
 }
 
 .tdlinks .active {
