@@ -1,5 +1,22 @@
 # portfolio patch notes
 _____
+**VER 0.8.6 | 05/06/20**
+- *bugfixes*
+  1. fixed a bug where certain animations were not playing correctly
+  2. fixed a bug where certain text showed up in the wrong colours
+- *changes*
+  1. changed instagram icon to a modal
+      - instagram modal contains two links
+      - the first one links to my main account
+      - the second one links to my artistic account
+  2. added a new icon to link to my second website where i upload my writing works and short stories
+  3. added new translations for new content
+  4. adjusted animations across the board
+- *quality of life*
+  1. cleaned up html files
+  2. cleaned up css files
+  3. cleaned up translations
+_____
 **VER 0.8.5 | 23/02/20**
 - *changes*
   1. added favicon
