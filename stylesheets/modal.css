@@ -74,8 +74,9 @@ Colour scheme
 }
 
 .modal-body div.email {
-    padding: 1.5em;
+    padding: 1em 2em;
     user-select: text;
+    cursor: text;
 }
 
 .softwarebtn, .worksbtn {
