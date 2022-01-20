@@ -9,6 +9,9 @@ _____
   4. changed aegisub link
   5. added my youtube channel under "stuff i've done"
   6. added translations for new content
+- *quality of life*
+  1. cleaned up html files
+  2. cleaned up css files
 - *issues*
   1. explore animation has a weird bug where it will shift downwards after clicking the welcome button
 _____
