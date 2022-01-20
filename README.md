@@ -1,6 +1,6 @@
 # portfolio patch notes
 _____
-**VER 4.0.0 | 20/01/21**
+**VER 4.0.0 | 20/01/21**  
 **too many changes and issues, and it has been too long, so might as well classify this as a major update**
 - *changes*
   1. changed explore animation
