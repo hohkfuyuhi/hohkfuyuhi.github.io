@@ -286,7 +286,7 @@ span.sep {
     transform: scale(1.3);
 }
 
-.fa-envelope:hover {
+.fa-envelope:hover, .fa-globe:hover {
     color: #bebcbc;
 }
 
@@ -296,22 +296,6 @@ span.sep {
 
 .fa-youtube:hover {
     color: #ff0000;
-}
-
-.fa-codepen:hover {
-    color: #ffffff;
-}
-
-.fa-telegram:hover {
-    color: #0088cc;
-}
-
-.fa-line:hover {
-    color: #00b900;
-}
-
-.fa-weixin:hover {
-    color: #1AAD19;
 }
 
 .divide {
