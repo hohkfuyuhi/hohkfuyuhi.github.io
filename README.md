@@ -1,5 +1,15 @@
 # portfolio patch notes
 _____
+**VER 4.1.0 | 29/05/22**  
+**holy shit an update to actually fix issues**
+- *bugfixes*
+  1. fixed a bug where the japanese translations were not appearing on the contact page
+- *quality of life*
+  1. cleaned up translations
+  2. cleaned up js files
+- *issues*
+  1. explore animation still has the weird bug from version 4.0.0 and **i have no idea what is going on**, i am *this* close to completely redoing the animation from scratch
+_____
 **VER 4.0.0 | 20/01/21**  
 **too many changes and issues, and it has been too long, so might as well classify this as a major update**
 - *changes*
@@ -13,7 +23,7 @@ _____
   1. cleaned up html files
   2. cleaned up css files
 - *issues*
-  1. explore animation has a weird bug where it will shift downwards after clicking the welcome button
+  1. explore animation has a weird bug where it will shift slightly downwards after clicking the welcome button
 _____
 **VER 3.3.4 | 05/06/20**
 - *bugfixes*
