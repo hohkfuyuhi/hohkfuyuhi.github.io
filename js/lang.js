@@ -87,8 +87,6 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video4").innerHTML = "camera operator";
         findme.innerHTML = "find Max here";
         document.getElementById("emailmodaltitle").innerHTML = "email";
-        document.getElementById("linemodaltitle").innerHTML = "line qr code";
-        document.getElementById("wcmodaltitle").innerHTML = "wechat qr code";
         document.getElementById("about1").innerHTML = "let's talk about Max";
         document.getElementById("about2").innerHTML = "usually plugged into his NW-ZX300";
         document.getElementById("aboutnorm").innerHTML = "ew mainstream";
@@ -142,11 +140,6 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video4").innerHTML = "撮影技師";
         findme.innerHTML = "連絡方法";
         document.getElementById("emailmodaltitle").innerHTML = "メール";
-        document.getElementById("igmodaltitle").innerHTML = "インスタ";
-        document.getElementById("ig1").innerHTML = "&#62; 主要アカウント";
-        document.getElementById("ig2").innerHTML = "&#62; 写真撮影／ビジュアルデザイン";
-        document.getElementById("linemodaltitle").innerHTML = "line二次元コード";
-        document.getElementById("wcmodaltitle").innerHTML = "wechat二次元コード";
         document.getElementById("about1").innerHTML = "マックスを紹介しましょう";
         document.getElementById("about2").innerHTML = "通常はNW-ZX300でハイレゾを聴きます";
         document.getElementById("aboutnorm").innerHTML = "一般人だよ";
@@ -200,11 +193,6 @@ function lang(langon,langoff1,langoff2){
         document.getElementById("video4").innerHTML = "放映技师";
         findme.innerHTML = "联络方式";
         document.getElementById("emailmodaltitle").innerHTML = "电子邮件";
-        document.getElementById("igmodaltitle").innerHTML = "instagram";
-        document.getElementById("ig1").innerHTML = "&#62; 主账号";
-        document.getElementById("ig2").innerHTML = "&#62; 摄影／视觉设计";
-        document.getElementById("linemodaltitle").innerHTML = "line二维码";
-        document.getElementById("wcmodaltitle").innerHTML = "微信二维码";
         document.getElementById("about1").innerHTML = "介绍一下浩杰吧";
         document.getElementById("about2").innerHTML = "通常会在NW-ZX300上听着高分辨率音频";
         document.getElementById("aboutnorm").innerHTML = "正常人啦";
