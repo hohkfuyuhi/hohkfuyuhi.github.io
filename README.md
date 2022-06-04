@@ -1,5 +1,12 @@
 # portfolio patch notes
 _____
+**VER 4.1.1 | 05/06/22**  
+**long overdue security update oops**
+- *changes*
+  1. added rel="noopener noreferrer nofollow" to all relevant href links - standard practice to prevent window.opener threats, and i couldn't care less about analytics or seo, so i'm just gonna add all three
+- *issues*
+  1. i still have no idea what's causing the explore animation bug
+_____
 **VER 4.1.0 | 29/05/22**  
 **holy shit an update to actually fix issues**
 - *bugfixes*
